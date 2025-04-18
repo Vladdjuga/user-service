@@ -177,3 +177,4 @@ C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\test.json
+C:\Users\User\source\repos\DDD_Messanger\API\obj\Debug\net8.0\API.sourcelink.json

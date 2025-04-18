@@ -9,11 +9,12 @@
   <ItemGroup>
     <Folder Include="Interfaces\Security\" />
     <Folder Include="Mappings\" />
-    <Folder Include="UseCases\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="MediatR" Version="11.0.0" />
+    <PackageReference Include="MediatR.Contracts" Version="1.0.1" />
   </ItemGroup>
 
   <ItemGroup>

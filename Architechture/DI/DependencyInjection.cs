@@ -6,12 +6,14 @@ using Application.Interfaces.Security;
 using Application.Mappings;
 using Application.Services;
 using Application.Services.Security;
+using Application.UseCases.Chats.CreateChat;
 using Domain.Entities;
 using Domain.Repositories;
 using Infrastructure.Auth;
 using Infrastructure.Persistence;
 using Infrastructure.Persistence.Contexts;
 using Infrastructure.Persistence.Repositories;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -32,6 +34,7 @@ public static class DependencyInjection
         services.AddTransient<IPasswordHasher, Pbkdf2PasswordHasher>();
         services.AddTransient<IJwtProvider, JwtProvider>();
         services.AddAutoMapper(typeof(MappingProfile));
+        services.AddMediatR(typeof(CreateChatHandler).Assembly);
         return services;
     }
 }

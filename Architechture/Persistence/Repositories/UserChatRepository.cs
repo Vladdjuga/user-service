@@ -14,6 +14,13 @@ public class UserChatRepository:IUserChatRepository
         _dbContext = dbContext;
         _dbSet = _dbContext.Set<UserChatEntity>();
     }
+
+    public async Task AddAsync(UserChatEntity userChat)
+    {
+        await _dbSet.AddAsync(userChat);
+        await _dbContext.SaveChangesAsync();
+    }
+
     public async Task<UserChatEntity?> GetByUserAndChatAsync(Guid userId, Guid chatId)
     {
         var obj=await _dbSet.FindAsync(userId,chatId);

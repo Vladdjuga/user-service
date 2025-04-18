@@ -17,3 +17,4 @@ C:\Users\User\source\repos\DDD_Messanger\Architechture\obj\Debug\net8.0\refint\I
 C:\Users\User\source\repos\DDD_Messanger\Architechture\obj\Debug\net8.0\Infrastructure.pdb
 C:\Users\User\source\repos\DDD_Messanger\Architechture\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 C:\Users\User\source\repos\DDD_Messanger\Architechture\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Users\User\source\repos\DDD_Messanger\Architechture\obj\Debug\net8.0\Infrastructure.sourcelink.json
