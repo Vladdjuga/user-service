@@ -1,0 +1,23 @@
+@API_HostAddress = http://localhost:5077
+
+GET {{API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{API_HostAddress}}/test/user/users/
+Accept: application/json
+
+###
+
+POST {{API_HostAddress}}/test/user/users/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "string",
+  "email": "string",
+  "password": "string"
+}
+
+###
