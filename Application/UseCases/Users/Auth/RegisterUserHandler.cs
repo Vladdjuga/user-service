@@ -6,8 +6,15 @@ using MediatR;
 
 namespace Application.UseCases.Users.Auth;
 
-public class RegisterUserHandler(IUserRepository repository,IPasswordHasher passwordHasher):IRequestHandler<RegisterUserCommand, Guid>
+public class RegisterUserHandler:IRequestHandler<RegisterUserCommand, Guid>
 {
+    private readonly IUserRepository _repository;
+    private readonly IPasswordHasher _passwordHasher;
+    public RegisterUserHandler(IUserRepository repository, IPasswordHasher passwordHasher)
+    {
+        _repository = repository;
+        _passwordHasher = passwordHasher;
+    }
     public async Task<Guid> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
     {
         var user = new UserEntity
@@ -18,9 +25,9 @@ public class RegisterUserHandler(IUserRepository repository,IPasswordHasher pass
             LastName = request.LastName,
             DateOfBirth = request.DateOfBirth,
             CreatedAt = DateTime.Now,
-            PasswordHash = passwordHasher.HashPassword(request.Password),
+            PasswordHash = _passwordHasher.HashPassword(request.Password),
         };
-        await repository.AddAsync(user);
+        await _repository.AddAsync(user,cancellationToken);
         return user.Id;
     }
 }

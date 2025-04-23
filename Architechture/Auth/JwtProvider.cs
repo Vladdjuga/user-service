@@ -7,8 +7,14 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Infrastructure.Auth;
 
-public class JwtProvider(IConfiguration config):IJwtProvider
+public class JwtProvider:IJwtProvider
 {
+    private readonly IConfiguration _config;
+
+    public JwtProvider(IConfiguration config)
+    {
+        _config = config;
+    }
     public string GenerateToken(Guid userSubject, string userName, string userEmail)
     {
         var claims = new List<Claim>
@@ -18,7 +24,7 @@ public class JwtProvider(IConfiguration config):IJwtProvider
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(JwtRegisteredClaimNames.UniqueName, userName)
         };
-        var audiences=config.GetSection("JwtSettings:Audiences")
+        var audiences=_config.GetSection("JwtSettings:Audiences")
             .Get<List<string>>();
         if (audiences?.Count > 0)
         {
@@ -29,11 +35,11 @@ public class JwtProvider(IConfiguration config):IJwtProvider
             }
         }
 
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["JwtSettings:Key"]!));
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["JwtSettings:Key"]!));
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
         var token = new JwtSecurityToken(
-            issuer: config["JwtSettings:Issuer"],
+            issuer: _config["JwtSettings:Issuer"],
             claims: claims,
             expires: DateTime.UtcNow.AddHours(1),
             signingCredentials: creds

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.ValueObjects
 {
-    public class Email
+    public sealed class Email
     {
         public string Address { get; private set; }
 
@@ -20,7 +20,6 @@ namespace Domain.ValueObjects
 
             Address = address;
         }
-
         private static bool IsValidEmail(string email)
         {
             try

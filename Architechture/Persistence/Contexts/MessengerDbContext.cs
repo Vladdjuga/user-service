@@ -1,4 +1,4 @@
-﻿    using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -9,8 +9,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Persistence.Contexts
 {
-    public class MessengerDbContext(DbContextOptions dbContextOptions):DbContext(dbContextOptions)
+    public class MessengerDbContext: DbContext
     {
+        public MessengerDbContext(DbContextOptions dbContextOptions):base(dbContextOptions) { }
         public DbSet<UserEntity> Users { get; set; }
         public DbSet<ChatEntity> Chats { get; set; }
         public DbSet<UserChatEntity> UserChats { get; set; }

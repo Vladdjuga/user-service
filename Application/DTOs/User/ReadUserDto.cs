@@ -1,6 +1,8 @@
-﻿namespace Application.DTOs.User;
+﻿using Application.Interfaces.DTOs;
 
-public class ReadUserDto
+namespace Application.DTOs.User;
+
+public class ReadUserDto:IReadUserDto
 {
     public Guid Id { get; set; }
     public required string Username { get; set; }

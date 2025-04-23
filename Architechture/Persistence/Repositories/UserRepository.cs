@@ -14,46 +14,53 @@ public sealed class UserRepository : IUserRepository
         _dbContext = dbContext;
         _dbSet = _dbContext.Set<UserEntity>();
     }
-    public async Task<IEnumerable<UserEntity>> GetAllAsync()
+    public async Task<IEnumerable<UserEntity>> GetAllAsync(CancellationToken cancellationToken)
     {
-        return await _dbSet.AsNoTracking().ToListAsync();
+        return await _dbSet.AsNoTracking().ToListAsync(cancellationToken);
     }
-    public async Task<UserEntity?> GetByIdAsync(Guid id)
+    public async Task<UserEntity?> GetByIdAsync(Guid id, CancellationToken cancellationToken)
     {
         return await _dbSet.AsNoTracking()
-            .FirstOrDefaultAsync(e => EF.Property<Guid>(e, "Id") == id);
+            .FirstOrDefaultAsync(e => EF.Property<Guid>(e, "Id") == id,cancellationToken);
     }
-    public async Task AddAsync(UserEntity entity)
+
+    public async Task<UserEntity?> GetByEmailAsync(string email, CancellationToken cancellationToken)
     {
-        await _dbSet.AddAsync(entity);
-        await _dbContext.SaveChangesAsync();
+        var userEntity = await _dbSet.AsNoTracking().FirstOrDefaultAsync(o=>o.Email.Equals(email)
+            ,cancellationToken);
+        return userEntity;
     }
-    public async Task DeleteAsync(Guid id)
+
+    public async Task<UserEntity?> GetByUserNameAsync(string userName, CancellationToken cancellationToken)
     {
-        var entity = await GetByIdAsync(id);
+        var userEntity= await _dbSet.AsNoTracking().FirstOrDefaultAsync(o=>o.Username.Equals(userName)
+            ,cancellationToken);
+        return userEntity;
+    }
+
+    public async Task AddAsync(UserEntity entity, CancellationToken cancellationToken)
+    {
+        await _dbSet.AddAsync(entity,cancellationToken);
+        await _dbContext.SaveChangesAsync(cancellationToken);
+    }
+    public async Task DeleteAsync(Guid id, CancellationToken cancellationToken)
+    {
+        var entity = await GetByIdAsync(id,cancellationToken);
         if (entity != null)
         {
             _dbSet.Remove(entity);
-            await _dbContext.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync(cancellationToken);
         }
     }
-    public async Task UpdateAsync(UserEntity entity)
+    public async Task UpdateAsync(UserEntity entity, CancellationToken cancellationToken)
     {
-        var trackedEntity = await _dbContext.Users
-            .AsNoTracking().FirstOrDefaultAsync(x => x.Id == entity.Id);
-        if (trackedEntity is null)
+        var existingEntity = await _dbContext.Users
+            .FirstOrDefaultAsync(x => x.Id == entity.Id, cancellationToken);
+        if (existingEntity == null)
             throw new Exception("User not found");
-        var entry = _dbContext.Entry(entity);
-        foreach (var p in entry.Properties)
-        {
-            var propertyName = p.Metadata.Name;
-            if (propertyName is nameof(UserEntity.Id) or nameof(UserEntity.CreatedAt))
-                    continue;
-            var currValue=p.CurrentValue;
-            var originalValue = _dbContext.Entry(trackedEntity)
-                .Property(propertyName).CurrentValue;
-            p.IsModified = !Equals(currValue, originalValue);
-        }
-        await _dbContext.SaveChangesAsync();
+        _dbContext.Entry(existingEntity).CurrentValues.SetValues(entity);
+        _dbContext.Entry(existingEntity).Property(x => x.Id).IsModified = false;
+        _dbContext.Entry(existingEntity).Property(x => x.CreatedAt).IsModified = false;
+        await _dbContext.SaveChangesAsync(cancellationToken);
     }
 }

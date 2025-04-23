@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[14.0.0, )"
             },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.8.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[11.0.0, )"
@@ -140,9 +144,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.8.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.8.0, )"
+            },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.1.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.3.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{E196D203-55B1-40CD-93F0-3DAE97A09893}|Architechture\\Infrastructure.csproj|solutionrelative:architechture\\persistence\\contexts\\messengerdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E196D203-55B1-40CD-93F0-3DAE97A09893}|Architechture\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\ddd_messanger\\architechture\\persistence\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E196D203-55B1-40CD-93F0-3DAE97A09893}|Architechture\\Infrastructure.csproj|solutionrelative:architechture\\persistence\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E196D203-55B1-40CD-93F0-3DAE97A09893}|Architechture\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\ddd_messanger\\architechture\\persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E196D203-55B1-40CD-93F0-3DAE97A09893}|Architechture\\Infrastructure.csproj|solutionrelative:architechture\\persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B0A40880-7120-40BF-9B95-262822BA64E1}|Domain\\Domain.csproj|c:\\users\\user\\source\\repos\\ddd_messanger\\domain\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0A40880-7120-40BF-9B95-262822BA64E1}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0A40880-7120-40BF-9B95-262822BA64E1}|Domain\\Domain.csproj|c:\\users\\user\\source\\repos\\ddd_messanger\\domain\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0A40880-7120-40BF-9B95-262822BA64E1}|Domain\\Domain.csproj|solutionrelative:domain\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0A40880-7120-40BF-9B95-262822BA64E1}|Domain\\Domain.csproj|c:\\users\\user\\source\\repos\\ddd_messanger\\domain\\valueobjects\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -108,6 +100,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{E196D203-55B1-40CD-93F0-3DAE97A09893}|Architechture\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\ddd_messanger\\architechture\\migrations\\20250404194122_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E196D203-55B1-40CD-93F0-3DAE97A09893}|Architechture\\Infrastructure.csproj|solutionrelative:architechture\\migrations\\20250404194122_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\DDD_Messanger\\Architechture\\Persistence\\Repositories\\Repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Architechture\\Persistence\\Repositories\\Repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\DDD_Messanger\\Domain\\Repositories\\IRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Repositories\\IRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -125,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Architechture\\DI\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Architechture\\DI\\DependencyInjection.cs",
@@ -133,12 +133,11 @@
               "RelativeToolTip": "Architechture\\DI\\DependencyInjection.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAADgvxIAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T19:32:27.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T19:32:27.7Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Architechture\\Persistence\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "Architechture\\Persistence\\UnitOfWork.cs",
@@ -146,12 +145,11 @@
               "RelativeToolTip": "Architechture\\Persistence\\UnitOfWork.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T19:28:58.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T19:28:58.895Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Architechture\\Persistence\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Architechture\\Persistence\\Repositories\\UserRepository.cs",
@@ -159,12 +157,11 @@
               "RelativeToolTip": "Architechture\\Persistence\\Repositories\\UserRepository.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T18:48:56.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T18:48:56.693Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Application\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\UserService.cs",
@@ -172,12 +169,11 @@
               "RelativeToolTip": "Application\\Services\\UserService.cs",
               "ViewState": "AQIAAD0AAAAAAAAAAAAUwAkAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T20:20:58.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T20:20:58.618Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 25,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Architechture\\Persistence\\Repositories\\Repository.cs",
               "RelativeDocumentMoniker": "Architechture\\Persistence\\Repositories\\Repository.cs",
@@ -185,8 +181,7 @@
               "RelativeToolTip": "Architechture\\Persistence\\Repositories\\Repository.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T18:34:11.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T18:34:11.223Z"
             },
             {
               "$type": "Document",
@@ -198,12 +193,11 @@
               "RelativeToolTip": "Architechture\\Persistence\\Contexts\\MessengerDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T09:51:05.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T09:51:05.919Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "IPasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Application\\Interfaces\\Security\\IPasswordHasher.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\Security\\IPasswordHasher.cs",
@@ -211,12 +205,11 @@
               "RelativeToolTip": "Application\\Interfaces\\Security\\IPasswordHasher.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T19:59:48.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T19:59:48.472Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Application\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "Application\\IUnitOfWork.cs",
@@ -224,12 +217,11 @@
               "RelativeToolTip": "Application\\IUnitOfWork.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T18:31:33.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T18:31:33.329Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Application\\Mappings\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Application\\Mappings\\MappingProfile.cs",
@@ -237,12 +229,11 @@
               "RelativeToolTip": "Application\\Mappings\\MappingProfile.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T20:29:20.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T20:29:20.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Pbkdf2PasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Application\\Services\\Security\\Pbkdf2PasswordHasher.cs",
               "RelativeDocumentMoniker": "Application\\Services\\Security\\Pbkdf2PasswordHasher.cs",
@@ -250,12 +241,11 @@
               "RelativeToolTip": "Application\\Services\\Security\\Pbkdf2PasswordHasher.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T20:01:17.571Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T20:01:17.571Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\API\\Controllers\\Test\\UserController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\Test\\UserController.cs",
@@ -263,12 +253,11 @@
               "RelativeToolTip": "API\\Controllers\\Test\\UserController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T19:51:21.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T19:51:21.082Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "UserEntity.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Domain\\Entities\\UserEntity.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\UserEntity.cs",
@@ -276,12 +265,11 @@
               "RelativeToolTip": "Domain\\Entities\\UserEntity.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T10:00:06.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T10:00:06.504Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 26,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Domain\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Repositories\\IRepository.cs",
@@ -289,12 +277,11 @@
               "RelativeToolTip": "Domain\\Repositories\\IRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T18:11:14.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T18:11:14.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "Email.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Domain\\ValueObjects\\Email.cs",
               "RelativeDocumentMoniker": "Domain\\ValueObjects\\Email.cs",
@@ -302,12 +289,11 @@
               "RelativeToolTip": "Domain\\ValueObjects\\Email.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T10:05:19.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T10:05:19.783Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\API\\appsettings.json",
               "RelativeDocumentMoniker": "API\\appsettings.json",
@@ -315,12 +301,11 @@
               "RelativeToolTip": "API\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-03T18:06:32.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T18:06:32.295Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Architechture\\Persistence\\Configurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "Architechture\\Persistence\\Configurations\\UserConfiguration.cs",
@@ -332,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "ReadUserDto.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Application\\DTOs\\User\\ReadUserDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\User\\ReadUserDto.cs",
@@ -344,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "UpdateUserDto.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Application\\DTOs\\User\\UpdateUserDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\User\\UpdateUserDto.cs",
@@ -356,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "CreateUserDto.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Application\\DTOs\\User\\CreateUserDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\User\\CreateUserDto.cs",
@@ -368,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "IService.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Application\\Interfaces\\IService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IService.cs",
@@ -380,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "Application.csproj",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Application\\Application.csproj",
               "RelativeDocumentMoniker": "Application\\Application.csproj",
@@ -392,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "dbo.Users [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__mssqllocaldb/UserDB/True/SqlTable/dbo.Users.sql",
               "ToolTip": "dbo.Users [Data]",
@@ -401,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 23,
               "Title": "20250404194918_SQL_Default_Value4.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Architechture\\Migrations\\20250404194918_SQL_Default_Value4.cs",
               "RelativeDocumentMoniker": "Architechture\\Migrations\\20250404194918_SQL_Default_Value4.cs",
@@ -413,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
@@ -425,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 24,
               "Title": "20250404194122_Init.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Architechture\\Migrations\\20250404194122_Init.cs",
               "RelativeDocumentMoniker": "Architechture\\Migrations\\20250404194122_Init.cs",
@@ -437,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
               "Title": "API.csproj",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\API\\API.csproj",
               "RelativeDocumentMoniker": "API\\API.csproj",
@@ -449,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 22,
               "Title": "Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Architechture\\Infrastructure.csproj",
               "RelativeDocumentMoniker": "Architechture\\Infrastructure.csproj",

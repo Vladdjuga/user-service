@@ -1,4 +1,5 @@
-﻿using Application.DTOs.User;
+﻿/*
+using Application.DTOs.User;
 using Application.Services;
 using Domain.Entities;
 using Infrastructure.Persistence.Repositories;
@@ -26,7 +27,7 @@ namespace API.Controllers.Test
             return await userService.GetByIdAsync(id);
         }
         [HttpPost("user")]
-        public async Task<IActionResult> CreateUser([FromBody] CreateUserDto dto)
+        public async Task<IActionResult> CreateUser([FromBody] RegisterUserDto dto)
         {
             try{
                 if (!ModelState.IsValid)
@@ -43,3 +44,4 @@ namespace API.Controllers.Test
         }
     }
 }
+*/
