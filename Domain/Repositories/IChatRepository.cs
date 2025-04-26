@@ -4,9 +4,9 @@ namespace Domain.Repositories;
 
 public interface IChatRepository
 {
-    Task<IEnumerable<ChatEntity>> GetAllAsync();
-    Task<ChatEntity?> GetByIdAsync(Guid id);
-    Task AddAsync(ChatEntity entity);
-    Task UpdateAsync(ChatEntity entity);
-    Task DeleteAsync(Guid id);
+    Task<IEnumerable<ChatEntity>> GetAllAsync(CancellationToken cancellationToken);
+    Task<ChatEntity?> GetByIdAsync(Guid id, CancellationToken cancellationToken);
+    Task AddAsync(ChatEntity entity, CancellationToken cancellationToken);
+    Task UpdateAsync(ChatEntity entity, CancellationToken cancellationToken);
+    Task DeleteAsync(Guid id, CancellationToken cancellationToken);
 }

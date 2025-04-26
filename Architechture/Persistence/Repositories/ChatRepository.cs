@@ -14,26 +14,26 @@ public class ChatRepository:IChatRepository
         _dbContext = dbContext;
         _dbSet = _dbContext.Set<ChatEntity>();
     }
-    public async Task<IEnumerable<ChatEntity>> GetAllAsync()
+    public async Task<IEnumerable<ChatEntity>> GetAllAsync(CancellationToken cancellationToken)
     {
-        return await _dbSet.AsNoTracking().ToListAsync();
+        return await _dbSet.AsNoTracking().ToListAsync(cancellationToken);
     }
 
-    public async Task<ChatEntity?> GetByIdAsync(Guid id)
+    public async Task<ChatEntity?> GetByIdAsync(Guid id, CancellationToken cancellationToken)
     {
-        return await _dbSet.FindAsync(id);
+        return await _dbSet.FindAsync([id],cancellationToken);
     }
 
-    public async Task AddAsync(ChatEntity entity)
+    public async Task AddAsync(ChatEntity entity, CancellationToken cancellationToken)
     {
-        await _dbSet.AddAsync(entity); 
-        await _dbContext.SaveChangesAsync();
+        await _dbSet.AddAsync(entity,cancellationToken); 
+        await _dbContext.SaveChangesAsync(cancellationToken);
     }
 
-    public async Task UpdateAsync(ChatEntity entity)
+    public async Task UpdateAsync(ChatEntity entity, CancellationToken cancellationToken)
     {
         var trackedEntity = await _dbContext.Chats
-            .AsNoTracking().FirstOrDefaultAsync(x => x.Id == entity.Id);
+            .AsNoTracking().FirstOrDefaultAsync(x => x.Id == entity.Id,cancellationToken);
         if (trackedEntity is null)
             throw new Exception("Chat not found");
         var entry = _dbContext.Entry(entity);
@@ -47,16 +47,16 @@ public class ChatRepository:IChatRepository
                 .Property(propertyName).CurrentValue;
             p.IsModified = !Equals(currValue, originalValue);
         }
-        await _dbContext.SaveChangesAsync();
+        await _dbContext.SaveChangesAsync(cancellationToken);
     }
 
-    public async Task DeleteAsync(Guid id)
+    public async Task DeleteAsync(Guid id, CancellationToken cancellationToken)
     {
-        var entity = await GetByIdAsync(id);
+        var entity = await GetByIdAsync(id,cancellationToken);
         if (entity != null)
         {
             _dbSet.Remove(entity);
-            await _dbContext.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync(cancellationToken);
         }
     }
 }

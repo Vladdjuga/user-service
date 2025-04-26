@@ -1,5 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 using Application.Auth;
+using Application.Common;
 using Application.Interfaces.Security;
 using Domain.Entities;
 using Domain.Repositories;
@@ -7,7 +8,7 @@ using MediatR;
 
 namespace Application.UseCases.Users.Auth;
 
-public class LoginUserHandler:IRequestHandler<LoginUserCommand, string>
+public class LoginUserHandler:IRequestHandler<LoginUserCommand, Result<string>>
 {
     private readonly IUserRepository _userRepository;
     private readonly IPasswordHasher _passwordHasher;
@@ -20,7 +21,7 @@ public class LoginUserHandler:IRequestHandler<LoginUserCommand, string>
         _passwordHasher = passwordHasher;
         _jwtProvider = jwtProvider;
     }
-    public async Task<string> Handle(LoginUserCommand request, CancellationToken cancellationToken)
+    public async Task<Result<string>> Handle(LoginUserCommand request, CancellationToken cancellationToken)
     {
         var emailPattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
         var nicknamePattern = @"^[a-zA-Z0-9_]{3,16}$";
@@ -34,12 +35,12 @@ public class LoginUserHandler:IRequestHandler<LoginUserCommand, string>
             userEntity = await _userRepository.GetByUserNameAsync(request.Identity,cancellationToken);
         }
         else
-            throw new ApplicationException("Invalid Identity");
+            return Result<string>.Failure("Invalid Identity");
         if(userEntity == null)
-            throw new ApplicationException("Invalid Identity");
+            return Result<string>.Failure("User not found");
         if(!_passwordHasher.VerifyPassword(request.Password, userEntity.PasswordHash))
-            throw new ApplicationException("Invalid Password");
+            return Result<string>.Failure("Invalid Password");
         var token = _jwtProvider.GenerateToken(userEntity.Id,userEntity.Username,userEntity.Email.Address);
-        return token;
+        return Result<string>.Success(token);
     }
 }

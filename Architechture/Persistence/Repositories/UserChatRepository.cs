@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Domain.Enums;
 using Domain.Repositories;
 using Infrastructure.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
@@ -15,21 +16,27 @@ public class UserChatRepository:IUserChatRepository
         _dbSet = _dbContext.Set<UserChatEntity>();
     }
 
-    public async Task AddAsync(UserChatEntity userChat)
+    public async Task AddAsync(UserChatEntity userChat,CancellationToken cancellationToken)
     {
-        await _dbSet.AddAsync(userChat);
-        await _dbContext.SaveChangesAsync();
+        await _dbSet.AddAsync(userChat,cancellationToken);
+        await _dbContext.SaveChangesAsync(cancellationToken);
     }
 
-    public async Task<UserChatEntity?> GetByUserAndChatAsync(Guid userId, Guid chatId)
+    public async Task<UserChatEntity?> GetByUserAndChatAsync(Guid userId, Guid chatId
+        ,CancellationToken cancellationToken)
     {
-        var obj=await _dbSet.FindAsync(userId,chatId);
+        var obj=await _dbSet.FirstOrDefaultAsync(
+            el=>el.UserId == userId && el.ChatId == chatId,
+            cancellationToken);
         return obj;
     }
 
-    public Task<IEnumerable<UserChatEntity>> GetAdminsByChatIdAsync(Guid chatId)
+    public async Task<IEnumerable<UserChatEntity>> GetAdminsByChatIdAsync(Guid chatId
+        ,CancellationToken cancellationToken)
     {
-        var objs=_dbSet.Where(x=>x.ChatId == chatId).ToList();
-        return Task.FromResult<IEnumerable<UserChatEntity>>(objs);
+        var objs=await _dbSet.Where(x=>x.ChatId == chatId 
+                                       && x.ChatRole==ChatRole.Admin)
+            .ToListAsync(cancellationToken);
+        return objs;
     }
 }

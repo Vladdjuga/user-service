@@ -177,6 +177,10 @@
             "MediatR.Contracts": {
               "target": "Package",
               "version": "[1.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.3, )"
             }
           },
           "imports": [

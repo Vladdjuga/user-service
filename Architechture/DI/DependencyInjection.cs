@@ -37,6 +37,7 @@ public static class DependencyInjection
         services.AddTransient<IJwtProvider, JwtProvider>();
         services.AddValidatorsFromAssemblyContaining<GetUserQueryValidator>();
         services.AddTransient(typeof(IPipelineBehavior<,>),typeof(ValidationBehavior<,>));
+        services.AddTransient(typeof(IPipelineBehavior<,>),typeof(ExceptionHandlingBehavior<,>));
         services.AddAutoMapper(typeof(MappingProfile));
         services.AddMediatR(typeof(CreateChatHandler).Assembly);
         return services;

@@ -1,4 +1,5 @@
-﻿using Application.Interfaces.Security;
+﻿using Application.Common;
+using Application.Interfaces.Security;
 using Domain.Entities;
 using Domain.Repositories;
 using Domain.ValueObjects;
@@ -6,7 +7,7 @@ using MediatR;
 
 namespace Application.UseCases.Users.Auth;
 
-public class RegisterUserHandler:IRequestHandler<RegisterUserCommand, Guid>
+public class RegisterUserHandler:IRequestHandler<RegisterUserCommand, Result<Guid>>
 {
     private readonly IUserRepository _repository;
     private readonly IPasswordHasher _passwordHasher;
@@ -15,7 +16,7 @@ public class RegisterUserHandler:IRequestHandler<RegisterUserCommand, Guid>
         _repository = repository;
         _passwordHasher = passwordHasher;
     }
-    public async Task<Guid> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
+    public async Task<Result<Guid>> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
     {
         var user = new UserEntity
         {
@@ -28,6 +29,6 @@ public class RegisterUserHandler:IRequestHandler<RegisterUserCommand, Guid>
             PasswordHash = _passwordHasher.HashPassword(request.Password),
         };
         await _repository.AddAsync(user,cancellationToken);
-        return user.Id;
+        return Result<Guid>.Success(user.Id);
     }
 }

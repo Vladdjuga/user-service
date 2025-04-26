@@ -4,12 +4,12 @@ namespace Domain.Entities;
 
 public class UserChatEntity
 {
-    public Guid UserId { get; set; }
-    public Guid ChatId { get; set; }
+    public Guid UserId { get; init; }
+    public Guid ChatId { get; init; }
     
-    public virtual UserEntity? User { get; set; }
-    public virtual ChatEntity? Chat { get; set; }
+    public virtual UserEntity? User { get; init; }
+    public virtual ChatEntity? Chat { get; init; }
     
-    public required bool IsMuted { get; set; }
-    public required ChatRole ChatRole { get; set; }
+    public required bool IsMuted { get; init; }
+    public required ChatRole ChatRole { get; init; }
 }

@@ -15,6 +15,7 @@ namespace Infrastructure.Persistence.Contexts
         public DbSet<UserEntity> Users { get; set; }
         public DbSet<ChatEntity> Chats { get; set; }
         public DbSet<UserChatEntity> UserChats { get; set; }
+        public DbSet<UserContactEntity> UserContacts { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseLazyLoadingProxies();

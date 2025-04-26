@@ -87,6 +87,42 @@ namespace Infrastructure.Migrations
                     b.ToTable("UserChat", (string)null);
                 });
 
+            modelBuilder.Entity("Domain.Entities.UserContactEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasDefaultValueSql("NEWID()");
+
+                    b.Property<Guid>("ContactId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("ContactStatus")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<Guid>("PrivateChatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ContactId");
+
+                    b.HasIndex("PrivateChatId");
+
+                    b.HasIndex("UserId", "ContactId")
+                        .IsUnique();
+
+                    b.ToTable("UserContacts", (string)null);
+                });
+
             modelBuilder.Entity("Domain.Entities.UserEntity", b =>
                 {
                     b.Property<Guid>("Id")
@@ -163,6 +199,33 @@ namespace Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Domain.Entities.UserContactEntity", b =>
+                {
+                    b.HasOne("Domain.Entities.UserEntity", "Contact")
+                        .WithMany()
+                        .HasForeignKey("ContactId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Entities.ChatEntity", "PrivateChat")
+                        .WithMany()
+                        .HasForeignKey("PrivateChatId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Entities.UserEntity", "User")
+                        .WithMany("Contacts")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Contact");
+
+                    b.Navigation("PrivateChat");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Domain.Entities.ChatEntity", b =>
                 {
                     b.Navigation("UserChatEntities");
@@ -170,6 +233,8 @@ namespace Infrastructure.Migrations
 
             modelBuilder.Entity("Domain.Entities.UserEntity", b =>
                 {
+                    b.Navigation("Contacts");
+
                     b.Navigation("UserChatEntities");
                 });
 #pragma warning restore 612, 618

@@ -1,11 +1,12 @@
-﻿using Domain.Entities;
+﻿using Application.Common;
+using Domain.Entities;
 using Domain.Enums;
 using Domain.Repositories;
 using MediatR;
 
 namespace Application.UseCases.Chats.CreateChat;
 
-public class CreateChatHandler:IRequestHandler<CreateChatCommand, Guid>
+public class CreateChatHandler:IRequestHandler<CreateChatCommand, Result<Guid>>
 {
     private readonly IChatRepository _chatRepository;
     private readonly IUserRepository _userRepository;
@@ -19,7 +20,7 @@ public class CreateChatHandler:IRequestHandler<CreateChatCommand, Guid>
         _userRepository = userRepository;
         _userChatRepository = userChatRepository;
     }
-    public async Task<Guid> Handle(CreateChatCommand request, CancellationToken cancellationToken)
+    public async Task<Result<Guid>> Handle(CreateChatCommand request, CancellationToken cancellationToken)
     {
         var chat = new ChatEntity
         {
@@ -29,7 +30,7 @@ public class CreateChatHandler:IRequestHandler<CreateChatCommand, Guid>
             CreatedAt = DateTime.Now,
             ChatType = request.ChatType
         };
-        await _chatRepository.AddAsync(chat);
+        await _chatRepository.AddAsync(chat,cancellationToken);
         var userChat = new UserChatEntity
         {
             ChatId = chat.Id,
@@ -37,8 +38,8 @@ public class CreateChatHandler:IRequestHandler<CreateChatCommand, Guid>
             ChatRole = ChatRole.Admin,
             IsMuted = false
         };
-        await _userChatRepository.AddAsync(userChat);
+        await _userChatRepository.AddAsync(userChat,cancellationToken);
 
-        return chat.Id;
+        return Result<Guid>.Success(chat.Id);
     }
 }
