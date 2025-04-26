@@ -79,7 +79,7 @@ public class UserController : Controller
     /// <returns>ReadUserDto or Bad Request if the exception was thrown.</returns>
     [Authorize]
     [HttpPatch("updateUserInfo")]
-    public async Task<Results<Ok<ReadUserDto>, ForbidHttpResult, BadRequest<string>>> UpdateUserInfo(
+    public async Task<Results<Ok<ReadUserDto>, BadRequest<string>>> UpdateUserInfo(
         UpdateUserDto userDto)
     {
         var userId = User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;

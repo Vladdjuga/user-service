@@ -39,4 +39,14 @@ public class UserChatRepository:IUserChatRepository
             .ToListAsync(cancellationToken);
         return objs;
     }
+
+    public async Task<IEnumerable<UserChatEntity>> GetChatsByUserIdAsync(Guid userId, bool includeChat,
+        CancellationToken cancellationToken)
+    {
+        var query=_dbSet.Where(x=>x.UserId == userId);
+        if (includeChat)
+            query=query.Include(x=>x.Chat);
+        var objs=await query.ToListAsync(cancellationToken);
+        return objs;
+    }
 }

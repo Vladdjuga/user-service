@@ -7,4 +7,6 @@ public interface IUserChatRepository
     Task AddAsync(UserChatEntity userChat, CancellationToken cancellationToken);
     Task<UserChatEntity?> GetByUserAndChatAsync(Guid userId, Guid chatId, CancellationToken cancellationToken);
     Task<IEnumerable<UserChatEntity>> GetAdminsByChatIdAsync(Guid chatId, CancellationToken cancellationToken);
+    Task<IEnumerable<UserChatEntity>> GetChatsByUserIdAsync(Guid userId, bool is_lazy,
+        CancellationToken cancellationToken);
 }
