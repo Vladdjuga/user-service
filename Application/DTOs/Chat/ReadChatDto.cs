@@ -4,7 +4,7 @@ namespace Application.DTOs.Chat;
 
 public class ReadChatDto
 {
-    public Guid Id { get; init; }
+    public required Guid Id { get; init; }
     public required string Title { get; init; }
     public required bool IsPrivate { get; init; }
     public required ChatType ChatType { get; init; } 

@@ -1,5 +1,7 @@
-﻿using Application.Common;
+﻿using System.IdentityModel.Tokens.Jwt;
+using Application.Common;
 using Application.DTOs.Chat;
+using Application.UseCases.Chats.CreateChat;
 using Application.UseCases.Chats.GetChats;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -40,6 +42,33 @@ public class ChatController:Controller
             return TypedResults.BadRequest("Failed to get chats");
         }
         _logger.LogInformation("User {Username} gets the chats", userId);
+        return TypedResults.Ok(result.Value);
+    }
+
+    [Authorize]
+    [HttpPost("addChat")]
+    public async Task<Results<Ok<ReadChatDto>,BadRequest<string>>> AddChat([FromBody] CreateChatDto createChatDto)
+    {
+        var userId = User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
+        if (!Guid.TryParse(userId, out Guid userGuid))
+        {
+            _logger.LogInformation("User {Username} not found", userGuid);
+            return TypedResults.BadRequest("User not found");
+        }
+        var command = new CreateChatCommand(
+            createChatDto.Title,
+            createChatDto.ChatType,
+            userGuid
+        );
+        _logger.LogInformation("User {UserId} tries to create chat", userId);
+        var result = await _mediator.Send(command);
+        if (result.IsFailure)
+        {
+            _logger.LogError("User {Username} failed to create chat", userId);
+            _logger.LogError("Error : {Message}", result.Error);
+            return TypedResults.BadRequest("Failed to create chat");
+        }
+        _logger.LogInformation("User {Username} added chat", userId);
         return TypedResults.Ok(result.Value);
     }
 }

@@ -24,13 +24,25 @@ public class UserContactRepository:IUserContactRepository
         return contacts;
     }
 
-    public async Task<UserContactEntity?> GetUserContactAsync(Guid userId, Guid contactId, CancellationToken cancellationToken)
+    public async Task<UserContactEntity?> GetUserContactAsync(Guid userId, Guid contactId,
+        CancellationToken cancellationToken)
     {
         var userContacts= await _dbSet.Where(el => el.UserId == userId && el.ContactId == contactId)
             .Include(el => el.Contact)
             .Include(el => el.User)
             .FirstOrDefaultAsync(cancellationToken);
         return userContacts;
+    }
+
+    public async Task<UserContactEntity?> GetUserContactAsync(Guid userId, Guid contactId,
+        CancellationToken cancellationToken,
+        Func<IQueryable<UserContactEntity>, IQueryable<UserContactEntity>>? include)
+    {
+        var query = _dbSet.Where(el => 
+            el.UserId == userId && el.ContactId == contactId);
+        if (include is not null)
+            query = include(query);
+        return await query.FirstOrDefaultAsync(cancellationToken);
     }
 
     public async Task AddAsync(UserContactEntity userContactEntity, CancellationToken cancellationToken)
@@ -72,5 +84,16 @@ public class UserContactRepository:IUserContactRepository
             ?? throw new ApplicationException("Entity not found");
         userContact.ContactStatus = status;
         await _dbContext.SaveChangesAsync(cancellationToken);
+    }
+
+    public async Task<UserContactEntity> GetByIdAsync(Guid id, CancellationToken cancellationToken,
+        Func<IQueryable<UserContactEntity>, IQueryable<UserContactEntity>>? include = null)
+    {
+        IQueryable<UserContactEntity> query = _dbSet;
+        if(include!=null)
+            query = include(query);
+        var userContact = await query.FirstOrDefaultAsync(cancellationToken)??
+                          throw new ApplicationException("Entity not found");
+        return userContact;
     }
 }

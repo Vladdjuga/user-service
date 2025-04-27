@@ -1,4 +1,5 @@
 ﻿using Application.DTOs.Chat;
+using Application.DTOs.Contact;
 using Application.DTOs.User;
 using AutoMapper;
 using Domain.Entities;
@@ -27,6 +28,7 @@ public class MappingProfile:Profile
             })
             .ForAllMembers(opts => opts.Condition((_, _, srcMember) => srcMember != null));
         //
+        //Make sure to Include Chats when mapping this
         CreateMap<UserChatEntity, ReadChatDto>()
             .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.ChatId))
             .ForMember(dest => dest.ChatType, opt => opt.MapFrom(src => src.Chat.ChatType))
@@ -35,5 +37,14 @@ public class MappingProfile:Profile
             .ForMember(dest=>dest.ChatRole,opt=>opt.MapFrom(src=>src.ChatRole))
             .ForMember(dest=>dest.CreatedAt,opt=>opt.MapFrom(src=>src.Chat.CreatedAt))
             .ForMember(dest=>dest.IsPrivate,opt=>opt.MapFrom(src=>src.Chat.IsPrivate));
+        //Make sure to Include Contacts when mapping this
+        CreateMap<UserContactEntity, ReadContactDto>()
+            .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.ContactId))
+            .ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(src => src.CreatedAt))
+            .ForMember(dest => dest.Status, opt => opt.MapFrom(src => src.ContactStatus))
+            .ForMember(dest => dest.PrivateChatId, opt => opt.MapFrom(src => src.PrivateChatId))
+            .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Contact.Email))
+            .ForMember(dest => dest.Username, opt => opt.MapFrom(src => src.Contact.Username))
+            .ForMember(dest => dest.DateOfBirth, opt => opt.MapFrom(src => src.Contact.DateOfBirth));
     }
 }

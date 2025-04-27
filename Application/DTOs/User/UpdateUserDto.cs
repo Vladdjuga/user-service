@@ -4,7 +4,6 @@ namespace Application.DTOs.User;
 
 public class UpdateUserDto
 {
-    public required Guid Id { get; set; }
     public string? Username { get; set; }
     public string? Email { get; set; }
     [RegularExpression(@"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{}|;:,.<>?])[^\s]{8,128}$",

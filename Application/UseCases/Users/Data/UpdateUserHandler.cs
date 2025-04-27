@@ -21,9 +21,7 @@ public class UpdateUserHandler:IRequestHandler<UpdateUserCommand,Result<ReadUser
     }
     public async Task<Result<ReadUserDto>> Handle(UpdateUserCommand request, CancellationToken cancellationToken)
     {
-        if(request.Dto.Id!=request.UserId)
-            return Result<ReadUserDto>.Failure("User does not exist");
-        var userEntity = await _userRepository.GetByIdAsync(request.Dto.Id,cancellationToken);
+        var userEntity = await _userRepository.GetByIdAsync(request.UserId,cancellationToken);
         if (userEntity == null)
             return Result<ReadUserDto>.Failure("User not found");
         _mapper.Map(request.Dto, userEntity);

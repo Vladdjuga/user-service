@@ -1,37 +1,43 @@
 ﻿using Application.Common;
+using Application.DTOs.Contact;
+using AutoMapper;
 using Domain.Entities;
 using Domain.Enums;
 using Domain.Repositories;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace Application.UseCases.Contacts.CreateContact;
 
-public class CreateContactHandler:IRequestHandler<CreateContactCommand,Result<Guid>>
+public class CreateContactHandler:IRequestHandler<CreateContactCommand,Result<ReadContactDto>>
 {
     private readonly IChatRepository _chatRepository;
     private readonly IUserRepository _userRepository;
     private readonly IUserChatRepository _userChatRepository;
     private readonly IUserContactRepository _userContactRepository;
+    private readonly IMapper _mapper;
 
     public CreateContactHandler(IChatRepository chatRepository, IUserRepository userRepository,
-        IUserContactRepository userContactRepository, IUserChatRepository userChatRepository)
+        IUserContactRepository userContactRepository, IUserChatRepository userChatRepository, IMapper mapper)
     {
         _chatRepository = chatRepository;
         _userRepository = userRepository;
         _userContactRepository = userContactRepository;
         _userChatRepository = userChatRepository;
+        _mapper = mapper;
     }
-    public async Task<Result<Guid>> Handle(CreateContactCommand request, CancellationToken cancellationToken)
+    public async Task<Result<ReadContactDto>> Handle(CreateContactCommand request,
+        CancellationToken cancellationToken)
     {
         var userContact = await _userContactRepository.GetUserContactAsync(request.UserId, request.ContactId, cancellationToken);
         if(userContact is not null)
-            return Result<Guid>.Failure("User contact already exists");
+            return Result<ReadContactDto>.Failure("User contact already exists");
         var user = await _userRepository.GetByIdAsync(request.UserId, cancellationToken);
         if (user is null)
-            return Result<Guid>.Failure("User does not exist");
+            return Result<ReadContactDto>.Failure("User does not exist");
         var contact = await _userRepository.GetByIdAsync(request.ContactId, cancellationToken);
         if (contact is null)
-            return Result<Guid>.Failure("Contact does not exist");
+            return Result<ReadContactDto>.Failure("Contact does not exist");
         var privateChat = new ChatEntity
         {
             Id = Guid.NewGuid(),
@@ -67,6 +73,11 @@ public class CreateContactHandler:IRequestHandler<CreateContactCommand,Result<Gu
             PrivateChatId = privateChat.Id
         };
         await _userContactRepository.AddAsync(userContactEntity, cancellationToken);
-        return Result<Guid>.Success(user.Id);
+        var loadedUserContact = await _userContactRepository.GetByIdAsync(userContactEntity.Id, cancellationToken, 
+            include => include
+                .Include(x => x.Contact)
+        );
+        var dto=_mapper.Map<ReadContactDto>(loadedUserContact);
+        return Result<ReadContactDto>.Success(dto);
     }
 }
