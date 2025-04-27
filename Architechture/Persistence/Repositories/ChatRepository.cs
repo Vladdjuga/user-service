@@ -24,6 +24,11 @@ public class ChatRepository:IChatRepository
         return await _dbSet.FindAsync([id],cancellationToken);
     }
 
+    public async Task<bool> AnyByIdAsync(Guid id, CancellationToken cancellationToken)
+    {
+        return await _dbSet.AnyAsync(e => e.Id == id, cancellationToken);
+    }
+
     public async Task AddAsync(ChatEntity entity, CancellationToken cancellationToken)
     {
         await _dbSet.AddAsync(entity,cancellationToken); 

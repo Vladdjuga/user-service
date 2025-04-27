@@ -49,4 +49,9 @@ public class UserChatRepository:IUserChatRepository
         var objs=await query.ToListAsync(cancellationToken);
         return objs;
     }
+
+    public async Task<bool> AnyByIdAsync(Guid userId,Guid chatId, CancellationToken cancellationToken)
+    {
+        return await _dbSet.AnyAsync(el => el.UserId == userId && el.ChatId == chatId, cancellationToken);
+    }
 }

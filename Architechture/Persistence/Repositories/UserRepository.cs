@@ -38,6 +38,11 @@ public sealed class UserRepository : IUserRepository
         return userEntity;
     }
 
+    public async Task<bool> AnyByIdAsync(Guid id, CancellationToken cancellationToken)
+    {
+        return await _dbSet.AsNoTracking().AnyAsync(e => e.Id.Equals(id), cancellationToken);
+    }
+
     public async Task AddAsync(UserEntity entity, CancellationToken cancellationToken)
     {
         await _dbSet.AddAsync(entity,cancellationToken);
