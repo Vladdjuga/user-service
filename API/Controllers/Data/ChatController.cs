@@ -40,7 +40,7 @@ public class ChatController:Controller
         {
             _logger.LogError("User {Username} failed to get chats", userId);
             _logger.LogError("Error : {Message}", result.Error);
-            return TypedResults.BadRequest("Failed to get chats");
+            return TypedResults.BadRequest(result.Error);
         }
         _logger.LogInformation("User {Username} gets the chats", userId);
         return TypedResults.Ok(result.Value);
@@ -67,7 +67,7 @@ public class ChatController:Controller
         {
             _logger.LogError("User {Username} failed to create chat", userId);
             _logger.LogError("Error : {Message}", result.Error);
-            return TypedResults.BadRequest("Failed to create chat");
+            return TypedResults.BadRequest(result.Error);
         }
         _logger.LogInformation("User {Username} added chat", userId);
         return TypedResults.Ok(result.Value);
@@ -90,7 +90,7 @@ public class ChatController:Controller
             _logger.LogError("Error while adding user {UserId} to chat {ChatId}",
                 addUserToChatDto.UserId, addUserToChatDto.ChatId);
             _logger.LogError("Error : {Message}", result.Error);
-            return TypedResults.BadRequest("Failed to create chat");
+            return TypedResults.BadRequest(result.Error);
         }
         _logger.LogInformation("Added user {UserId} to chat {ChatId}",
             addUserToChatDto.UserId, addUserToChatDto.ChatId);

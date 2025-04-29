@@ -40,7 +40,7 @@ public class AuthController : Controller
         {
             _logger.LogError("Failure while login user {User}.", loginDto.Identity);
             _logger.LogError("Error: {Error}", result.Error);
-            return TypedResults.BadRequest("Can't login");
+            return TypedResults.BadRequest(result.Error);
         }
         _logger.LogInformation("Login User: {Identity} - {Password}", loginDto.Identity, loginDto.Password);
         _logger.LogInformation("Token generated for user - {Identity}. Token : {Token}", loginDto.Identity, result);
@@ -70,7 +70,7 @@ public class AuthController : Controller
         {
             _logger.LogError("Failure while registering user {Username} - {Email}", registerDto.Username, registerDto.Email);
             _logger.LogError("Error: {Error}", result.Error);
-            return TypedResults.BadRequest("Can't register");
+            return TypedResults.BadRequest(result.Error);
         }
         _logger.LogInformation("Registered User: {Username} - {Email}", registerDto.Username, registerDto.Email);
         return TypedResults.Ok(result.Value);

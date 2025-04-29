@@ -48,7 +48,7 @@ public class ContactController:Controller
             _logger.LogInformation("Failed to create contact for {UserId} and {ContactId}",
                 userGuid, contactId);
             _logger.LogInformation("Error: {Error}", result.Error);
-            return TypedResults.BadRequest("Failed to create contact");
+            return TypedResults.BadRequest(result.Error);
         }
         _logger.LogInformation("Created contact {ContactId}", contactId);
         return TypedResults.Ok(result.Value);
@@ -70,7 +70,7 @@ public class ContactController:Controller
         {
             _logger.LogError("Error getting contact {ContactId}", contactId);
             _logger.LogInformation("Error: {Error}", result.Error);
-            return TypedResults.BadRequest("Error getting contact");
+            return TypedResults.BadRequest(result.Error);
         }
         _logger.LogInformation("Retrieved contact {ContactId}", contactId);
         return TypedResults.Ok(result.Value);
@@ -93,7 +93,7 @@ public class ContactController:Controller
         {
             _logger.LogError("Error getting contacts for {UserId}", userGuid);
             _logger.LogInformation("Error: {Error}", result.Error);
-            return TypedResults.BadRequest("Error getting contacts");
+            return TypedResults.BadRequest(result.Error);
         }
         _logger.LogInformation("Retrieved contacts for {UserId}", userGuid);
         return TypedResults.Ok(result.Value);
@@ -122,7 +122,7 @@ public class ContactController:Controller
         {
             _logger.LogError("Error changing status for contact : {ContactId}", contactId);
             _logger.LogInformation("Error: {Error}", result.Error);
-            return TypedResults.BadRequest("Error changing status");
+            return TypedResults.BadRequest(result.Error);
         }
         _logger.LogInformation("Successfully changed contact status to {Status}", status);
         return TypedResults.Ok();
