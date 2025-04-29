@@ -65,7 +65,7 @@ public class UserController : Controller
         {
             _logger.LogInformation("Failed to get user info for {Username}", username);
             _logger.LogInformation("Error: {Error}", result.Error);
-            return TypedResults.BadRequest("Can't get user info");
+            return TypedResults.BadRequest(result.Error);
         }
 
         _logger.LogInformation("User {Username} found", username);
@@ -96,7 +96,7 @@ public class UserController : Controller
         {
             _logger.LogInformation("Failed to update user info for {Username}", userDto.Username);
             _logger.LogInformation("Error: {Error}", result.Error);
-            return TypedResults.BadRequest("Can't update user info");
+            return TypedResults.BadRequest(result.Error);
         }
         _logger.LogInformation("User {Username} updated", userDto.Username);
         return TypedResults.Ok(result.Value);
