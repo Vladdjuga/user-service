@@ -5,7 +5,7 @@ using MediatR;
 
 namespace Application.UseCases.Contacts.ChangeContactStatus;
 
-public class ChangeContactStatusHandler:IRequestHandler<ChangeContactStatusCommand,Result>
+public class ChangeContactStatusHandler:IRequestHandler<ChangeContactStatusCommand,IResult>
 {
     private readonly IUserContactRepository _userContactRepository;
     private readonly IMapper _mapper;
@@ -16,7 +16,7 @@ public class ChangeContactStatusHandler:IRequestHandler<ChangeContactStatusComma
         _mapper = mapper;
     }
 
-    public async Task<Result> Handle(ChangeContactStatusCommand request, CancellationToken cancellationToken)
+    public async Task<IResult> Handle(ChangeContactStatusCommand request, CancellationToken cancellationToken)
     {
         var userContact = await _userContactRepository.GetUserContactAsync(request.UserId,
             request.ContactId,

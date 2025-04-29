@@ -1211,7 +1211,9 @@
           "Domain": "1.0.0",
           "FluentValidation": "11.8.0",
           "MediatR": "11.0.0",
-          "MediatR.Contracts": "1.0.1"
+          "MediatR.Contracts": "1.0.1",
+          "Microsoft.EntityFrameworkCore": "9.0.3",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.3"
         },
         "runtime": {
           "Application.dll": {}

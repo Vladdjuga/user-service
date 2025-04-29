@@ -4,4 +4,4 @@ using MediatR;
 
 namespace Application.UseCases.Contacts.ChangeContactStatus;
 
-public record ChangeContactStatusCommand(Guid UserId,Guid ContactId,ContactStatus ContactStatus) : IRequest<Result>;
+public record ChangeContactStatusCommand(Guid UserId,Guid ContactId,ContactStatus ContactStatus) : IRequest<IResult>;

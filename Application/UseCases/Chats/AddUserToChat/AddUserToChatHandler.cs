@@ -5,7 +5,7 @@ using MediatR;
 
 namespace Application.UseCases.Chats.AddUserToChat;
 
-public class AddUserToChatHandler:IRequestHandler<AddUserToChatCommand,Result>
+public class AddUserToChatHandler:IRequestHandler<AddUserToChatCommand,IResult>
 {
     private readonly IChatRepository _chatRepository;
     private readonly IUserRepository _userRepository;
@@ -18,7 +18,7 @@ public class AddUserToChatHandler:IRequestHandler<AddUserToChatCommand,Result>
         _userChatRepository = userChatRepository;
     }
 
-    public async Task<Result> Handle(AddUserToChatCommand request, CancellationToken cancellationToken)
+    public async Task<IResult> Handle(AddUserToChatCommand request, CancellationToken cancellationToken)
     {
         if(!await _userRepository.AnyByIdAsync(request.UserId, cancellationToken))
             return Result.Failure("Failed to find user");

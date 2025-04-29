@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="Encryption\" />
     <Folder Include="DI\" />
+    <Folder Include="Migrations\" />
     <Folder Include="Notifications\" />
   </ItemGroup>
 

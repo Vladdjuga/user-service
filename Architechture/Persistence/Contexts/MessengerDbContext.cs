@@ -11,20 +11,20 @@ namespace Infrastructure.Persistence.Contexts
 {
     public class MessengerDbContext: DbContext
     {
-        public MessengerDbContext(DbContextOptions dbContextOptions):base(dbContextOptions) { }
+        public MessengerDbContext(DbContextOptions<MessengerDbContext> dbContextOptions):base(dbContextOptions) { }
         public DbSet<UserEntity> Users { get; set; }
         public DbSet<ChatEntity> Chats { get; set; }
         public DbSet<UserChatEntity> UserChats { get; set; }
         public DbSet<UserContactEntity> UserContacts { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseLazyLoadingProxies();
             base.OnConfiguring(optionsBuilder);
+            optionsBuilder.UseLazyLoadingProxies();
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
     }
 }

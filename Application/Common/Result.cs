@@ -1,6 +1,12 @@
 ﻿namespace Application.Common;
 
-public class Result
+public interface IResult
+{
+    bool IsSuccess { get; }
+    string Error { get; }
+    bool IsFailure { get; }
+}
+public class Result:IResult
 {
     public bool IsSuccess { get; }
     public string Error { get; }
@@ -13,11 +19,11 @@ public class Result
         Error = error;
     }
 
-    public static Result Success() => new Result(true, string.Empty);
-    public static Result Failure(string error) => new Result(false, error);
+    public static IResult Success() => new Result(true, string.Empty);
+    public static IResult Failure(string error) => new Result(false, error);
 }
 
-public class Result<T> : Result
+public class Result<T> : Result,IResult
 {
     protected Result(bool isSuccess, string error, T value) : base(isSuccess, error)
     {
