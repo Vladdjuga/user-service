@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Architechture\Infrastructure.csproj" />
+    <ProjectReference Include="..\Grpc\Grpc.csproj" />
   </ItemGroup>
 
 </Project>

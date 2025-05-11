@@ -196,3 +196,12 @@ C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Serilog.Sinks.Debu
 C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Serilog.Sinks.File.dll
 C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Grpc.dll
+C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Grpc.pdb

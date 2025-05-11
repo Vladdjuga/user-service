@@ -38,6 +38,14 @@
       },
       "publishAllPorts": true,
       "useSSL": true
+    },
+    "RESTAndGRPCService": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
     }
   },
   "$schema": "http://json.schemastore.org/launchsettings.json",
