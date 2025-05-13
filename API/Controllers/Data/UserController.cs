@@ -50,7 +50,7 @@ public class UserController : Controller
         var userId = User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
         if (!Guid.TryParse(userId, out Guid userGuid))
         {
-            _logger.LogInformation("Couldn\'t parse from {UserIdString} to {UserIdGuid}"
+            _logger.LogError("Couldn\'t parse from {UserIdString} to {UserIdGuid}"
                 , userId, userGuid);
             return TypedResults.BadRequest("User not found");
         }
@@ -63,8 +63,8 @@ public class UserController : Controller
         var result = await _mediator.Send(query);
         if (result.IsFailure)
         {
-            _logger.LogInformation("Failed to get user info for {Username}", username);
-            _logger.LogInformation("Error: {Error}", result.Error);
+            _logger.LogError("Failed to get user info for {Username}", username);
+            _logger.LogError("Error: {Error}", result.Error);
             return TypedResults.BadRequest(result.Error);
         }
 
@@ -85,7 +85,7 @@ public class UserController : Controller
         var userId = User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
         if (!Guid.TryParse(userId, out Guid userGuid))
         {
-            _logger.LogInformation("User {Username} not found", userGuid);
+            _logger.LogError("User {Username} not found", userGuid);
             return TypedResults.BadRequest("User not found");
         }
 
@@ -94,8 +94,8 @@ public class UserController : Controller
         var result = await _mediator.Send(command);
         if (result.IsFailure)
         {
-            _logger.LogInformation("Failed to update user info for {Username}", userDto.Username);
-            _logger.LogInformation("Error: {Error}", result.Error);
+            _logger.LogError("Failed to update user info for {Username}", userDto.Username);
+            _logger.LogError("Error: {Error}", result.Error);
             return TypedResults.BadRequest(result.Error);
         }
         _logger.LogInformation("User {Username} updated", userDto.Username);

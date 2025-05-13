@@ -45,9 +45,9 @@ public class ContactController:Controller
         var result = await _mediator.Send(command);
         if (result.IsFailure)
         {
-            _logger.LogInformation("Failed to create contact for {UserId} and {ContactId}",
+            _logger.LogError("Failed to create contact for {UserId} and {ContactId}",
                 userGuid, contactId);
-            _logger.LogInformation("Error: {Error}", result.Error);
+            _logger.LogError("Error: {Error}", result.Error);
             return TypedResults.BadRequest(result.Error);
         }
         _logger.LogInformation("Created contact {ContactId}", contactId);
@@ -60,7 +60,7 @@ public class ContactController:Controller
         var userId = User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
         if (!Guid.TryParse(userId, out Guid userGuid))
         {
-            _logger.LogInformation("User {Username} not found", userGuid);
+            _logger.LogError("User {Username} not found", userGuid);
             return TypedResults.BadRequest("User not found");
         }
         var query=new GetContactQuery(userGuid,contactId);
@@ -69,7 +69,7 @@ public class ContactController:Controller
         if (result.IsFailure)
         {
             _logger.LogError("Error getting contact {ContactId}", contactId);
-            _logger.LogInformation("Error: {Error}", result.Error);
+            _logger.LogError("Error: {Error}", result.Error);
             return TypedResults.BadRequest(result.Error);
         }
         _logger.LogInformation("Retrieved contact {ContactId}", contactId);
@@ -92,7 +92,7 @@ public class ContactController:Controller
         if (result.IsFailure)
         {
             _logger.LogError("Error getting contacts for {UserId}", userGuid);
-            _logger.LogInformation("Error: {Error}", result.Error);
+            _logger.LogError("Error: {Error}", result.Error);
             return TypedResults.BadRequest(result.Error);
         }
         _logger.LogInformation("Retrieved contacts for {UserId}", userGuid);
@@ -107,7 +107,7 @@ public class ContactController:Controller
         var userId=User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
         if (!Guid.TryParse(userId, out Guid userGuid))
         {
-            _logger.LogInformation("User {Username} not found", userGuid);
+            _logger.LogError("User {Username} not found", userGuid);
             return TypedResults.BadRequest("User not found");
         }
 
@@ -121,7 +121,7 @@ public class ContactController:Controller
         if (result.IsFailure)
         {
             _logger.LogError("Error changing status for contact : {ContactId}", contactId);
-            _logger.LogInformation("Error: {Error}", result.Error);
+            _logger.LogError("Error: {Error}", result.Error);
             return TypedResults.BadRequest(result.Error);
         }
         _logger.LogInformation("Successfully changed contact status to {Status}", status);

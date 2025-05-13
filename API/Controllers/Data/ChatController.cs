@@ -53,7 +53,7 @@ public class ChatController:Controller
         var userId = User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
         if (!Guid.TryParse(userId, out Guid userGuid))
         {
-            _logger.LogInformation("User {Username} not found", userGuid);
+            _logger.LogError("User {Username} not found", userGuid);
             return TypedResults.BadRequest("User not found");
         }
         var command = new CreateChatCommand(

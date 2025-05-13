@@ -1,24 +1,28 @@
 ﻿using System.Security.Claims;
 using Application.Interfaces;
+using Application.Utilities;
 using Microsoft.AspNetCore.Http;
 
 namespace Infrastructure.Services;
 
 public class CurrentUserService:ICurrentUserService
 {
-    public Guid UserId { get; }
-    public string Username { get; }
-    public string Email { get; }
+    public required Guid UserId { get; init; }
+    public required string Username { get;init; }
+    public required string Email { get;init; }
 
     public CurrentUserService(IHttpContextAccessor accessor)
     {
         var user = accessor.HttpContext?.User;
+        if (user?.Identity?.IsAuthenticated != true) return;
 
-        if (user?.Identity?.IsAuthenticated == true)
+        var tmp = GuidParser.SafeParse(user.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+        if (tmp == null)
         {
-            UserId = new Guid(user.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? string.Empty);
-            Username = user.FindFirst(ClaimTypes.Role)?.Value ?? string.Empty;
-            Email = user.FindFirst(ClaimTypes.Email)?.Value ?? string.Empty;
+            throw new ApplicationException("User is not authenticated");
         }
+        UserId = tmp.Value;
+        Username = user.FindFirst(ClaimTypes.Role)?.Value ?? string.Empty;
+        Email = user.FindFirst(ClaimTypes.Email)?.Value ?? string.Empty;
     }
 }

@@ -1,6 +1,7 @@
 using System.Text;
 using API.Swagger;
 using Infrastructure.DI;
+using Infrastructure.Middleware;
 using Infrastructure.Persistence.Contexts;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -65,6 +66,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseMiddleware<GlobalExceptionMiddleware>();
 
 app.MapControllers();
 
