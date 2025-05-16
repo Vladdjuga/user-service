@@ -31,7 +31,8 @@ public class GlobalExceptionMiddleware
             var error = new
             {
                 message = "Something went wrong.",
-                detail = ex.Message
+                title = "Internal Server Error",
+                detail = "Unexpected error occurred. Please try again later."
             };
 
             var json = JsonSerializer.Serialize(error);

@@ -1,5 +1,6 @@
 using System.Text;
 using API.Swagger;
+using Chat;
 using Infrastructure.DI;
 using Infrastructure.Middleware;
 using Infrastructure.Persistence.Contexts;
@@ -10,6 +11,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
 using Swashbuckle.AspNetCore.SwaggerGen;
+using API.gRPCClients;
 
 var builder = WebApplication.CreateBuilder(args);
 var config=builder.Configuration;
@@ -52,6 +54,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 
+builder.Services.AddGrpc();
 builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
@@ -70,5 +73,6 @@ app.UseAuthorization();
 app.UseMiddleware<GlobalExceptionMiddleware>();
 
 app.MapControllers();
+app.MapGrpcService<API.gRPCClients.ChatService>();
 
 app.Run();

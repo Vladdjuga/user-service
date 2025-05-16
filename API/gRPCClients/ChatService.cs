@@ -3,6 +3,8 @@ using Application.Utilities;
 using Chat;
 using Grpc.Core;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace API.gRPCClients;
 
@@ -16,6 +18,7 @@ public class ChatService:Chat.ChatService.ChatServiceBase
         _logger = logger;
         _mediator = mediator;
     }
+    [Authorize]
     public override async Task<UserChatExistsResponse> UserChatExists(UserChatExistsRequest request,
         ServerCallContext context)
     {
