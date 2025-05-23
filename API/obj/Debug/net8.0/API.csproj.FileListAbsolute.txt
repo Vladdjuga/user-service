@@ -205,3 +205,7 @@ C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Grpc.Net.ClientFac
 C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Grpc.Net.Common.dll
 C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Grpc.dll
 C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\Grpc.pdb
+C:\Users\User\source\repos\DDD_Messanger\API\bin\Debug\net8.0\API.staticwebassets.endpoints.json
+C:\Users\User\source\repos\DDD_Messanger\API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\User\source\repos\DDD_Messanger\API\obj\Debug\net8.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\User\source\repos\DDD_Messanger\API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

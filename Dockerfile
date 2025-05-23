@@ -1,19 +1,19 @@
 # Базовый рантайм
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
-EXPOSE 8080
-EXPOSE 8081
+EXPOSE 5001
+EXPOSE 6001
 
 # SDK для сборки
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 # Копируем решение и проекты (на уровень выше)
-COPY ../DDD_Messenger.sln ./
-COPY ../API/API.csproj ./API/
-COPY ../Architechture/Infrastructure.csproj ./Architechture/
-COPY ../Grpc/Grpc.csproj ./Grpc/
+COPY DDD_Messenger.sln ./
+COPY API/API.csproj ./API/
+COPY Architechture/Infrastructure.csproj ./Architechture/
+COPY Grpc/Grpc.csproj ./Grpc/
 
 # Восстанавливаем зависимости
 RUN dotnet restore "./API/API.csproj"

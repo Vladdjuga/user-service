@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uhUtflnT9X0=",
+  "dgSpecHash": "Tsq5HCBrYW4=",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\source\\repos\\DDD_Messanger\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.13\\microsoft.netcore.app.ref.8.0.13.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.13\\microsoft.windowsdesktop.app.ref.8.0.13.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.13\\microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

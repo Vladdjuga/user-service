@@ -13,6 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grpc", "Grpc\Grpc.csproj", "{AC95D482-4DBD-4F88-82E1-0AB2318C4BA0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4E163053-0607-4DB4-BEE6-6BB2796DAAEE}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		.dockerignore = .dockerignore
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,5 +51,12 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2DA145E0-535E-4AE8-8960-E245955FDDF1}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6CAA7DE-D33F-49D5-9C47-7DA519BC0C3E} = {4E163053-0607-4DB4-BEE6-6BB2796DAAEE}
+		{AB943CE9-6115-484D-A35C-D549B4BB28FC} = {4E163053-0607-4DB4-BEE6-6BB2796DAAEE}
+		{B0A40880-7120-40BF-9B95-262822BA64E1} = {4E163053-0607-4DB4-BEE6-6BB2796DAAEE}
+		{AC95D482-4DBD-4F88-82E1-0AB2318C4BA0} = {4E163053-0607-4DB4-BEE6-6BB2796DAAEE}
+		{E196D203-55B1-40CD-93F0-3DAE97A09893} = {4E163053-0607-4DB4-BEE6-6BB2796DAAEE}
 	EndGlobalSection
 EndGlobal
