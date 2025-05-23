@@ -72,6 +72,10 @@ app.UseAuthorization();
 
 app.UseMiddleware<GlobalExceptionMiddleware>();
 
+app.MapGet("/health", () => Results.Ok("OK"))
+    .WithName("HealthCheck")
+    .WithTags("HealthCheck");
+
 app.MapControllers();
 app.MapGrpcService<API.gRPCClients.ChatService>();
 
