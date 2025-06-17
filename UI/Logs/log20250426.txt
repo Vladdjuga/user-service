@@ -1,0 +1,393 @@
+2025-04-26 13:29:51.891 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-04-26 13:29:51.954 +03:00 [DBG] An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: configuration added for 'Proxies:UseLazyLoadingProxies', configuration added for 'Proxies:UseChangeTrackingProxies'.
+2025-04-26 13:29:52.150 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:29:52.174 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:29:52.239 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:29:52.290 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:29:52.293 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:29:52.319 +03:00 [DBG] The index {'ChatId'} was not created on entity type 'UserChatEntity' as the properties are already covered by the index {'ChatId', 'UserId'}.
+2025-04-26 13:29:52.321 +03:00 [DBG] The index {'UserId'} was not created on entity type 'UserContactEntity' as the properties are already covered by the index {'UserId', 'ContactId'}.
+2025-04-26 13:29:52.424 +03:00 [WRN] The 'ChatRole' property 'ChatRole' on entity type 'UserChatEntity' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value 'Admin', since this is the CLR default for the 'ChatRole' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+2025-04-26 13:29:52.499 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-04-26 13:29:53.168 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-04-26 13:30:45.892 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-04-26 13:30:45.952 +03:00 [DBG] An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: configuration added for 'Proxies:UseLazyLoadingProxies', configuration added for 'Proxies:UseChangeTrackingProxies'.
+2025-04-26 13:30:46.139 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:30:46.162 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:30:46.224 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:30:46.277 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:30:46.280 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:30:46.311 +03:00 [DBG] The index {'ChatId'} was not created on entity type 'UserChatEntity' as the properties are already covered by the index {'ChatId', 'UserId'}.
+2025-04-26 13:30:46.313 +03:00 [DBG] The index {'UserId'} was not created on entity type 'UserContactEntity' as the properties are already covered by the index {'UserId', 'ContactId'}.
+2025-04-26 13:30:46.437 +03:00 [WRN] The 'ChatRole' property 'ChatRole' on entity type 'UserChatEntity' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value 'Admin', since this is the CLR default for the 'ChatRole' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+2025-04-26 13:30:46.513 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-04-26 13:30:46.539 +03:00 [DBG] Creating DbConnection.
+2025-04-26 13:30:46.580 +03:00 [DBG] Created DbConnection. (39ms).
+2025-04-26 13:30:46.586 +03:00 [DBG] Migrating using database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:30:46.593 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:30:47.692 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:30:47.696 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-04-26 13:30:47.702 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (3ms).
+2025-04-26 13:30:47.705 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (9ms).
+2025-04-26 13:30:47.711 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-04-26 13:30:47.735 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-04-26 13:30:47.740 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:30:47.747 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (4ms).
+2025-04-26 13:30:47.749 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:30:47.751 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:30:47.754 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-04-26 13:30:47.756 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-04-26 13:30:47.758 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-04-26 13:30:47.759 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (2ms).
+2025-04-26 13:30:47.763 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-04-26 13:30:47.783 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-04-26 13:30:47.879 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-04-26 13:30:47.884 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-04-26 13:30:47.886 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-04-26 13:30:47.888 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2025-04-26 13:30:47.890 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (4ms).
+2025-04-26 13:30:47.892 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-04-26 13:30:47.896 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-04-26 13:30:47.901 +03:00 [DBG] Committing transaction.
+2025-04-26 13:30:47.907 +03:00 [DBG] Committed transaction.
+2025-04-26 13:30:47.909 +03:00 [DBG] Disposing transaction.
+2025-04-26 13:30:47.912 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-04-26 13:30:47.914 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-04-26 13:30:47.917 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-04-26 13:30:47.920 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (3ms).
+2025-04-26 13:30:47.923 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (6ms).
+2025-04-26 13:30:47.925 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-04-26 13:30:47.928 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-04-26 13:30:47.932 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-04-26 13:30:47.933 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-04-26 13:30:47.937 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (5ms).
+2025-04-26 13:30:47.940 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-04-26 13:30:47.943 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-04-26 13:30:47.947 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-04-26 13:30:47.948 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-04-26 13:30:47.951 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2025-04-26 13:30:47.954 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-04-26 13:30:47.959 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-04-26 13:30:47.964 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:30:47.969 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 5ms reading results.
+2025-04-26 13:30:47.980 +03:00 [INF] Applying migration '20250426102953_AddingUserContact'.
+2025-04-26 13:30:48.020 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-04-26 13:30:48.022 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2025-04-26 13:30:48.023 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2025-04-26 13:30:48.025 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [UserContacts] (
+    [Id] uniqueidentifier NOT NULL DEFAULT (NEWID()),
+    [UserId] uniqueidentifier NOT NULL,
+    [ContactId] uniqueidentifier NOT NULL,
+    [ContactStatus] int NOT NULL,
+    [CreatedAt] datetime2 NOT NULL DEFAULT (GETDATE()),
+    [PrivateChatId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_UserContacts] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_UserContacts_Chats_PrivateChatId] FOREIGN KEY ([PrivateChatId]) REFERENCES [Chats] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_UserContacts_Users_ContactId] FOREIGN KEY ([ContactId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_UserContacts_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+);
+2025-04-26 13:30:48.039 +03:00 [ERR] Failed executing DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [UserContacts] (
+    [Id] uniqueidentifier NOT NULL DEFAULT (NEWID()),
+    [UserId] uniqueidentifier NOT NULL,
+    [ContactId] uniqueidentifier NOT NULL,
+    [ContactStatus] int NOT NULL,
+    [CreatedAt] datetime2 NOT NULL DEFAULT (GETDATE()),
+    [PrivateChatId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_UserContacts] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_UserContacts_Chats_PrivateChatId] FOREIGN KEY ([PrivateChatId]) REFERENCES [Chats] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_UserContacts_Users_ContactId] FOREIGN KEY ([ContactId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_UserContacts_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+);
+2025-04-26 13:30:48.043 +03:00 [DBG] Disposing transaction.
+2025-04-26 13:30:48.049 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-04-26 13:30:48.050 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-04-26 13:30:48.052 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (3ms).
+2025-04-26 13:30:48.054 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-04-26 13:30:48.060 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-04-26 13:30:48.065 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:30:48.068 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (2ms).
+2025-04-26 13:30:48.071 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-04-26 13:30:48.074 +03:00 [DBG] Disposing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:30:48.079 +03:00 [DBG] Disposed connection to database '' on server '' (4ms).
+2025-04-26 13:31:10.821 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-04-26 13:31:10.883 +03:00 [DBG] An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: configuration added for 'Proxies:UseLazyLoadingProxies', configuration added for 'Proxies:UseChangeTrackingProxies'.
+2025-04-26 13:31:11.063 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:31:11.087 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:31:11.149 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:31:11.198 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:31:11.203 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:31:11.231 +03:00 [DBG] The index {'ChatId'} was not created on entity type 'UserChatEntity' as the properties are already covered by the index {'ChatId', 'UserId'}.
+2025-04-26 13:31:11.234 +03:00 [DBG] The index {'UserId'} was not created on entity type 'UserContactEntity' as the properties are already covered by the index {'UserId', 'ContactId'}.
+2025-04-26 13:31:11.345 +03:00 [WRN] The 'ChatRole' property 'ChatRole' on entity type 'UserChatEntity' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value 'Admin', since this is the CLR default for the 'ChatRole' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+2025-04-26 13:31:11.413 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-04-26 13:31:11.854 +03:00 [DBG] Creating DbConnection.
+2025-04-26 13:31:11.880 +03:00 [DBG] Created DbConnection. (23ms).
+2025-04-26 13:31:11.887 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:31:12.040 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:31:12.044 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-04-26 13:31:12.050 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (3ms).
+2025-04-26 13:31:12.052 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (8ms).
+2025-04-26 13:31:12.058 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-04-26 13:31:12.079 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-04-26 13:31:12.084 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:31:12.091 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (4ms).
+2025-04-26 13:31:12.095 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-04-26 13:31:12.096 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-04-26 13:31:12.099 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (3ms).
+2025-04-26 13:31:12.100 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:31:12.103 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:31:12.104 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-04-26 13:31:12.115 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-04-26 13:31:12.118 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:31:12.120 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (1ms).
+2025-04-26 13:31:12.128 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:31:12.130 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:31:12.131 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-04-26 13:31:12.132 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-04-26 13:31:12.134 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-04-26 13:31:12.136 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-04-26 13:31:12.140 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-04-26 13:31:12.145 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:31:12.148 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 4ms reading results.
+2025-04-26 13:31:12.150 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:31:12.152 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (1ms).
+2025-04-26 13:31:12.196 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-04-26 13:31:12.198 +03:00 [DBG] Disposing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:31:12.200 +03:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-04-26 13:33:24.810 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-04-26 13:33:24.876 +03:00 [DBG] An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: configuration added for 'Proxies:UseLazyLoadingProxies', configuration added for 'Proxies:UseChangeTrackingProxies'.
+2025-04-26 13:33:25.065 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:33:25.088 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:33:25.151 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:33:25.196 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:33:25.200 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:33:25.228 +03:00 [DBG] The index {'ChatId'} was not created on entity type 'UserChatEntity' as the properties are already covered by the index {'ChatId', 'UserId'}.
+2025-04-26 13:33:25.230 +03:00 [DBG] The index {'UserId'} was not created on entity type 'UserContactEntity' as the properties are already covered by the index {'UserId', 'ContactId'}.
+2025-04-26 13:33:25.337 +03:00 [WRN] The 'ChatRole' property 'ChatRole' on entity type 'UserChatEntity' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value 'Admin', since this is the CLR default for the 'ChatRole' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+2025-04-26 13:33:25.405 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-04-26 13:33:25.880 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-04-26 13:33:38.918 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-04-26 13:33:38.976 +03:00 [DBG] An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: configuration added for 'Proxies:UseLazyLoadingProxies', configuration added for 'Proxies:UseChangeTrackingProxies'.
+2025-04-26 13:33:39.148 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:33:39.173 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:33:39.232 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:33:39.276 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:33:39.280 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-26 13:33:39.311 +03:00 [DBG] The index {'ChatId'} was not created on entity type 'UserChatEntity' as the properties are already covered by the index {'ChatId', 'UserId'}.
+2025-04-26 13:33:39.313 +03:00 [DBG] The index {'UserId'} was not created on entity type 'UserContactEntity' as the properties are already covered by the index {'UserId', 'ContactId'}.
+2025-04-26 13:33:39.418 +03:00 [WRN] The 'ChatRole' property 'ChatRole' on entity type 'UserChatEntity' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value 'Admin', since this is the CLR default for the 'ChatRole' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+2025-04-26 13:33:39.483 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-04-26 13:33:39.506 +03:00 [DBG] Creating DbConnection.
+2025-04-26 13:33:39.531 +03:00 [DBG] Created DbConnection. (23ms).
+2025-04-26 13:33:39.536 +03:00 [DBG] Migrating using database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:33:39.541 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:33:39.704 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:33:39.708 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-04-26 13:33:39.713 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (3ms).
+2025-04-26 13:33:39.716 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (7ms).
+2025-04-26 13:33:39.723 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-04-26 13:33:39.743 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-04-26 13:33:39.746 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:33:39.753 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (4ms).
+2025-04-26 13:33:39.755 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:33:39.757 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:33:39.760 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-04-26 13:33:39.762 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-04-26 13:33:39.763 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-04-26 13:33:39.765 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (2ms).
+2025-04-26 13:33:39.768 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-04-26 13:33:39.781 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-04-26 13:33:39.874 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-04-26 13:33:39.879 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-04-26 13:33:39.881 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-04-26 13:33:39.882 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-04-26 13:33:39.884 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2025-04-26 13:33:39.885 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-04-26 13:33:39.889 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-04-26 13:33:39.892 +03:00 [DBG] Committing transaction.
+2025-04-26 13:33:39.896 +03:00 [DBG] Committed transaction.
+2025-04-26 13:33:39.898 +03:00 [DBG] Disposing transaction.
+2025-04-26 13:33:39.900 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-04-26 13:33:39.901 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-04-26 13:33:39.903 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-04-26 13:33:39.904 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-04-26 13:33:39.905 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2025-04-26 13:33:39.906 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-04-26 13:33:39.908 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-04-26 13:33:39.913 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-04-26 13:33:39.914 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-04-26 13:33:39.915 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (2ms).
+2025-04-26 13:33:39.916 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-04-26 13:33:39.918 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-04-26 13:33:39.921 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-04-26 13:33:39.922 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-04-26 13:33:39.924 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-04-26 13:33:39.926 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-04-26 13:33:39.930 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-04-26 13:33:39.934 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:33:39.935 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 2ms reading results.
+2025-04-26 13:33:39.944 +03:00 [INF] Applying migration '20250426103325_AddUserContacts'.
+2025-04-26 13:33:39.969 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-04-26 13:33:39.970 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2025-04-26 13:33:39.972 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2025-04-26 13:33:39.975 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [UserContacts] (
+    [Id] uniqueidentifier NOT NULL DEFAULT (NEWID()),
+    [UserId] uniqueidentifier NOT NULL,
+    [ContactId] uniqueidentifier NOT NULL,
+    [ContactStatus] int NOT NULL,
+    [CreatedAt] datetime2 NOT NULL DEFAULT (GETDATE()),
+    [PrivateChatId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_UserContacts] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_UserContacts_Chats_PrivateChatId] FOREIGN KEY ([PrivateChatId]) REFERENCES [Chats] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_UserContacts_Users_ContactId] FOREIGN KEY ([ContactId]) REFERENCES [Users] ([Id]),
+    CONSTRAINT [FK_UserContacts_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+);
+2025-04-26 13:33:39.983 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [UserContacts] (
+    [Id] uniqueidentifier NOT NULL DEFAULT (NEWID()),
+    [UserId] uniqueidentifier NOT NULL,
+    [ContactId] uniqueidentifier NOT NULL,
+    [ContactStatus] int NOT NULL,
+    [CreatedAt] datetime2 NOT NULL DEFAULT (GETDATE()),
+    [PrivateChatId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_UserContacts] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_UserContacts_Chats_PrivateChatId] FOREIGN KEY ([PrivateChatId]) REFERENCES [Chats] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_UserContacts_Users_ContactId] FOREIGN KEY ([ContactId]) REFERENCES [Users] ([Id]),
+    CONSTRAINT [FK_UserContacts_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+);
+2025-04-26 13:33:39.987 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-04-26 13:33:39.989 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2025-04-26 13:33:39.991 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2025-04-26 13:33:39.992 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_UserContacts_ContactId] ON [UserContacts] ([ContactId]);
+2025-04-26 13:33:39.995 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_UserContacts_ContactId] ON [UserContacts] ([ContactId]);
+2025-04-26 13:33:39.998 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-04-26 13:33:39.999 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2025-04-26 13:33:40.001 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2025-04-26 13:33:40.002 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_UserContacts_PrivateChatId] ON [UserContacts] ([PrivateChatId]);
+2025-04-26 13:33:40.008 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_UserContacts_PrivateChatId] ON [UserContacts] ([PrivateChatId]);
+2025-04-26 13:33:40.011 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-04-26 13:33:40.012 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2025-04-26 13:33:40.013 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2025-04-26 13:33:40.015 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_UserContacts_UserId_ContactId] ON [UserContacts] ([UserId], [ContactId]);
+2025-04-26 13:33:40.018 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_UserContacts_UserId_ContactId] ON [UserContacts] ([UserId], [ContactId]);
+2025-04-26 13:33:40.021 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-04-26 13:33:40.022 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2025-04-26 13:33:40.024 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2025-04-26 13:33:40.026 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250426103325_AddUserContacts', N'9.0.3');
+2025-04-26 13:33:40.030 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250426103325_AddUserContacts', N'9.0.3');
+2025-04-26 13:33:40.033 +03:00 [DBG] Committing transaction.
+2025-04-26 13:33:40.034 +03:00 [DBG] Committed transaction.
+2025-04-26 13:33:40.035 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-04-26 13:33:40.038 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (3ms).
+2025-04-26 13:33:40.040 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (5ms).
+2025-04-26 13:33:40.042 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-04-26 13:33:40.046 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-04-26 13:33:40.049 +03:00 [DBG] Disposing transaction.
+2025-04-26 13:33:40.050 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:33:40.053 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (3ms).
+2025-04-26 13:33:40.056 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-04-26 13:33:40.058 +03:00 [DBG] Disposing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-26 13:33:40.060 +03:00 [DBG] Disposed connection to database '' on server '' (2ms).

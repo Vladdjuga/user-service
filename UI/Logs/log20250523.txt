@@ -1,0 +1,150 @@
+2025-05-23 15:14:44.110 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-05-23 15:14:44.345 +03:00 [DBG] Hosting starting
+2025-05-23 15:14:44.365 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 15:14:44.394 +03:00 [DBG] Reading data from file 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys\key-481ef570-6c2e-4a6e-9762-cce7f7c8e8f9.xml'.
+2025-05-23 15:14:44.438 +03:00 [DBG] Found key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9}.
+2025-05-23 15:14:44.459 +03:00 [DBG] Considering key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} with expiration date 2025-06-12 18:14:50Z as default key.
+2025-05-23 15:14:44.466 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-05-23 15:14:44.472 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-05-23 15:14:44.477 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-05-23 15:14:44.489 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-05-23 15:14:44.493 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-05-23 15:14:44.497 +03:00 [DBG] Using key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} as the default key.
+2025-05-23 15:14:44.500 +03:00 [DBG] Key ring with default key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} was loaded during application startup.
+2025-05-23 15:14:44.606 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-05-23 15:14:44.610 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-05-23 15:14:44.645 +03:00 [INF] Now listening on: http://[::]:7000
+2025-05-23 15:14:44.648 +03:00 [INF] Now listening on: http://[::]:7001
+2025-05-23 15:14:44.649 +03:00 [DBG] Loaded hosting startup assembly API
+2025-05-23 15:14:44.651 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 15:14:44.652 +03:00 [INF] Hosting environment: Development
+2025-05-23 15:14:44.653 +03:00 [INF] Content root path: C:\Users\User\source\repos\DDD_Messanger\API
+2025-05-23 15:14:44.654 +03:00 [DBG] Hosting started
+2025-05-23 15:15:17.201 +03:00 [DBG] Connection id "0HNCPUDTC0R60" accepted.
+2025-05-23 15:15:17.204 +03:00 [DBG] Connection id "0HNCPUDTC0R61" accepted.
+2025-05-23 15:15:17.204 +03:00 [DBG] Connection id "0HNCPUDTC0R60" started.
+2025-05-23 15:15:17.205 +03:00 [DBG] Connection id "0HNCPUDTC0R61" started.
+2025-05-23 15:15:17.243 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/ - null null
+2025-05-23 15:15:17.263 +03:00 [DBG] No candidates found for the request path '/'
+2025-05-23 15:15:17.265 +03:00 [DBG] Request did not match any endpoints
+2025-05-23 15:15:17.287 +03:00 [DBG] The request path  does not match the path filter
+2025-05-23 15:15:17.314 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-05-23 15:15:17.324 +03:00 [DBG] Connection id "0HNCPUDTC0R60" completed keep alive response.
+2025-05-23 15:15:17.327 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/ - 404 0 null 85.3448ms
+2025-05-23 15:15:17.345 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7001/, Response status code: 404
+2025-05-23 15:15:20.318 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger - null null
+2025-05-23 15:15:20.322 +03:00 [DBG] No candidates found for the request path '/swagger'
+2025-05-23 15:15:20.323 +03:00 [DBG] Request did not match any endpoints
+2025-05-23 15:15:20.328 +03:00 [DBG] Connection id "0HNCPUDTC0R60" completed keep alive response.
+2025-05-23 15:15:20.330 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger - 301 0 null 11.6818ms
+2025-05-23 15:15:20.334 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/index.html - null null
+2025-05-23 15:15:20.342 +03:00 [DBG] 1 candidate(s) found for the request path '/swagger/index.html'
+2025-05-23 15:15:20.349 +03:00 [DBG] Endpoint 'gRPC - Unimplemented service' with route pattern '{unimplementedService}/{unimplementedMethod:grpcunimplemented}' was rejected by constraint 'unimplementedMethod':'Grpc.AspNetCore.Server.Model.Internal.GrpcUnimplementedConstraint' with value 'index.html' for the request path '/swagger/index.html'
+2025-05-23 15:15:20.355 +03:00 [DBG] Endpoint 'gRPC - Unimplemented service' with route pattern '{unimplementedService}/{unimplementedMethod:grpcunimplemented}' is not valid for the request path '/swagger/index.html'
+2025-05-23 15:15:20.357 +03:00 [DBG] Request did not match any endpoints
+2025-05-23 15:15:20.501 +03:00 [DBG] Connection id "0HNCPUDTC0R60" completed keep alive response.
+2025-05-23 15:15:20.502 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/index.html - 200 null text/html;charset=utf-8 167.739ms
+2025-05-23 15:15:20.568 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui.css - null null
+2025-05-23 15:15:20.570 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui-bundle.js - null null
+2025-05-23 15:15:20.572 +03:00 [DBG] 1 candidate(s) found for the request path '/swagger/swagger-ui.css'
+2025-05-23 15:15:20.573 +03:00 [DBG] 1 candidate(s) found for the request path '/swagger/swagger-ui-bundle.js'
+2025-05-23 15:15:20.574 +03:00 [DBG] Endpoint 'gRPC - Unimplemented service' with route pattern '{unimplementedService}/{unimplementedMethod:grpcunimplemented}' was rejected by constraint 'unimplementedMethod':'Grpc.AspNetCore.Server.Model.Internal.GrpcUnimplementedConstraint' with value 'swagger-ui.css' for the request path '/swagger/swagger-ui.css'
+2025-05-23 15:15:20.575 +03:00 [DBG] Endpoint 'gRPC - Unimplemented service' with route pattern '{unimplementedService}/{unimplementedMethod:grpcunimplemented}' was rejected by constraint 'unimplementedMethod':'Grpc.AspNetCore.Server.Model.Internal.GrpcUnimplementedConstraint' with value 'swagger-ui-bundle.js' for the request path '/swagger/swagger-ui-bundle.js'
+2025-05-23 15:15:20.576 +03:00 [DBG] Connection id "0HNCPUDTC0R62" accepted.
+2025-05-23 15:15:20.578 +03:00 [DBG] Endpoint 'gRPC - Unimplemented service' with route pattern '{unimplementedService}/{unimplementedMethod:grpcunimplemented}' is not valid for the request path '/swagger/swagger-ui.css'
+2025-05-23 15:15:20.580 +03:00 [DBG] Endpoint 'gRPC - Unimplemented service' with route pattern '{unimplementedService}/{unimplementedMethod:grpcunimplemented}' is not valid for the request path '/swagger/swagger-ui-bundle.js'
+2025-05-23 15:15:20.582 +03:00 [DBG] Connection id "0HNCPUDTC0R62" started.
+2025-05-23 15:15:20.584 +03:00 [DBG] Request did not match any endpoints
+2025-05-23 15:15:20.586 +03:00 [DBG] Request did not match any endpoints
+2025-05-23 15:15:20.587 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui-standalone-preset.js - null null
+2025-05-23 15:15:20.594 +03:00 [DBG] 1 candidate(s) found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-05-23 15:15:20.597 +03:00 [DBG] Endpoint 'gRPC - Unimplemented service' with route pattern '{unimplementedService}/{unimplementedMethod:grpcunimplemented}' was rejected by constraint 'unimplementedMethod':'Grpc.AspNetCore.Server.Model.Internal.GrpcUnimplementedConstraint' with value 'swagger-ui-standalone-preset.js' for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-05-23 15:15:20.600 +03:00 [DBG] Endpoint 'gRPC - Unimplemented service' with route pattern '{unimplementedService}/{unimplementedMethod:grpcunimplemented}' is not valid for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-05-23 15:15:20.603 +03:00 [DBG] Request did not match any endpoints
+2025-05-23 15:15:20.613 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-05-23 15:15:20.614 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-05-23 15:15:20.616 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-05-23 15:15:20.619 +03:00 [DBG] Connection id "0HNCPUDTC0R60" completed keep alive response.
+2025-05-23 15:15:20.619 +03:00 [DBG] Connection id "0HNCPUDTC0R62" completed keep alive response.
+2025-05-23 15:15:20.621 +03:00 [DBG] Connection id "0HNCPUDTC0R61" completed keep alive response.
+2025-05-23 15:15:20.621 +03:00 [DBG] Connection id "0HNCPUDTC0R63" accepted.
+2025-05-23 15:15:20.622 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui.css - 200 143943 text/css 53.8806ms
+2025-05-23 15:15:20.624 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 36.3732ms
+2025-05-23 15:15:20.625 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 54.7209ms
+2025-05-23 15:15:20.626 +03:00 [DBG] Connection id "0HNCPUDTC0R63" started.
+2025-05-23 15:15:20.627 +03:00 [DBG] Connection id "0HNCPUDTC0R64" accepted.
+2025-05-23 15:15:20.637 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui-standalone-preset.js - null null
+2025-05-23 15:15:20.637 +03:00 [DBG] Connection id "0HNCPUDTC0R64" started.
+2025-05-23 15:15:20.639 +03:00 [DBG] 1 candidate(s) found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-05-23 15:15:20.640 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui-bundle.js - null null
+2025-05-23 15:15:20.641 +03:00 [DBG] Endpoint 'gRPC - Unimplemented service' with route pattern '{unimplementedService}/{unimplementedMethod:grpcunimplemented}' was rejected by constraint 'unimplementedMethod':'Grpc.AspNetCore.Server.Model.Internal.GrpcUnimplementedConstraint' with value 'swagger-ui-standalone-preset.js' for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-05-23 15:15:20.643 +03:00 [DBG] 1 candidate(s) found for the request path '/swagger/swagger-ui-bundle.js'
+2025-05-23 15:15:20.645 +03:00 [DBG] Endpoint 'gRPC - Unimplemented service' with route pattern '{unimplementedService}/{unimplementedMethod:grpcunimplemented}' is not valid for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-05-23 15:15:20.646 +03:00 [DBG] Endpoint 'gRPC - Unimplemented service' with route pattern '{unimplementedService}/{unimplementedMethod:grpcunimplemented}' was rejected by constraint 'unimplementedMethod':'Grpc.AspNetCore.Server.Model.Internal.GrpcUnimplementedConstraint' with value 'swagger-ui-bundle.js' for the request path '/swagger/swagger-ui-bundle.js'
+2025-05-23 15:15:20.648 +03:00 [DBG] Request did not match any endpoints
+2025-05-23 15:15:20.650 +03:00 [DBG] Endpoint 'gRPC - Unimplemented service' with route pattern '{unimplementedService}/{unimplementedMethod:grpcunimplemented}' is not valid for the request path '/swagger/swagger-ui-bundle.js'
+2025-05-23 15:15:20.651 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-05-23 15:15:20.652 +03:00 [DBG] Request did not match any endpoints
+2025-05-23 15:15:20.653 +03:00 [DBG] Connection id "0HNCPUDTC0R63" completed keep alive response.
+2025-05-23 15:15:20.656 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 18.8349ms
+2025-05-23 15:15:20.659 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-05-23 15:15:20.661 +03:00 [DBG] Connection id "0HNCPUDTC0R64" completed keep alive response.
+2025-05-23 15:15:20.663 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 22.172ms
+2025-05-23 15:15:20.933 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/v1/swagger.json - null null
+2025-05-23 15:15:20.936 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-05-23 15:15:20.937 +03:00 [DBG] Request did not match any endpoints
+2025-05-23 15:15:20.942 +03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-05-23 15:15:20.947 +03:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-05-23 15:15:20.986 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/favicon-32x32.png - null null
+2025-05-23 15:15:20.990 +03:00 [DBG] 1 candidate(s) found for the request path '/swagger/favicon-32x32.png'
+2025-05-23 15:15:20.991 +03:00 [DBG] Endpoint 'gRPC - Unimplemented service' with route pattern '{unimplementedService}/{unimplementedMethod:grpcunimplemented}' was rejected by constraint 'unimplementedMethod':'Grpc.AspNetCore.Server.Model.Internal.GrpcUnimplementedConstraint' with value 'favicon-32x32.png' for the request path '/swagger/favicon-32x32.png'
+2025-05-23 15:15:20.994 +03:00 [DBG] Endpoint 'gRPC - Unimplemented service' with route pattern '{unimplementedService}/{unimplementedMethod:grpcunimplemented}' is not valid for the request path '/swagger/favicon-32x32.png'
+2025-05-23 15:15:20.996 +03:00 [DBG] Request did not match any endpoints
+2025-05-23 15:15:20.997 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-05-23 15:15:20.999 +03:00 [DBG] Connection id "0HNCPUDTC0R62" completed keep alive response.
+2025-05-23 15:15:21.002 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/favicon-32x32.png - 200 628 image/png 15.7583ms
+2025-05-23 15:15:21.135 +03:00 [DBG] Connection id "0HNCPUDTC0R61" completed keep alive response.
+2025-05-23 15:15:21.137 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 203.277ms
+2025-05-23 15:15:47.214 +03:00 [INF] Application is shutting down...
+2025-05-23 15:15:47.215 +03:00 [DBG] Hosting stopping
+2025-05-23 15:15:47.225 +03:00 [DBG] Connection id "0HNCPUDTC0R63" disconnecting.
+2025-05-23 15:15:47.225 +03:00 [DBG] Connection id "0HNCPUDTC0R60" disconnecting.
+2025-05-23 15:15:47.225 +03:00 [DBG] Connection id "0HNCPUDTC0R64" disconnecting.
+2025-05-23 15:15:47.225 +03:00 [DBG] Connection id "0HNCPUDTC0R62" disconnecting.
+2025-05-23 15:15:47.225 +03:00 [DBG] Connection id "0HNCPUDTC0R61" disconnecting.
+2025-05-23 15:15:47.228 +03:00 [DBG] Connection id "0HNCPUDTC0R60" stopped.
+2025-05-23 15:15:47.228 +03:00 [DBG] Connection id "0HNCPUDTC0R63" stopped.
+2025-05-23 15:15:47.228 +03:00 [DBG] Connection id "0HNCPUDTC0R64" stopped.
+2025-05-23 15:15:47.229 +03:00 [DBG] Connection id "0HNCPUDTC0R62" stopped.
+2025-05-23 15:15:47.230 +03:00 [DBG] Connection id "0HNCPUDTC0R61" stopped.
+2025-05-23 15:15:47.232 +03:00 [DBG] Connection id "0HNCPUDTC0R60" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-23 15:15:47.232 +03:00 [DBG] Connection id "0HNCPUDTC0R63" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-23 15:15:47.233 +03:00 [DBG] Connection id "0HNCPUDTC0R64" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-23 15:15:47.234 +03:00 [DBG] Connection id "0HNCPUDTC0R62" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-23 15:15:47.235 +03:00 [DBG] Connection id "0HNCPUDTC0R61" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-23 15:15:47.245 +03:00 [DBG] Hosting stopped
+2025-05-23 15:27:45.990 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-05-23 15:27:46.120 +03:00 [DBG] Hosting starting
+2025-05-23 15:27:46.138 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 15:27:46.153 +03:00 [DBG] Reading data from file 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys\key-481ef570-6c2e-4a6e-9762-cce7f7c8e8f9.xml'.
+2025-05-23 15:27:46.163 +03:00 [DBG] Found key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9}.
+2025-05-23 15:27:46.179 +03:00 [DBG] Considering key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} with expiration date 2025-06-12 18:14:50Z as default key.
+2025-05-23 15:27:46.186 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-05-23 15:27:46.191 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-05-23 15:27:46.193 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-05-23 15:27:46.204 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-05-23 15:27:46.207 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-05-23 15:27:46.211 +03:00 [DBG] Using key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} as the default key.
+2025-05-23 15:27:46.214 +03:00 [DBG] Key ring with default key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} was loaded during application startup.
+2025-05-23 15:27:46.290 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-05-23 15:27:46.293 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-05-23 15:27:46.327 +03:00 [INF] Now listening on: http://[::]:7000
+2025-05-23 15:27:46.329 +03:00 [INF] Now listening on: http://[::]:7001
+2025-05-23 15:27:46.331 +03:00 [DBG] Loaded hosting startup assembly API
+2025-05-23 15:27:46.332 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 15:27:46.333 +03:00 [INF] Hosting environment: Development
+2025-05-23 15:27:46.334 +03:00 [INF] Content root path: C:\Users\User\source\repos\DDD_Messanger\API
+2025-05-23 15:27:46.335 +03:00 [DBG] Hosting started
+2025-05-23 15:27:49.343 +03:00 [INF] Application is shutting down...
+2025-05-23 15:27:49.346 +03:00 [DBG] Hosting stopping
+2025-05-23 15:27:49.361 +03:00 [DBG] Hosting stopped

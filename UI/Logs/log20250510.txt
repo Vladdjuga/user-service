@@ -1,0 +1,521 @@
+2025-05-10 22:25:26.111 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-05-10 22:25:26.301 +03:00 [DBG] Hosting starting
+2025-05-10 22:25:26.319 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-10 22:25:26.338 +03:00 [DBG] Reading data from file 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys\key-481ef570-6c2e-4a6e-9762-cce7f7c8e8f9.xml'.
+2025-05-10 22:25:26.347 +03:00 [DBG] Found key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9}.
+2025-05-10 22:25:26.362 +03:00 [DBG] Considering key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} with expiration date 2025-06-12 18:14:50Z as default key.
+2025-05-10 22:25:26.367 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-05-10 22:25:26.373 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-05-10 22:25:26.377 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-05-10 22:25:26.386 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-05-10 22:25:26.389 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-05-10 22:25:26.391 +03:00 [DBG] Using key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} as the default key.
+2025-05-10 22:25:26.393 +03:00 [DBG] Key ring with default key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} was loaded during application startup.
+2025-05-10 22:25:26.448 +03:00 [INF] Now listening on: http://localhost:5077
+2025-05-10 22:25:26.449 +03:00 [DBG] Loaded hosting startup assembly API
+2025-05-10 22:25:26.451 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-10 22:25:26.452 +03:00 [INF] Hosting environment: Development
+2025-05-10 22:25:26.453 +03:00 [INF] Content root path: C:\Users\User\source\repos\DDD_Messanger\API
+2025-05-10 22:25:26.454 +03:00 [DBG] Hosting started
+2025-05-10 22:25:26.766 +03:00 [DBG] Connection id "0HNCFV1LH9KI7" received FIN.
+2025-05-10 22:25:26.779 +03:00 [DBG] Connection id "0HNCFV1LH9KI7" accepted.
+2025-05-10 22:25:26.781 +03:00 [DBG] Connection id "0HNCFV1LH9KI7" started.
+2025-05-10 22:25:26.791 +03:00 [DBG] Connection id "0HNCFV1LH9KI7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-10 22:25:26.798 +03:00 [DBG] Connection id "0HNCFV1LH9KI7" disconnecting.
+2025-05-10 22:25:26.807 +03:00 [DBG] Connection id "0HNCFV1LH9KI7" stopped.
+2025-05-10 22:25:26.947 +03:00 [DBG] Connection id "0HNCFV1LH9KI8" accepted.
+2025-05-10 22:25:26.955 +03:00 [DBG] Connection id "0HNCFV1LH9KI8" started.
+2025-05-10 22:25:27.105 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger - null null
+2025-05-10 22:25:27.119 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-05-10 22:25:27.158 +03:00 [DBG] No candidates found for the request path '/swagger'
+2025-05-10 22:25:27.160 +03:00 [DBG] Request did not match any endpoints
+2025-05-10 22:25:27.191 +03:00 [DBG] Connection id "0HNCFV1LH9KI8" completed keep alive response.
+2025-05-10 22:25:27.194 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger - 301 0 null 92.3476ms
+2025-05-10 22:25:27.205 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/index.html - null null
+2025-05-10 22:25:27.208 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-05-10 22:25:27.209 +03:00 [DBG] Request did not match any endpoints
+2025-05-10 22:25:27.392 +03:00 [DBG] Connection id "0HNCFV1LH9KI8" completed keep alive response.
+2025-05-10 22:25:27.393 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/index.html - 200 null text/html;charset=utf-8 188.0209ms
+2025-05-10 22:25:27.429 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/swagger-ui.css - null null
+2025-05-10 22:25:27.429 +03:00 [DBG] Connection id "0HNCFV1LH9KI9" accepted.
+2025-05-10 22:25:27.434 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2025-05-10 22:25:27.436 +03:00 [DBG] Connection id "0HNCFV1LH9KI9" started.
+2025-05-10 22:25:27.437 +03:00 [DBG] Request did not match any endpoints
+2025-05-10 22:25:27.439 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/swagger-ui-bundle.js - null null
+2025-05-10 22:25:27.439 +03:00 [DBG] Connection id "0HNCFV1LH9KIA" accepted.
+2025-05-10 22:25:27.445 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2025-05-10 22:25:27.446 +03:00 [DBG] Connection id "0HNCFV1LH9KIA" started.
+2025-05-10 22:25:27.448 +03:00 [DBG] Request did not match any endpoints
+2025-05-10 22:25:27.450 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/swagger-ui-standalone-preset.js - null null
+2025-05-10 22:25:27.454 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-05-10 22:25:27.455 +03:00 [DBG] Request did not match any endpoints
+2025-05-10 22:25:27.470 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-05-10 22:25:27.471 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-05-10 22:25:27.476 +03:00 [DBG] Connection id "0HNCFV1LH9KIA" completed keep alive response.
+2025-05-10 22:25:27.476 +03:00 [DBG] Connection id "0HNCFV1LH9KI8" completed keep alive response.
+2025-05-10 22:25:27.478 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 27.6941ms
+2025-05-10 22:25:27.480 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/swagger-ui.css - 200 143943 text/css 51.1646ms
+2025-05-10 22:25:27.484 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-05-10 22:25:27.490 +03:00 [DBG] Connection id "0HNCFV1LH9KI9" completed keep alive response.
+2025-05-10 22:25:27.491 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 52.2319ms
+2025-05-10 22:25:27.631 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/favicon-32x32.png - null null
+2025-05-10 22:25:27.633 +03:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2025-05-10 22:25:27.634 +03:00 [DBG] Request did not match any endpoints
+2025-05-10 22:25:27.639 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-05-10 22:25:27.640 +03:00 [DBG] Connection id "0HNCFV1LH9KI9" completed keep alive response.
+2025-05-10 22:25:27.642 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/favicon-32x32.png - 200 628 image/png 10.6015ms
+2025-05-10 22:25:27.719 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/v1/swagger.json - null null
+2025-05-10 22:25:27.722 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-05-10 22:25:27.723 +03:00 [DBG] Request did not match any endpoints
+2025-05-10 22:25:27.873 +03:00 [DBG] Connection id "0HNCFV1LH9KI9" completed keep alive response.
+2025-05-10 22:25:27.875 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 155.3429ms
+2025-05-10 22:26:06.169 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5077/api/Auth/login - application/json 59
+2025-05-10 22:26:06.177 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/login'
+2025-05-10 22:26:06.184 +03:00 [DBG] Endpoint 'API.Controllers.Auth.AuthController.Login (API)' with route pattern 'api/Auth/login' is valid for the request path '/api/Auth/login'
+2025-05-10 22:26:06.185 +03:00 [DBG] Request matched endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-05-10 22:26:06.187 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-05-10 22:26:06.189 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-05-10 22:26:06.229 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-05-10 22:26:06.232 +03:00 [INF] Executing endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-05-10 22:26:06.256 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[System.String],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] Login(Application.DTOs.User.LoginUserDto) on controller API.Controllers.Auth.AuthController (API).
+2025-05-10 22:26:06.259 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-05-10 22:26:06.261 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-05-10 22:26:06.262 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-05-10 22:26:06.264 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-05-10 22:26:06.266 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-05-10 22:26:06.269 +03:00 [DBG] Executing controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-05-10 22:26:06.271 +03:00 [DBG] Executed controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-05-10 22:26:06.276 +03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' ...
+2025-05-10 22:26:06.280 +03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' using the name '' in request data ...
+2025-05-10 22:26:06.283 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-05-10 22:26:06.292 +03:00 [DBG] Connection id "0HNCFV1LH9KI9", Request id "0HNCFV1LH9KI9:00000004": started reading request body.
+2025-05-10 22:26:06.293 +03:00 [DBG] Connection id "0HNCFV1LH9KI9", Request id "0HNCFV1LH9KI9:00000004": done reading request body.
+2025-05-10 22:26:06.314 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Application.DTOs.User.LoginUserDto'
+2025-05-10 22:26:06.315 +03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-05-10 22:26:06.317 +03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-05-10 22:26:06.318 +03:00 [DBG] Attempting to validate the bound parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' ...
+2025-05-10 22:26:06.326 +03:00 [DBG] Done attempting to validate the bound parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-05-10 22:26:06.340 +03:00 [INF] Executing action method API.Controllers.Auth.AuthController.Login (API) - Validation state: "Valid"
+2025-05-10 22:26:06.343 +03:00 [INF] Starting to login User: vlados_pisos - Qwerty123
+2025-05-10 22:26:06.577 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-05-10 22:26:07.055 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-05-10 22:26:07.099 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-05-10 22:26:07.237 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-05-10 22:26:07.353 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-05-10 22:26:07.356 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-05-10 22:26:07.406 +03:00 [DBG] The index {'ChatId'} was not created on entity type 'UserChatEntity' as the properties are already covered by the index {'ChatId', 'UserId'}.
+2025-05-10 22:26:07.408 +03:00 [DBG] The index {'UserId'} was not created on entity type 'UserContactEntity' as the properties are already covered by the index {'UserId', 'ContactId'}.
+2025-05-10 22:26:07.605 +03:00 [WRN] The 'ChatRole' property 'ChatRole' on entity type 'UserChatEntity' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value 'Admin', since this is the CLR default for the 'ChatRole' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+2025-05-10 22:26:07.792 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-05-10 22:26:07.907 +03:00 [DBG] Compiling query expression: 
+'DbSet<UserEntity>()
+    .AsNoTracking()
+    .FirstOrDefault(o => o.Username.Equals(__userName_0))'
+2025-05-10 22:26:08.422 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserEntity>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<UserEntity>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserEntity.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserEntity.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 1], [Property: UserEntity.DateOfBirth (DateTime) Required, 2], [Property: UserEntity.Email (Email) Required Index, 3], [Property: UserEntity.FirstName (string) Required MaxLength(50), 4], [Property: UserEntity.LastName (string) Required MaxLength(50), 5], [Property: UserEntity.PasswordHash (string) Required MaxLength(255), 6], [Property: UserEntity.Username (string) Required Index MaxLength(50), 7] }
+            SELECT TOP(1) u.Id, u.CreatedAt, u.DateOfBirth, u.Email, u.FirstName, u.LastName, u.PasswordHash, u.Username
+            FROM Users AS u
+            WHERE u.Username == @__userName_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserEntity.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserEntity.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 1], [Property: UserEntity.DateOfBirth (DateTime) Required, 2], [Property: UserEntity.Email (Email) Required Index, 3], [Property: UserEntity.FirstName (string) Required MaxLength(50), 4], [Property: UserEntity.LastName (string) Required MaxLength(50), 5], [Property: UserEntity.PasswordHash (string) Required MaxLength(255), 6], [Property: UserEntity.Username (string) Required Index MaxLength(50), 7] }
+            SELECT TOP(1) u.Id, u.CreatedAt, u.DateOfBirth, u.Email, u.FirstName, u.LastName, u.PasswordHash, u.Username
+            FROM Users AS u
+            WHERE u.Username == @__userName_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            UserEntity entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                UserEntity instance1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(UserEntity);
+                (object)dataReader.GetGuid(0) != null ? 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]: 
+                            {
+                                return (UserEntity)
+                                {
+                                    UserEntityProxy instance;
+                                    DbContext namelessParameter{2};
+                                    IEntityType namelessParameter{3};
+                                    ILazyLoader namelessParameter{4};
+                                    namelessParameter{2} = materializationContext1.Context;
+                                    namelessParameter{3} = (IEntityType)ParameterBindingInfo.StructuralType;
+                                    namelessParameter{4} = InfrastructureExtensions.GetService<ILazyLoader>((IInfrastructure<IServiceProvider>)materializationContext1.Context);
+                                    instance = (UserEntityProxy)ProxyFactory.CreateLazyLoadingProxy(
+                                        context: namelessParameter{2}, 
+                                        entityType: namelessParameter{3}, 
+                                        loader: namelessParameter{4}, 
+                                        constructorArguments: new object[]{ });
+                                    instance.<Id>k__BackingField = dataReader.GetGuid(0);
+                                    instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(1);
+                                    instance.<DateOfBirth>k__BackingField = dataReader.GetDateTime(2);
+                                    instance.<Email>k__BackingField = Invoke(((ValueConverter<Email, string>)((IReadOnlyProperty)[LIFTABLE Constant: Property: UserEntity.Email (Email) Required Index | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity").FindProperty("Email")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetString(3));
+                                    instance.<FirstName>k__BackingField = dataReader.GetString(4);
+                                    instance.<LastName>k__BackingField = dataReader.GetString(5);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(6);
+                                    instance.<Username>k__BackingField = dataReader.GetString(7);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    (namelessParameter{2} is IInjectableService) ? ((IInjectableService)namelessParameter{2}).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    (namelessParameter{3} is IInjectableService) ? ((IInjectableService)namelessParameter{3}).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    (namelessParameter{4} is IInjectableService) ? ((IInjectableService)namelessParameter{4}).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{9} => namelessParameter{9}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    return instance;
+                                };
+                            }
+                        default: 
+                            default(UserEntity)
+                    }
+                    ;
+                    return instance1;
+                } : 
+                {
+                    object[] keyValues1;
+                    keyValues1 = new object[]{ (object)dataReader.GetGuid(0) };
+                    return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                        entityType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{10} => namelessParameter{10}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")], 
+                        properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: UserEntity.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity").FindPrimaryKey().Properties], 
+                        keyValues: keyValues1);
+                };
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: Infrastructure.Persistence.Contexts.MessengerDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-05-10 22:26:08.487 +03:00 [DBG] Creating DbConnection.
+2025-05-10 22:26:08.521 +03:00 [DBG] Created DbConnection. (30ms).
+2025-05-10 22:26:08.528 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:26:08.741 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:26:08.750 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-10 22:26:08.760 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (6ms).
+2025-05-10 22:26:08.772 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (23ms).
+2025-05-10 22:26:08.785 +03:00 [DBG] Executing DbCommand [Parameters=[@__userName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__userName_0
+2025-05-10 22:26:08.846 +03:00 [INF] Executed DbCommand (66ms) [Parameters=[@__userName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__userName_0
+2025-05-10 22:26:08.889 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:26:08.900 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 42ms reading results.
+2025-05-10 22:26:08.905 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:26:08.915 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (9ms).
+2025-05-10 22:26:08.923 +03:00 [ERR] Failure while login user vlados_pisos.
+2025-05-10 22:26:08.924 +03:00 [ERR] Error: Invalid Password
+2025-05-10 22:26:08.933 +03:00 [INF] Executed action method API.Controllers.Auth.AuthController.Login (API), returned result Microsoft.AspNetCore.Mvc.HttpActionResult in 2585.6233ms.
+2025-05-10 22:26:08.942 +03:00 [INF] Setting HTTP status code 400.
+2025-05-10 22:26:08.943 +03:00 [INF] Writing value of type 'String' as Json.
+2025-05-10 22:26:08.960 +03:00 [INF] Executed action API.Controllers.Auth.AuthController.Login (API) in 2687.1482ms
+2025-05-10 22:26:08.963 +03:00 [INF] Executed endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-05-10 22:26:08.967 +03:00 [DBG] Connection id "0HNCFV1LH9KI9" completed keep alive response.
+2025-05-10 22:26:08.974 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-05-10 22:26:08.982 +03:00 [DBG] Disposing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:26:08.985 +03:00 [DBG] Disposed connection to database '' on server '' (3ms).
+2025-05-10 22:26:08.987 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5077/api/Auth/login - 400 null application/json; charset=utf-8 2818.0679ms
+2025-05-10 22:26:14.074 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5077/api/Auth/login - application/json 60
+2025-05-10 22:26:14.079 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/login'
+2025-05-10 22:26:14.081 +03:00 [DBG] Endpoint 'API.Controllers.Auth.AuthController.Login (API)' with route pattern 'api/Auth/login' is valid for the request path '/api/Auth/login'
+2025-05-10 22:26:14.083 +03:00 [DBG] Request matched endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-05-10 22:26:14.084 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-05-10 22:26:14.086 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-05-10 22:26:14.087 +03:00 [INF] Executing endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-05-10 22:26:14.088 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[System.String],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] Login(Application.DTOs.User.LoginUserDto) on controller API.Controllers.Auth.AuthController (API).
+2025-05-10 22:26:14.090 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-05-10 22:26:14.092 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-05-10 22:26:14.093 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-05-10 22:26:14.095 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-05-10 22:26:14.097 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-05-10 22:26:14.098 +03:00 [DBG] Executing controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-05-10 22:26:14.100 +03:00 [DBG] Executed controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-05-10 22:26:14.102 +03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' ...
+2025-05-10 22:26:14.103 +03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' using the name '' in request data ...
+2025-05-10 22:26:14.105 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-05-10 22:26:14.106 +03:00 [DBG] Connection id "0HNCFV1LH9KI9", Request id "0HNCFV1LH9KI9:00000005": started reading request body.
+2025-05-10 22:26:14.108 +03:00 [DBG] Connection id "0HNCFV1LH9KI9", Request id "0HNCFV1LH9KI9:00000005": done reading request body.
+2025-05-10 22:26:14.109 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Application.DTOs.User.LoginUserDto'
+2025-05-10 22:26:14.110 +03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-05-10 22:26:14.111 +03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-05-10 22:26:14.113 +03:00 [DBG] Attempting to validate the bound parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' ...
+2025-05-10 22:26:14.115 +03:00 [DBG] Done attempting to validate the bound parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-05-10 22:26:14.117 +03:00 [INF] Executing action method API.Controllers.Auth.AuthController.Login (API) - Validation state: "Valid"
+2025-05-10 22:26:14.118 +03:00 [INF] Starting to login User: vlados_pisos - Qwerty123@
+2025-05-10 22:26:14.175 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-05-10 22:26:14.181 +03:00 [DBG] Creating DbConnection.
+2025-05-10 22:26:14.182 +03:00 [DBG] Created DbConnection. (1ms).
+2025-05-10 22:26:14.183 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:26:14.186 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:26:14.187 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-10 22:26:14.188 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-05-10 22:26:14.189 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-05-10 22:26:14.191 +03:00 [DBG] Executing DbCommand [Parameters=[@__userName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__userName_0
+2025-05-10 22:26:14.196 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__userName_0
+2025-05-10 22:26:14.200 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:26:14.201 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 2ms reading results.
+2025-05-10 22:26:14.203 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:26:14.204 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (1ms).
+2025-05-10 22:26:14.206 +03:00 [ERR] Failure while login user vlados_pisos.
+2025-05-10 22:26:14.207 +03:00 [ERR] Error: Invalid Password
+2025-05-10 22:26:14.209 +03:00 [INF] Executed action method API.Controllers.Auth.AuthController.Login (API), returned result Microsoft.AspNetCore.Mvc.HttpActionResult in 90.7738ms.
+2025-05-10 22:26:14.210 +03:00 [INF] Setting HTTP status code 400.
+2025-05-10 22:26:14.211 +03:00 [INF] Writing value of type 'String' as Json.
+2025-05-10 22:26:14.213 +03:00 [INF] Executed action API.Controllers.Auth.AuthController.Login (API) in 114.604ms
+2025-05-10 22:26:14.215 +03:00 [INF] Executed endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-05-10 22:26:14.216 +03:00 [DBG] Connection id "0HNCFV1LH9KI9" completed keep alive response.
+2025-05-10 22:26:14.218 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-05-10 22:26:14.220 +03:00 [DBG] Disposing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:26:14.221 +03:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-05-10 22:26:14.223 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5077/api/Auth/login - 400 null application/json; charset=utf-8 148.9922ms
+2025-05-10 22:26:15.833 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5077/api/Auth/login - application/json 60
+2025-05-10 22:26:15.836 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/login'
+2025-05-10 22:26:15.837 +03:00 [DBG] Endpoint 'API.Controllers.Auth.AuthController.Login (API)' with route pattern 'api/Auth/login' is valid for the request path '/api/Auth/login'
+2025-05-10 22:26:15.838 +03:00 [DBG] Request matched endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-05-10 22:26:15.839 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-05-10 22:26:15.841 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-05-10 22:26:15.842 +03:00 [INF] Executing endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-05-10 22:26:15.842 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[System.String],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] Login(Application.DTOs.User.LoginUserDto) on controller API.Controllers.Auth.AuthController (API).
+2025-05-10 22:26:15.844 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-05-10 22:26:15.846 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-05-10 22:26:15.847 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-05-10 22:26:15.849 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-05-10 22:26:15.851 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-05-10 22:26:15.852 +03:00 [DBG] Executing controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-05-10 22:26:15.853 +03:00 [DBG] Executed controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-05-10 22:26:15.854 +03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' ...
+2025-05-10 22:26:15.855 +03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' using the name '' in request data ...
+2025-05-10 22:26:15.856 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-05-10 22:26:15.857 +03:00 [DBG] Connection id "0HNCFV1LH9KI9", Request id "0HNCFV1LH9KI9:00000006": started reading request body.
+2025-05-10 22:26:15.858 +03:00 [DBG] Connection id "0HNCFV1LH9KI9", Request id "0HNCFV1LH9KI9:00000006": done reading request body.
+2025-05-10 22:26:15.860 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Application.DTOs.User.LoginUserDto'
+2025-05-10 22:26:15.861 +03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-05-10 22:26:15.862 +03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-05-10 22:26:15.863 +03:00 [DBG] Attempting to validate the bound parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' ...
+2025-05-10 22:26:15.864 +03:00 [DBG] Done attempting to validate the bound parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-05-10 22:26:15.866 +03:00 [INF] Executing action method API.Controllers.Auth.AuthController.Login (API) - Validation state: "Valid"
+2025-05-10 22:26:15.867 +03:00 [INF] Starting to login User: vlados_pisos - Qwerty123@
+2025-05-10 22:26:15.883 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-05-10 22:26:15.885 +03:00 [DBG] Creating DbConnection.
+2025-05-10 22:26:15.886 +03:00 [DBG] Created DbConnection. (0ms).
+2025-05-10 22:26:15.887 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:26:15.888 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:26:15.889 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-10 22:26:15.890 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-05-10 22:26:15.891 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-05-10 22:26:15.892 +03:00 [DBG] Executing DbCommand [Parameters=[@__userName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__userName_0
+2025-05-10 22:26:15.895 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__userName_0
+2025-05-10 22:26:15.899 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:26:15.900 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 2ms reading results.
+2025-05-10 22:26:15.901 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:26:15.903 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (1ms).
+2025-05-10 22:26:15.904 +03:00 [ERR] Failure while login user vlados_pisos.
+2025-05-10 22:26:15.905 +03:00 [ERR] Error: Invalid Password
+2025-05-10 22:26:15.907 +03:00 [INF] Executed action method API.Controllers.Auth.AuthController.Login (API), returned result Microsoft.AspNetCore.Mvc.HttpActionResult in 40.1367ms.
+2025-05-10 22:26:15.909 +03:00 [INF] Setting HTTP status code 400.
+2025-05-10 22:26:15.910 +03:00 [INF] Writing value of type 'String' as Json.
+2025-05-10 22:26:15.911 +03:00 [INF] Executed action API.Controllers.Auth.AuthController.Login (API) in 58.7132ms
+2025-05-10 22:26:15.912 +03:00 [INF] Executed endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-05-10 22:26:15.913 +03:00 [DBG] Connection id "0HNCFV1LH9KI9" completed keep alive response.
+2025-05-10 22:26:15.915 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-05-10 22:26:15.916 +03:00 [DBG] Disposing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:26:15.917 +03:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-05-10 22:26:15.919 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5077/api/Auth/login - 400 null application/json; charset=utf-8 85.2172ms
+2025-05-10 22:27:22.695 +03:00 [DBG] Connection id "0HNCFV1LH9KIA" received FIN.
+2025-05-10 22:27:22.695 +03:00 [DBG] Connection id "0HNCFV1LH9KI8" received FIN.
+2025-05-10 22:27:22.696 +03:00 [DBG] Connection id "0HNCFV1LH9KIA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-10 22:27:22.697 +03:00 [DBG] Connection id "0HNCFV1LH9KI8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-10 22:27:22.698 +03:00 [DBG] Connection id "0HNCFV1LH9KIA" disconnecting.
+2025-05-10 22:27:22.700 +03:00 [DBG] Connection id "0HNCFV1LH9KI8" disconnecting.
+2025-05-10 22:27:22.702 +03:00 [DBG] Connection id "0HNCFV1LH9KIA" stopped.
+2025-05-10 22:27:22.702 +03:00 [DBG] Connection id "0HNCFV1LH9KI8" stopped.
+2025-05-10 22:27:38.015 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5077/api/Auth/register - application/json 161
+2025-05-10 22:27:38.017 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2025-05-10 22:27:38.018 +03:00 [DBG] Endpoint 'API.Controllers.Auth.AuthController.Register (API)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2025-05-10 22:27:38.019 +03:00 [DBG] Request matched endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-05-10 22:27:38.020 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-05-10 22:27:38.020 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-05-10 22:27:38.021 +03:00 [INF] Executing endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-05-10 22:27:38.026 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[System.Guid],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] Register(Application.DTOs.User.RegisterUserDto) on controller API.Controllers.Auth.AuthController (API).
+2025-05-10 22:27:38.027 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-05-10 22:27:38.028 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-05-10 22:27:38.029 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-05-10 22:27:38.031 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-05-10 22:27:38.032 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-05-10 22:27:38.034 +03:00 [DBG] Executing controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-05-10 22:27:38.035 +03:00 [DBG] Executed controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-05-10 22:27:38.036 +03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' ...
+2025-05-10 22:27:38.037 +03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' using the name '' in request data ...
+2025-05-10 22:27:38.038 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-05-10 22:27:38.045 +03:00 [DBG] Connection id "0HNCFV1LH9KI9", Request id "0HNCFV1LH9KI9:00000007": started reading request body.
+2025-05-10 22:27:38.046 +03:00 [DBG] Connection id "0HNCFV1LH9KI9", Request id "0HNCFV1LH9KI9:00000007": done reading request body.
+2025-05-10 22:27:38.053 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Application.DTOs.User.RegisterUserDto'
+2025-05-10 22:27:38.054 +03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-05-10 22:27:38.056 +03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-05-10 22:27:38.057 +03:00 [DBG] Attempting to validate the bound parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' ...
+2025-05-10 22:27:38.062 +03:00 [DBG] Done attempting to validate the bound parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-05-10 22:27:38.064 +03:00 [INF] Executing action method API.Controllers.Auth.AuthController.Register (API) - Validation state: "Invalid"
+2025-05-10 22:27:38.066 +03:00 [INF] Starting to register user admin - admin@gmail.com
+2025-05-10 22:27:38.085 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-05-10 22:27:38.142 +03:00 [DBG] 'MessengerDbContext' generated a temporary value for the property 'UserEntity.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-10 22:27:38.241 +03:00 [DBG] Context 'MessengerDbContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-10 22:27:38.246 +03:00 [DBG] SaveChanges starting for 'MessengerDbContext'.
+2025-05-10 22:27:38.252 +03:00 [DBG] DetectChanges starting for 'MessengerDbContext'.
+2025-05-10 22:27:38.271 +03:00 [DBG] DetectChanges completed for 'MessengerDbContext'.
+2025-05-10 22:27:38.368 +03:00 [DBG] Creating DbConnection.
+2025-05-10 22:27:38.369 +03:00 [DBG] Created DbConnection. (0ms).
+2025-05-10 22:27:38.371 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:27:38.372 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:27:38.377 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-10 22:27:38.378 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-05-10 22:27:38.382 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2025-05-10 22:27:38.385 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Date), @p2='?' (Size = 450), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 255), @p6='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [DateOfBirth], [Email], [FirstName], [LastName], [PasswordHash], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-05-10 22:27:38.392 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Date), @p2='?' (Size = 450), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 255), @p6='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [DateOfBirth], [Email], [FirstName], [LastName], [PasswordHash], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-05-10 22:27:38.409 +03:00 [DBG] The foreign key property 'UserEntity.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-05-10 22:27:38.419 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:27:38.420 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 26ms reading results.
+2025-05-10 22:27:38.423 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:27:38.425 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (1ms).
+2025-05-10 22:27:38.442 +03:00 [DBG] An entity of type 'UserEntity' tracked by 'MessengerDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-10 22:27:38.450 +03:00 [DBG] SaveChanges completed for 'MessengerDbContext' with 1 entities written to the database.
+2025-05-10 22:27:38.452 +03:00 [INF] Registered User: admin - admin@gmail.com
+2025-05-10 22:27:38.455 +03:00 [INF] Executed action method API.Controllers.Auth.AuthController.Register (API), returned result Microsoft.AspNetCore.Mvc.HttpActionResult in 390.0689ms.
+2025-05-10 22:27:38.458 +03:00 [INF] Setting HTTP status code 200.
+2025-05-10 22:27:38.462 +03:00 [INF] Writing value of type 'Guid' as Json.
+2025-05-10 22:27:38.473 +03:00 [INF] Executed action API.Controllers.Auth.AuthController.Register (API) in 439.2661ms
+2025-05-10 22:27:38.475 +03:00 [INF] Executed endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-05-10 22:27:38.476 +03:00 [DBG] Connection id "0HNCFV1LH9KI9" completed keep alive response.
+2025-05-10 22:27:38.478 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-05-10 22:27:38.481 +03:00 [DBG] Disposing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:27:38.483 +03:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-05-10 22:27:38.485 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5077/api/Auth/register - 200 null application/json; charset=utf-8 469.5933ms
+2025-05-10 22:27:59.858 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5077/api/Auth/login - application/json 51
+2025-05-10 22:27:59.860 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/login'
+2025-05-10 22:27:59.860 +03:00 [DBG] Endpoint 'API.Controllers.Auth.AuthController.Login (API)' with route pattern 'api/Auth/login' is valid for the request path '/api/Auth/login'
+2025-05-10 22:27:59.862 +03:00 [DBG] Request matched endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-05-10 22:27:59.863 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-05-10 22:27:59.864 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-05-10 22:27:59.865 +03:00 [INF] Executing endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-05-10 22:27:59.866 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[System.String],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] Login(Application.DTOs.User.LoginUserDto) on controller API.Controllers.Auth.AuthController (API).
+2025-05-10 22:27:59.868 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-05-10 22:27:59.869 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-05-10 22:27:59.871 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-05-10 22:27:59.873 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-05-10 22:27:59.874 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-05-10 22:27:59.875 +03:00 [DBG] Executing controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-05-10 22:27:59.876 +03:00 [DBG] Executed controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-05-10 22:27:59.877 +03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' ...
+2025-05-10 22:27:59.878 +03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' using the name '' in request data ...
+2025-05-10 22:27:59.879 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-05-10 22:27:59.880 +03:00 [DBG] Connection id "0HNCFV1LH9KI9", Request id "0HNCFV1LH9KI9:00000008": started reading request body.
+2025-05-10 22:27:59.882 +03:00 [DBG] Connection id "0HNCFV1LH9KI9", Request id "0HNCFV1LH9KI9:00000008": done reading request body.
+2025-05-10 22:27:59.884 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Application.DTOs.User.LoginUserDto'
+2025-05-10 22:27:59.885 +03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-05-10 22:27:59.885 +03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-05-10 22:27:59.886 +03:00 [DBG] Attempting to validate the bound parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' ...
+2025-05-10 22:27:59.887 +03:00 [DBG] Done attempting to validate the bound parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-05-10 22:27:59.888 +03:00 [INF] Executing action method API.Controllers.Auth.AuthController.Login (API) - Validation state: "Valid"
+2025-05-10 22:27:59.889 +03:00 [INF] Starting to login User: admin - admin123
+2025-05-10 22:27:59.891 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-05-10 22:27:59.893 +03:00 [DBG] Creating DbConnection.
+2025-05-10 22:27:59.893 +03:00 [DBG] Created DbConnection. (0ms).
+2025-05-10 22:27:59.894 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:27:59.895 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:27:59.897 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-10 22:27:59.898 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-05-10 22:27:59.899 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-05-10 22:27:59.900 +03:00 [DBG] Executing DbCommand [Parameters=[@__userName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__userName_0
+2025-05-10 22:27:59.903 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__userName_0
+2025-05-10 22:27:59.906 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:27:59.907 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 2ms reading results.
+2025-05-10 22:27:59.909 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:27:59.910 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (1ms).
+2025-05-10 22:27:59.944 +03:00 [INF] Login User: admin - admin123
+2025-05-10 22:27:59.946 +03:00 [INF] Token generated for user - admin. Token : Application.Common.Result`1[System.String]
+2025-05-10 22:27:59.947 +03:00 [INF] Executed action method API.Controllers.Auth.AuthController.Login (API), returned result Microsoft.AspNetCore.Mvc.HttpActionResult in 58.04ms.
+2025-05-10 22:27:59.949 +03:00 [INF] Setting HTTP status code 200.
+2025-05-10 22:27:59.950 +03:00 [INF] Writing value of type 'String' as Json.
+2025-05-10 22:27:59.952 +03:00 [INF] Executed action API.Controllers.Auth.AuthController.Login (API) in 76.9543ms
+2025-05-10 22:27:59.953 +03:00 [INF] Executed endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-05-10 22:27:59.954 +03:00 [DBG] Connection id "0HNCFV1LH9KI9" completed keep alive response.
+2025-05-10 22:27:59.955 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-05-10 22:27:59.956 +03:00 [DBG] Disposing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-05-10 22:27:59.957 +03:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-05-10 22:27:59.960 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5077/api/Auth/login - 200 null application/json; charset=utf-8 102.5967ms
+2025-05-10 22:29:55.405 +03:00 [DBG] Connection id "0HNCFV1LH9KI9" received FIN.
+2025-05-10 22:29:55.407 +03:00 [DBG] Connection id "0HNCFV1LH9KI9" disconnecting.
+2025-05-10 22:29:55.408 +03:00 [DBG] Connection id "0HNCFV1LH9KI9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-10 22:29:55.420 +03:00 [DBG] Connection id "0HNCFV1LH9KI9" stopped.
+2025-05-10 22:30:32.342 +03:00 [INF] Application is shutting down...
+2025-05-10 22:30:32.343 +03:00 [DBG] Hosting stopping
+2025-05-10 22:30:32.352 +03:00 [DBG] Hosting stopped

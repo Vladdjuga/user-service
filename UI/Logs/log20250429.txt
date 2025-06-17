@@ -1,0 +1,1656 @@
+2025-04-29 19:17:19.461 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-04-29 19:17:19.574 +03:00 [DBG] Hosting starting
+2025-04-29 19:17:19.588 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 19:17:19.601 +03:00 [DBG] Reading data from file 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys\key-481ef570-6c2e-4a6e-9762-cce7f7c8e8f9.xml'.
+2025-04-29 19:17:19.630 +03:00 [DBG] Found key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9}.
+2025-04-29 19:17:19.641 +03:00 [DBG] Considering key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} with expiration date 2025-06-12 18:14:50Z as default key.
+2025-04-29 19:17:19.645 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-29 19:17:19.649 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-04-29 19:17:19.650 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-29 19:17:19.657 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-04-29 19:17:19.659 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-04-29 19:17:19.662 +03:00 [DBG] Using key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} as the default key.
+2025-04-29 19:17:19.663 +03:00 [DBG] Key ring with default key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} was loaded during application startup.
+2025-04-29 19:17:19.721 +03:00 [INF] Now listening on: http://localhost:5077
+2025-04-29 19:17:19.722 +03:00 [DBG] Loaded hosting startup assembly API
+2025-04-29 19:17:19.724 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 19:17:19.724 +03:00 [INF] Hosting environment: Development
+2025-04-29 19:17:19.725 +03:00 [INF] Content root path: C:\Users\User\source\repos\DDD_Messanger\API
+2025-04-29 19:17:19.726 +03:00 [DBG] Hosting started
+2025-04-29 19:17:20.158 +03:00 [DBG] Connection id "0HNC7758J3HO4" received FIN.
+2025-04-29 19:17:20.169 +03:00 [DBG] Connection id "0HNC7758J3HO4" accepted.
+2025-04-29 19:17:20.171 +03:00 [DBG] Connection id "0HNC7758J3HO4" started.
+2025-04-29 19:17:20.181 +03:00 [DBG] Connection id "0HNC7758J3HO4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-29 19:17:20.186 +03:00 [DBG] Connection id "0HNC7758J3HO4" disconnecting.
+2025-04-29 19:17:20.195 +03:00 [DBG] Connection id "0HNC7758J3HO4" stopped.
+2025-04-29 19:17:20.364 +03:00 [DBG] Connection id "0HNC7758J3HO5" accepted.
+2025-04-29 19:17:20.365 +03:00 [DBG] Connection id "0HNC7758J3HO5" started.
+2025-04-29 19:17:20.504 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger - null null
+2025-04-29 19:17:20.508 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-04-29 19:17:20.532 +03:00 [DBG] No candidates found for the request path '/swagger'
+2025-04-29 19:17:20.535 +03:00 [DBG] Request did not match any endpoints
+2025-04-29 19:17:20.565 +03:00 [DBG] Connection id "0HNC7758J3HO5" completed keep alive response.
+2025-04-29 19:17:20.569 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger - 301 0 null 66.2777ms
+2025-04-29 19:17:20.580 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/index.html - null null
+2025-04-29 19:17:20.583 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-04-29 19:17:20.584 +03:00 [DBG] Request did not match any endpoints
+2025-04-29 19:17:20.896 +03:00 [DBG] Connection id "0HNC7758J3HO5" completed keep alive response.
+2025-04-29 19:17:20.902 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/index.html - 200 null text/html;charset=utf-8 321.467ms
+2025-04-29 19:17:21.200 +03:00 [DBG] Connection id "0HNC7758J3HO6" accepted.
+2025-04-29 19:17:21.203 +03:00 [DBG] Connection id "0HNC7758J3HO6" started.
+2025-04-29 19:17:21.201 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/swagger-ui.css - null null
+2025-04-29 19:17:21.203 +03:00 [DBG] Connection id "0HNC7758J3HO7" accepted.
+2025-04-29 19:17:21.207 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/swagger-ui-bundle.js - null null
+2025-04-29 19:17:21.210 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2025-04-29 19:17:21.212 +03:00 [DBG] Connection id "0HNC7758J3HO7" started.
+2025-04-29 19:17:21.216 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2025-04-29 19:17:21.221 +03:00 [DBG] Request did not match any endpoints
+2025-04-29 19:17:21.223 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-29 19:17:21.224 +03:00 [DBG] Request did not match any endpoints
+2025-04-29 19:17:21.227 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-04-29 19:17:21.229 +03:00 [DBG] Request did not match any endpoints
+2025-04-29 19:17:21.235 +03:00 [INF] The file /swagger-ui-bundle.js was not modified
+2025-04-29 19:17:21.235 +03:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2025-04-29 19:17:21.235 +03:00 [INF] The file /swagger-ui.css was not modified
+2025-04-29 19:17:21.243 +03:00 [DBG] Handled. Status code: 304 File: /swagger-ui-standalone-preset.js
+2025-04-29 19:17:21.243 +03:00 [DBG] Handled. Status code: 304 File: /swagger-ui-bundle.js
+2025-04-29 19:17:21.243 +03:00 [DBG] Handled. Status code: 304 File: /swagger-ui.css
+2025-04-29 19:17:21.245 +03:00 [DBG] Connection id "0HNC7758J3HO7" completed keep alive response.
+2025-04-29 19:17:21.246 +03:00 [DBG] Connection id "0HNC7758J3HO6" completed keep alive response.
+2025-04-29 19:17:21.251 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/swagger-ui-bundle.js - 304 null text/javascript 43.7781ms
+2025-04-29 19:17:21.249 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/swagger-ui-standalone-preset.js - 304 null text/javascript 25.6827ms
+2025-04-29 19:17:21.247 +03:00 [DBG] Connection id "0HNC7758J3HO5" completed keep alive response.
+2025-04-29 19:17:21.267 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/swagger-ui.css - 304 null text/css 66.2625ms
+2025-04-29 19:17:21.354 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/favicon-32x32.png - null null
+2025-04-29 19:17:21.354 +03:00 [DBG] Connection id "0HNC7758J3HO7" received FIN.
+2025-04-29 19:17:21.357 +03:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2025-04-29 19:17:21.358 +03:00 [DBG] Connection id "0HNC7758J3HO7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-29 19:17:21.359 +03:00 [DBG] Request did not match any endpoints
+2025-04-29 19:17:21.360 +03:00 [DBG] Connection id "0HNC7758J3HO7" disconnecting.
+2025-04-29 19:17:21.364 +03:00 [DBG] The file transmission was cancelled
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2025-04-29 19:17:21.378 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-29 19:17:21.380 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/favicon-32x32.png - 499 628 image/png 26.4311ms
+2025-04-29 19:17:21.390 +03:00 [DBG] Connection id "0HNC7758J3HO7" stopped.
+2025-04-29 19:17:21.451 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/v1/swagger.json - null null
+2025-04-29 19:17:21.454 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-04-29 19:17:21.455 +03:00 [DBG] Request did not match any endpoints
+2025-04-29 19:17:21.655 +03:00 [DBG] Connection id "0HNC7758J3HO6" completed keep alive response.
+2025-04-29 19:17:21.657 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 206.1817ms
+2025-04-29 19:17:37.612 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5077/api/Auth/register - application/json 204
+2025-04-29 19:17:37.617 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2025-04-29 19:17:37.625 +03:00 [DBG] Endpoint 'API.Controllers.Auth.AuthController.Register (API)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2025-04-29 19:17:37.628 +03:00 [DBG] Request matched endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-04-29 19:17:37.630 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-29 19:17:37.632 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-04-29 19:17:37.676 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-04-29 19:17:37.679 +03:00 [INF] Executing endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-04-29 19:17:37.704 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[System.Guid],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] Register(Application.DTOs.User.RegisterUserDto) on controller API.Controllers.Auth.AuthController (API).
+2025-04-29 19:17:37.707 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-04-29 19:17:37.709 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-04-29 19:17:37.710 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-04-29 19:17:37.712 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-04-29 19:17:37.713 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-04-29 19:17:37.716 +03:00 [DBG] Executing controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-04-29 19:17:37.719 +03:00 [DBG] Executed controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-04-29 19:17:37.727 +03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' ...
+2025-04-29 19:17:37.730 +03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' using the name '' in request data ...
+2025-04-29 19:17:37.733 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-04-29 19:17:37.749 +03:00 [DBG] Connection id "0HNC7758J3HO6", Request id "0HNC7758J3HO6:00000003": started reading request body.
+2025-04-29 19:17:37.751 +03:00 [DBG] Connection id "0HNC7758J3HO6", Request id "0HNC7758J3HO6:00000003": done reading request body.
+2025-04-29 19:17:37.781 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Application.DTOs.User.RegisterUserDto'
+2025-04-29 19:17:37.782 +03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-04-29 19:17:37.784 +03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-04-29 19:17:37.785 +03:00 [DBG] Attempting to validate the bound parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' ...
+2025-04-29 19:17:37.796 +03:00 [DBG] Done attempting to validate the bound parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-04-29 19:17:37.811 +03:00 [INF] Executing action method API.Controllers.Auth.AuthController.Register (API) - Validation state: "Valid"
+2025-04-29 19:17:37.815 +03:00 [INF] Starting to register user string - string
+2025-04-29 19:17:37.904 +03:00 [INF] Executed action API.Controllers.Auth.AuthController.Register (API) in 185.583ms
+2025-04-29 19:17:37.907 +03:00 [INF] Executed endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-04-29 19:17:37.909 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+FluentValidation.ValidationException: Validation failed: 
+ -- DateOfBirth: 'Date Of Birth' must be less than '1/1/2010 12:00:00 AM'. Severity: Error
+   at Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\Behaviors\ValidationBehaivor.cs:line 24
+   at API.Controllers.Auth.AuthController.Register(RegisterUserDto registerDto) in C:\Users\User\source\repos\DDD_Messanger\API\Controllers\Auth\AuthController.cs:line 68
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-29 19:17:37.924 +03:00 [DBG] Connection id "0HNC7758J3HO6" completed keep alive response.
+2025-04-29 19:17:37.926 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5077/api/Auth/register - 500 null text/plain; charset=utf-8 313.9804ms
+2025-04-29 19:17:51.176 +03:00 [INF] Application is shutting down...
+2025-04-29 19:17:51.177 +03:00 [DBG] Hosting stopping
+2025-04-29 19:17:51.183 +03:00 [DBG] Connection id "0HNC7758J3HO5" disconnecting.
+2025-04-29 19:17:51.183 +03:00 [DBG] Connection id "0HNC7758J3HO6" disconnecting.
+2025-04-29 19:17:51.184 +03:00 [DBG] Connection id "0HNC7758J3HO5" stopped.
+2025-04-29 19:17:51.185 +03:00 [DBG] Connection id "0HNC7758J3HO6" stopped.
+2025-04-29 19:17:51.187 +03:00 [DBG] Connection id "0HNC7758J3HO5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-29 19:17:51.187 +03:00 [DBG] Connection id "0HNC7758J3HO6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-29 19:17:51.194 +03:00 [DBG] Hosting stopped
+2025-04-29 19:18:27.930 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-04-29 19:18:28.044 +03:00 [DBG] Hosting starting
+2025-04-29 19:18:28.060 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 19:18:28.077 +03:00 [DBG] Reading data from file 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys\key-481ef570-6c2e-4a6e-9762-cce7f7c8e8f9.xml'.
+2025-04-29 19:18:28.086 +03:00 [DBG] Found key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9}.
+2025-04-29 19:18:28.096 +03:00 [DBG] Considering key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} with expiration date 2025-06-12 18:14:50Z as default key.
+2025-04-29 19:18:28.101 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-29 19:18:28.105 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-04-29 19:18:28.107 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-29 19:18:28.114 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-04-29 19:18:28.116 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-04-29 19:18:28.119 +03:00 [DBG] Using key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} as the default key.
+2025-04-29 19:18:28.121 +03:00 [DBG] Key ring with default key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} was loaded during application startup.
+2025-04-29 19:18:28.170 +03:00 [INF] Now listening on: http://localhost:5077
+2025-04-29 19:18:28.171 +03:00 [DBG] Loaded hosting startup assembly API
+2025-04-29 19:18:28.173 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 19:18:28.174 +03:00 [INF] Hosting environment: Development
+2025-04-29 19:18:28.175 +03:00 [INF] Content root path: C:\Users\User\source\repos\DDD_Messanger\API
+2025-04-29 19:18:28.176 +03:00 [DBG] Hosting started
+2025-04-29 19:18:28.516 +03:00 [DBG] Connection id "0HNC775SV0R4O" received FIN.
+2025-04-29 19:18:28.529 +03:00 [DBG] Connection id "0HNC775SV0R4O" accepted.
+2025-04-29 19:18:28.532 +03:00 [DBG] Connection id "0HNC775SV0R4O" started.
+2025-04-29 19:18:28.547 +03:00 [DBG] Connection id "0HNC775SV0R4O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-29 19:18:28.559 +03:00 [DBG] Connection id "0HNC775SV0R4O" disconnecting.
+2025-04-29 19:18:28.574 +03:00 [DBG] Connection id "0HNC775SV0R4O" stopped.
+2025-04-29 19:18:28.682 +03:00 [DBG] Connection id "0HNC775SV0R4P" accepted.
+2025-04-29 19:18:28.684 +03:00 [DBG] Connection id "0HNC775SV0R4P" started.
+2025-04-29 19:18:28.816 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/index.html - null null
+2025-04-29 19:18:28.823 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-04-29 19:18:28.845 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-04-29 19:18:28.847 +03:00 [DBG] Request did not match any endpoints
+2025-04-29 19:18:29.022 +03:00 [DBG] Connection id "0HNC775SV0R4P" completed keep alive response.
+2025-04-29 19:18:29.025 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/index.html - 200 null text/html;charset=utf-8 210.9731ms
+2025-04-29 19:18:29.212 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/v1/swagger.json - null null
+2025-04-29 19:18:29.215 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-04-29 19:18:29.216 +03:00 [DBG] Request did not match any endpoints
+2025-04-29 19:18:29.397 +03:00 [DBG] Connection id "0HNC775SV0R4P" completed keep alive response.
+2025-04-29 19:18:29.400 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 187.6126ms
+2025-04-29 19:18:40.825 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5077/api/Auth/register - application/json 170
+2025-04-29 19:18:40.833 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2025-04-29 19:18:40.839 +03:00 [DBG] Endpoint 'API.Controllers.Auth.AuthController.Register (API)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2025-04-29 19:18:40.841 +03:00 [DBG] Request matched endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-04-29 19:18:40.845 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-29 19:18:40.847 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-04-29 19:18:40.885 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-04-29 19:18:40.888 +03:00 [INF] Executing endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-04-29 19:18:40.915 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[System.Guid],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] Register(Application.DTOs.User.RegisterUserDto) on controller API.Controllers.Auth.AuthController (API).
+2025-04-29 19:18:40.917 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-04-29 19:18:40.919 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-04-29 19:18:40.921 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-04-29 19:18:40.924 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-04-29 19:18:40.926 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-04-29 19:18:40.928 +03:00 [DBG] Executing controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-04-29 19:18:40.930 +03:00 [DBG] Executed controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-04-29 19:18:40.934 +03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' ...
+2025-04-29 19:18:40.938 +03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' using the name '' in request data ...
+2025-04-29 19:18:40.941 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-04-29 19:18:40.955 +03:00 [DBG] Connection id "0HNC775SV0R4P", Request id "0HNC775SV0R4P:00000003": started reading request body.
+2025-04-29 19:18:40.957 +03:00 [DBG] Connection id "0HNC775SV0R4P", Request id "0HNC775SV0R4P:00000003": done reading request body.
+2025-04-29 19:18:40.981 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Application.DTOs.User.RegisterUserDto'
+2025-04-29 19:18:40.982 +03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-04-29 19:18:40.983 +03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-04-29 19:18:40.985 +03:00 [DBG] Attempting to validate the bound parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' ...
+2025-04-29 19:18:40.994 +03:00 [DBG] Done attempting to validate the bound parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-04-29 19:18:41.005 +03:00 [INF] Executing action method API.Controllers.Auth.AuthController.Register (API) - Validation state: "Valid"
+2025-04-29 19:18:41.009 +03:00 [INF] Starting to register user string - string
+2025-04-29 19:18:41.231 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-04-29 19:18:41.732 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-29 19:18:41.775 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-29 19:18:41.917 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-29 19:18:42.029 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-29 19:18:42.032 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-29 19:18:42.076 +03:00 [DBG] The index {'ChatId'} was not created on entity type 'UserChatEntity' as the properties are already covered by the index {'ChatId', 'UserId'}.
+2025-04-29 19:18:42.078 +03:00 [DBG] The index {'UserId'} was not created on entity type 'UserContactEntity' as the properties are already covered by the index {'UserId', 'ContactId'}.
+2025-04-29 19:18:42.295 +03:00 [WRN] The 'ChatRole' property 'ChatRole' on entity type 'UserChatEntity' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value 'Admin', since this is the CLR default for the 'ChatRole' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+2025-04-29 19:18:42.479 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-04-29 19:18:42.501 +03:00 [INF] Exception occured during request handling
+System.ArgumentException: Invalid email address format. (Parameter 'address')
+   at Domain.ValueObjects.Email..ctor(String address) in C:\Users\User\source\repos\DDD_Messanger\Domain\ValueObjects\Email.cs:line 19
+   at Application.UseCases.Users.Auth.RegisterUserHandler.Handle(RegisterUserCommand request, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\UseCases\Users\Auth\RegisterUserHandler.cs:line 21
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Application.Behaviors.ExceptionHandlingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\Behaviors\ExceptionHandlingBehavior.cs:line 21
+2025-04-29 19:18:42.530 +03:00 [INF] Request: {"Username":"string","Email":"string","Password":"hEt0TEtnW]&Q(5Z-!hE9e1%n3","FirstName":"string","LastName":"string","DateOfBirth":"2005-04-29T00:00:00.0000000","$type":"RegisterUserCommand"}
+2025-04-29 19:18:42.540 +03:00 [ERR] Invalid email address format. (Parameter 'address')
+System.ArgumentException: Invalid email address format. (Parameter 'address')
+   at Domain.ValueObjects.Email..ctor(String address) in C:\Users\User\source\repos\DDD_Messanger\Domain\ValueObjects\Email.cs:line 19
+   at Application.UseCases.Users.Auth.RegisterUserHandler.Handle(RegisterUserCommand request, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\UseCases\Users\Auth\RegisterUserHandler.cs:line 21
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Application.Behaviors.ExceptionHandlingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\Behaviors\ExceptionHandlingBehavior.cs:line 21
+2025-04-29 19:18:42.561 +03:00 [INF] Executed action API.Controllers.Auth.AuthController.Register (API) in 1628.8597ms
+2025-04-29 19:18:42.564 +03:00 [INF] Executed endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-04-29 19:18:42.566 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'Application.Common.Result' to type 'Application.Common.Result`1[System.Guid]'.
+   at Application.Behaviors.ExceptionHandlingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\Behaviors\ExceptionHandlingBehavior.cs:line 28
+   at Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\Behaviors\ValidationBehaivor.cs:line 26
+   at API.Controllers.Auth.AuthController.Register(RegisterUserDto registerDto) in C:\Users\User\source\repos\DDD_Messanger\API\Controllers\Auth\AuthController.cs:line 68
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-29 19:18:42.584 +03:00 [DBG] Connection id "0HNC775SV0R4P" completed keep alive response.
+2025-04-29 19:18:42.593 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-04-29 19:18:42.600 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5077/api/Auth/register - 500 null text/plain; charset=utf-8 1774.5653ms
+2025-04-29 19:20:38.469 +03:00 [DBG] Connection id "0HNC775SV0R4P" received FIN.
+2025-04-29 19:20:38.470 +03:00 [DBG] Connection id "0HNC775SV0R4P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-29 19:20:38.472 +03:00 [DBG] Connection id "0HNC775SV0R4P" disconnecting.
+2025-04-29 19:20:38.474 +03:00 [DBG] Connection id "0HNC775SV0R4P" stopped.
+2025-04-29 19:22:33.972 +03:00 [INF] Application is shutting down...
+2025-04-29 19:22:33.974 +03:00 [DBG] Hosting stopping
+2025-04-29 19:22:33.983 +03:00 [DBG] Hosting stopped
+2025-04-29 19:33:06.055 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-04-29 19:33:06.193 +03:00 [DBG] Hosting starting
+2025-04-29 19:33:06.211 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 19:33:06.228 +03:00 [DBG] Reading data from file 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys\key-481ef570-6c2e-4a6e-9762-cce7f7c8e8f9.xml'.
+2025-04-29 19:33:06.237 +03:00 [DBG] Found key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9}.
+2025-04-29 19:33:06.250 +03:00 [DBG] Considering key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} with expiration date 2025-06-12 18:14:50Z as default key.
+2025-04-29 19:33:06.255 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-29 19:33:06.260 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-04-29 19:33:06.263 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-29 19:33:06.271 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-04-29 19:33:06.273 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-04-29 19:33:06.276 +03:00 [DBG] Using key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} as the default key.
+2025-04-29 19:33:06.278 +03:00 [DBG] Key ring with default key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} was loaded during application startup.
+2025-04-29 19:33:06.346 +03:00 [INF] Now listening on: http://localhost:5077
+2025-04-29 19:33:06.347 +03:00 [DBG] Loaded hosting startup assembly API
+2025-04-29 19:33:06.348 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 19:33:06.349 +03:00 [INF] Hosting environment: Development
+2025-04-29 19:33:06.350 +03:00 [INF] Content root path: C:\Users\User\source\repos\DDD_Messanger\API
+2025-04-29 19:33:06.352 +03:00 [DBG] Hosting started
+2025-04-29 19:33:06.410 +03:00 [DBG] Connection id "0HNC77E2J8MI0" received FIN.
+2025-04-29 19:33:06.419 +03:00 [DBG] Connection id "0HNC77E2J8MI0" accepted.
+2025-04-29 19:33:06.421 +03:00 [DBG] Connection id "0HNC77E2J8MI0" started.
+2025-04-29 19:33:06.432 +03:00 [DBG] Connection id "0HNC77E2J8MI0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-29 19:33:06.437 +03:00 [DBG] Connection id "0HNC77E2J8MI0" disconnecting.
+2025-04-29 19:33:06.446 +03:00 [DBG] Connection id "0HNC77E2J8MI0" stopped.
+2025-04-29 19:33:06.728 +03:00 [DBG] Connection id "0HNC77E2J8MI1" accepted.
+2025-04-29 19:33:06.730 +03:00 [DBG] Connection id "0HNC77E2J8MI1" started.
+2025-04-29 19:33:07.032 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/index.html - null null
+2025-04-29 19:33:07.036 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-04-29 19:33:07.058 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-04-29 19:33:07.060 +03:00 [DBG] Request did not match any endpoints
+2025-04-29 19:33:07.293 +03:00 [DBG] Connection id "0HNC77E2J8MI1" completed keep alive response.
+2025-04-29 19:33:07.297 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/index.html - 200 null text/html;charset=utf-8 266.9237ms
+2025-04-29 19:33:07.689 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/v1/swagger.json - null null
+2025-04-29 19:33:07.693 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-04-29 19:33:07.694 +03:00 [DBG] Request did not match any endpoints
+2025-04-29 19:33:07.882 +03:00 [DBG] Connection id "0HNC77E2J8MI1" completed keep alive response.
+2025-04-29 19:33:07.884 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 194.7092ms
+2025-04-29 19:33:16.796 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5077/api/Auth/register - application/json 265
+2025-04-29 19:33:16.804 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2025-04-29 19:33:16.809 +03:00 [DBG] Endpoint 'API.Controllers.Auth.AuthController.Register (API)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2025-04-29 19:33:16.812 +03:00 [DBG] Request matched endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-04-29 19:33:16.815 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-29 19:33:16.816 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-04-29 19:33:16.853 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-04-29 19:33:16.857 +03:00 [INF] Executing endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-04-29 19:33:16.881 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[System.Guid],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] Register(Application.DTOs.User.RegisterUserDto) on controller API.Controllers.Auth.AuthController (API).
+2025-04-29 19:33:16.884 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-04-29 19:33:16.885 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-04-29 19:33:16.887 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-04-29 19:33:16.888 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-04-29 19:33:16.890 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-04-29 19:33:16.893 +03:00 [DBG] Executing controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-04-29 19:33:16.895 +03:00 [DBG] Executed controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-04-29 19:33:16.899 +03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' ...
+2025-04-29 19:33:16.902 +03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' using the name '' in request data ...
+2025-04-29 19:33:16.904 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-04-29 19:33:16.917 +03:00 [DBG] Connection id "0HNC77E2J8MI1", Request id "0HNC77E2J8MI1:00000003": started reading request body.
+2025-04-29 19:33:16.918 +03:00 [DBG] Connection id "0HNC77E2J8MI1", Request id "0HNC77E2J8MI1:00000003": done reading request body.
+2025-04-29 19:33:16.944 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Application.DTOs.User.RegisterUserDto'
+2025-04-29 19:33:16.946 +03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-04-29 19:33:16.947 +03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-04-29 19:33:16.949 +03:00 [DBG] Attempting to validate the bound parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' ...
+2025-04-29 19:33:16.959 +03:00 [DBG] Done attempting to validate the bound parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-04-29 19:33:16.972 +03:00 [INF] Executing action method API.Controllers.Auth.AuthController.Register (API) - Validation state: "Valid"
+2025-04-29 19:33:16.976 +03:00 [INF] Starting to register user string - string
+2025-04-29 19:33:17.191 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-04-29 19:33:17.658 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-29 19:33:17.702 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-29 19:33:17.836 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-29 19:33:17.949 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-29 19:33:17.952 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-29 19:33:17.998 +03:00 [DBG] The index {'ChatId'} was not created on entity type 'UserChatEntity' as the properties are already covered by the index {'ChatId', 'UserId'}.
+2025-04-29 19:33:18.000 +03:00 [DBG] The index {'UserId'} was not created on entity type 'UserContactEntity' as the properties are already covered by the index {'UserId', 'ContactId'}.
+2025-04-29 19:33:18.198 +03:00 [WRN] The 'ChatRole' property 'ChatRole' on entity type 'UserChatEntity' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value 'Admin', since this is the CLR default for the 'ChatRole' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+2025-04-29 19:33:18.373 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-04-29 19:33:18.394 +03:00 [INF] Exception occured during request handling
+System.ArgumentException: Invalid email address format. (Parameter 'address')
+   at Domain.ValueObjects.Email..ctor(String address) in C:\Users\User\source\repos\DDD_Messanger\Domain\ValueObjects\Email.cs:line 19
+   at Application.UseCases.Users.Auth.RegisterUserHandler.Handle(RegisterUserCommand request, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\UseCases\Users\Auth\RegisterUserHandler.cs:line 21
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Application.Behaviors.ExceptionHandlingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\Behaviors\ExceptionHandlingBehavior.cs:line 21
+2025-04-29 19:33:18.412 +03:00 [INF] Request: {"Username":"string","Email":"string","Password":"WZt)1W7<[@Eq\"\"iiT9!N/ne@,PhsE;I@+V;($<\\ijX;dw?*R7I:k(;\"pE2vl3\"@>HF1Npynt=r~\\P'`K7QT5wr[\\B|+Qi\"Nf]/","FirstName":"string","LastName":"string","DateOfBirth":"2005-04-29T16:33:13.4940000Z","$type":"RegisterUserCommand"}
+2025-04-29 19:33:18.418 +03:00 [ERR] Invalid email address format. (Parameter 'address')
+System.ArgumentException: Invalid email address format. (Parameter 'address')
+   at Domain.ValueObjects.Email..ctor(String address) in C:\Users\User\source\repos\DDD_Messanger\Domain\ValueObjects\Email.cs:line 19
+   at Application.UseCases.Users.Auth.RegisterUserHandler.Handle(RegisterUserCommand request, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\UseCases\Users\Auth\RegisterUserHandler.cs:line 21
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Application.Behaviors.ExceptionHandlingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\Behaviors\ExceptionHandlingBehavior.cs:line 21
+2025-04-29 19:33:18.431 +03:00 [INF] Executed action API.Controllers.Auth.AuthController.Register (API) in 1536.3761ms
+2025-04-29 19:33:18.433 +03:00 [INF] Executed endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-04-29 19:33:18.434 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'Application.Common.Result' to type 'Application.Common.Result`1[System.Guid]'.
+   at Application.Behaviors.ExceptionHandlingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\Behaviors\ExceptionHandlingBehavior.cs:line 28
+   at Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\Behaviors\ValidationBehaivor.cs:line 26
+   at API.Controllers.Auth.AuthController.Register(RegisterUserDto registerDto) in C:\Users\User\source\repos\DDD_Messanger\API\Controllers\Auth\AuthController.cs:line 68
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-29 19:33:18.445 +03:00 [DBG] Connection id "0HNC77E2J8MI1" completed keep alive response.
+2025-04-29 19:33:18.449 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-04-29 19:33:18.453 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5077/api/Auth/register - 500 null text/plain; charset=utf-8 1656.791ms
+2025-04-29 19:35:14.386 +03:00 [DBG] Connection id "0HNC77E2J8MI1" received FIN.
+2025-04-29 19:35:14.388 +03:00 [DBG] Connection id "0HNC77E2J8MI1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-29 19:35:14.389 +03:00 [DBG] Connection id "0HNC77E2J8MI1" disconnecting.
+2025-04-29 19:35:14.392 +03:00 [DBG] Connection id "0HNC77E2J8MI1" stopped.
+2025-04-29 19:37:19.600 +03:00 [INF] Application is shutting down...
+2025-04-29 19:37:19.601 +03:00 [DBG] Hosting stopping
+2025-04-29 19:37:19.610 +03:00 [DBG] Hosting stopped
+2025-04-29 19:37:26.265 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-04-29 19:37:26.395 +03:00 [DBG] Hosting starting
+2025-04-29 19:37:26.409 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 19:37:26.424 +03:00 [DBG] Reading data from file 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys\key-481ef570-6c2e-4a6e-9762-cce7f7c8e8f9.xml'.
+2025-04-29 19:37:26.433 +03:00 [DBG] Found key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9}.
+2025-04-29 19:37:26.446 +03:00 [DBG] Considering key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} with expiration date 2025-06-12 18:14:50Z as default key.
+2025-04-29 19:37:26.451 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-29 19:37:26.458 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-04-29 19:37:26.460 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-29 19:37:26.470 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-04-29 19:37:26.472 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-04-29 19:37:26.475 +03:00 [DBG] Using key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} as the default key.
+2025-04-29 19:37:26.477 +03:00 [DBG] Key ring with default key {481ef570-6c2e-4a6e-9762-cce7f7c8e8f9} was loaded during application startup.
+2025-04-29 19:37:26.536 +03:00 [INF] Now listening on: http://localhost:5077
+2025-04-29 19:37:26.538 +03:00 [DBG] Loaded hosting startup assembly API
+2025-04-29 19:37:26.539 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 19:37:26.540 +03:00 [INF] Hosting environment: Development
+2025-04-29 19:37:26.541 +03:00 [INF] Content root path: C:\Users\User\source\repos\DDD_Messanger\API
+2025-04-29 19:37:26.542 +03:00 [DBG] Hosting started
+2025-04-29 19:37:26.821 +03:00 [DBG] Connection id "0HNC77GG6NQIH" received FIN.
+2025-04-29 19:37:26.834 +03:00 [DBG] Connection id "0HNC77GG6NQIH" accepted.
+2025-04-29 19:37:26.836 +03:00 [DBG] Connection id "0HNC77GG6NQIH" started.
+2025-04-29 19:37:26.846 +03:00 [DBG] Connection id "0HNC77GG6NQIH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-29 19:37:26.852 +03:00 [DBG] Connection id "0HNC77GG6NQIH" disconnecting.
+2025-04-29 19:37:26.865 +03:00 [DBG] Connection id "0HNC77GG6NQIH" stopped.
+2025-04-29 19:37:26.975 +03:00 [DBG] Connection id "0HNC77GG6NQII" accepted.
+2025-04-29 19:37:26.977 +03:00 [DBG] Connection id "0HNC77GG6NQII" started.
+2025-04-29 19:37:27.056 +03:00 [DBG] Connection id "0HNC77GG6NQIJ" accepted.
+2025-04-29 19:37:27.058 +03:00 [DBG] Connection id "0HNC77GG6NQIJ" started.
+2025-04-29 19:37:27.065 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/index.html - null null
+2025-04-29 19:37:27.073 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-04-29 19:37:27.102 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-04-29 19:37:27.104 +03:00 [DBG] Request did not match any endpoints
+2025-04-29 19:37:27.300 +03:00 [DBG] Connection id "0HNC77GG6NQII" completed keep alive response.
+2025-04-29 19:37:27.303 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/index.html - 200 null text/html;charset=utf-8 241.3615ms
+2025-04-29 19:37:27.547 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/swagger/v1/swagger.json - null null
+2025-04-29 19:37:27.551 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-04-29 19:37:27.552 +03:00 [DBG] Request did not match any endpoints
+2025-04-29 19:37:27.742 +03:00 [DBG] Connection id "0HNC77GG6NQIJ" completed keep alive response.
+2025-04-29 19:37:27.744 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 197.3477ms
+2025-04-29 19:37:33.772 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5077/api/Auth/register - application/json 251
+2025-04-29 19:37:33.783 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2025-04-29 19:37:33.792 +03:00 [DBG] Endpoint 'API.Controllers.Auth.AuthController.Register (API)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2025-04-29 19:37:33.794 +03:00 [DBG] Request matched endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-04-29 19:37:33.798 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-29 19:37:33.799 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-04-29 19:37:33.834 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-04-29 19:37:33.838 +03:00 [INF] Executing endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-04-29 19:37:33.862 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[System.Guid],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] Register(Application.DTOs.User.RegisterUserDto) on controller API.Controllers.Auth.AuthController (API).
+2025-04-29 19:37:33.865 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-04-29 19:37:33.867 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-04-29 19:37:33.869 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-04-29 19:37:33.871 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-04-29 19:37:33.873 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-04-29 19:37:33.876 +03:00 [DBG] Executing controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-04-29 19:37:33.878 +03:00 [DBG] Executed controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-04-29 19:37:33.883 +03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' ...
+2025-04-29 19:37:33.886 +03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' using the name '' in request data ...
+2025-04-29 19:37:33.889 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-04-29 19:37:33.903 +03:00 [DBG] Connection id "0HNC77GG6NQIJ", Request id "0HNC77GG6NQIJ:00000002": started reading request body.
+2025-04-29 19:37:33.905 +03:00 [DBG] Connection id "0HNC77GG6NQIJ", Request id "0HNC77GG6NQIJ:00000002": done reading request body.
+2025-04-29 19:37:33.929 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Application.DTOs.User.RegisterUserDto'
+2025-04-29 19:37:33.931 +03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-04-29 19:37:33.932 +03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-04-29 19:37:33.934 +03:00 [DBG] Attempting to validate the bound parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' ...
+2025-04-29 19:37:33.942 +03:00 [DBG] Done attempting to validate the bound parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-04-29 19:37:33.955 +03:00 [INF] Executing action method API.Controllers.Auth.AuthController.Register (API) - Validation state: "Valid"
+2025-04-29 19:37:33.959 +03:00 [INF] Starting to register user string - string
+2025-04-29 19:37:34.173 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-04-29 19:37:34.663 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-29 19:37:34.706 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-29 19:37:34.845 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-29 19:37:34.951 +03:00 [DBG] No relationship from 'UserContactEntity' to 'UserEntity' has been configured by convention because there are multiple properties on one entity type - {'Contact', 'User'} that could be matched with the properties on the other entity type - {'Contacts'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-29 19:37:34.953 +03:00 [DBG] No relationship from 'UserEntity' to 'UserContactEntity' has been configured by convention because there are multiple properties on one entity type - {'Contacts'} that could be matched with the properties on the other entity type - {'Contact', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-04-29 19:37:34.996 +03:00 [DBG] The index {'ChatId'} was not created on entity type 'UserChatEntity' as the properties are already covered by the index {'ChatId', 'UserId'}.
+2025-04-29 19:37:34.998 +03:00 [DBG] The index {'UserId'} was not created on entity type 'UserContactEntity' as the properties are already covered by the index {'UserId', 'ContactId'}.
+2025-04-29 19:37:35.203 +03:00 [WRN] The 'ChatRole' property 'ChatRole' on entity type 'UserChatEntity' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value 'Admin', since this is the CLR default for the 'ChatRole' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+2025-04-29 19:37:35.390 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-04-29 19:37:35.409 +03:00 [ERR] Exception occured during request handling
+System.ArgumentException: Invalid email address format. (Parameter 'address')
+   at Domain.ValueObjects.Email..ctor(String address) in C:\Users\User\source\repos\DDD_Messanger\Domain\ValueObjects\Email.cs:line 19
+   at Application.UseCases.Users.Auth.RegisterUserHandler.Handle(RegisterUserCommand request, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\UseCases\Users\Auth\RegisterUserHandler.cs:line 21
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Application.Behaviors.ExceptionHandlingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\Behaviors\ExceptionHandlingBehavior.cs:line 21
+2025-04-29 19:37:35.431 +03:00 [ERR] Request: {"Username":"string","Email":"string","Password":"_8A,3x<fA'ERP{cc*FsK^0+V{L@_O,kz59-N~pUfu%-?4]iU&*4|k|wMhJO$/cHp9\\Jo)xI]4/*&:J=yVpqe077>G$S","FirstName":"string","LastName":"string","DateOfBirth":"2005-04-29T16:37:29.9740000Z","$type":"RegisterUserCommand"}
+2025-04-29 19:37:35.438 +03:00 [ERR] Invalid email address format. (Parameter 'address')
+System.ArgumentException: Invalid email address format. (Parameter 'address')
+   at Domain.ValueObjects.Email..ctor(String address) in C:\Users\User\source\repos\DDD_Messanger\Domain\ValueObjects\Email.cs:line 19
+   at Application.UseCases.Users.Auth.RegisterUserHandler.Handle(RegisterUserCommand request, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\UseCases\Users\Auth\RegisterUserHandler.cs:line 21
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Application.Behaviors.ExceptionHandlingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\Behaviors\ExceptionHandlingBehavior.cs:line 21
+2025-04-29 19:37:35.442 +03:00 [ERR] Failure while registering user string - string
+2025-04-29 19:37:35.444 +03:00 [ERR] Error: Invalid email address format. (Parameter 'address')
+2025-04-29 19:37:35.449 +03:00 [INF] Executed action method API.Controllers.Auth.AuthController.Register (API), returned result Microsoft.AspNetCore.Mvc.HttpActionResult in 1488.6076ms.
+2025-04-29 19:37:35.459 +03:00 [INF] Setting HTTP status code 400.
+2025-04-29 19:37:35.461 +03:00 [INF] Writing value of type 'String' as Json.
+2025-04-29 19:37:35.473 +03:00 [INF] Executed action API.Controllers.Auth.AuthController.Register (API) in 1595.5101ms
+2025-04-29 19:37:35.475 +03:00 [INF] Executed endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-04-29 19:37:35.476 +03:00 [DBG] Connection id "0HNC77GG6NQIJ" completed keep alive response.
+2025-04-29 19:37:35.480 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-04-29 19:37:35.484 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5077/api/Auth/register - 400 null application/json; charset=utf-8 1712.0798ms
+2025-04-29 19:38:03.327 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5077/api/Auth/register - application/json 260
+2025-04-29 19:38:03.331 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2025-04-29 19:38:03.332 +03:00 [DBG] Endpoint 'API.Controllers.Auth.AuthController.Register (API)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2025-04-29 19:38:03.334 +03:00 [DBG] Request matched endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-04-29 19:38:03.335 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-29 19:38:03.336 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-04-29 19:38:03.337 +03:00 [INF] Executing endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-04-29 19:38:03.338 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[System.Guid],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] Register(Application.DTOs.User.RegisterUserDto) on controller API.Controllers.Auth.AuthController (API).
+2025-04-29 19:38:03.339 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-04-29 19:38:03.341 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-04-29 19:38:03.342 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-04-29 19:38:03.344 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-04-29 19:38:03.345 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-04-29 19:38:03.347 +03:00 [DBG] Executing controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-04-29 19:38:03.349 +03:00 [DBG] Executed controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-04-29 19:38:03.350 +03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' ...
+2025-04-29 19:38:03.352 +03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' using the name '' in request data ...
+2025-04-29 19:38:03.353 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-04-29 19:38:03.354 +03:00 [DBG] Connection id "0HNC77GG6NQIJ", Request id "0HNC77GG6NQIJ:00000003": started reading request body.
+2025-04-29 19:38:03.356 +03:00 [DBG] Connection id "0HNC77GG6NQIJ", Request id "0HNC77GG6NQIJ:00000003": done reading request body.
+2025-04-29 19:38:03.358 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Application.DTOs.User.RegisterUserDto'
+2025-04-29 19:38:03.359 +03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-04-29 19:38:03.361 +03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-04-29 19:38:03.362 +03:00 [DBG] Attempting to validate the bound parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto' ...
+2025-04-29 19:38:03.364 +03:00 [DBG] Done attempting to validate the bound parameter 'registerDto' of type 'Application.DTOs.User.RegisterUserDto'.
+2025-04-29 19:38:03.366 +03:00 [INF] Executing action method API.Controllers.Auth.AuthController.Register (API) - Validation state: "Valid"
+2025-04-29 19:38:03.367 +03:00 [INF] Starting to register user string - string@mail.com
+2025-04-29 19:38:03.424 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-04-29 19:38:03.505 +03:00 [DBG] 'MessengerDbContext' generated a temporary value for the property 'UserEntity.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-04-29 19:38:03.608 +03:00 [DBG] Context 'MessengerDbContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-04-29 19:38:03.614 +03:00 [DBG] SaveChanges starting for 'MessengerDbContext'.
+2025-04-29 19:38:03.620 +03:00 [DBG] DetectChanges starting for 'MessengerDbContext'.
+2025-04-29 19:38:03.641 +03:00 [DBG] DetectChanges completed for 'MessengerDbContext'.
+2025-04-29 19:38:03.845 +03:00 [DBG] Creating DbConnection.
+2025-04-29 19:38:03.887 +03:00 [DBG] Created DbConnection. (40ms).
+2025-04-29 19:38:03.896 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:04.135 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:04.151 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-04-29 19:38:04.163 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (6ms).
+2025-04-29 19:38:04.179 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (28ms).
+2025-04-29 19:38:04.193 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Date), @p2='?' (Size = 450), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 255), @p6='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [DateOfBirth], [Email], [FirstName], [LastName], [PasswordHash], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-04-29 19:38:04.264 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Date), @p2='?' (Size = 450), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 255), @p6='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [DateOfBirth], [Email], [FirstName], [LastName], [PasswordHash], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-04-29 19:38:04.292 +03:00 [DBG] The foreign key property 'UserEntity.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-04-29 19:38:04.307 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:04.317 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 42ms reading results.
+2025-04-29 19:38:04.324 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:04.333 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (9ms).
+2025-04-29 19:38:04.354 +03:00 [DBG] An entity of type 'UserEntity' tracked by 'MessengerDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-04-29 19:38:04.361 +03:00 [DBG] SaveChanges completed for 'MessengerDbContext' with 1 entities written to the database.
+2025-04-29 19:38:04.371 +03:00 [INF] Registered User: string - string@mail.com
+2025-04-29 19:38:04.376 +03:00 [INF] Executed action method API.Controllers.Auth.AuthController.Register (API), returned result Microsoft.AspNetCore.Mvc.HttpActionResult in 1008.5655ms.
+2025-04-29 19:38:04.386 +03:00 [INF] Setting HTTP status code 200.
+2025-04-29 19:38:04.391 +03:00 [INF] Writing value of type 'Guid' as Json.
+2025-04-29 19:38:04.400 +03:00 [INF] Executed action API.Controllers.Auth.AuthController.Register (API) in 1053.114ms
+2025-04-29 19:38:04.403 +03:00 [INF] Executed endpoint 'API.Controllers.Auth.AuthController.Register (API)'
+2025-04-29 19:38:04.408 +03:00 [DBG] Connection id "0HNC77GG6NQIJ" completed keep alive response.
+2025-04-29 19:38:04.410 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-04-29 19:38:04.415 +03:00 [DBG] Disposing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:04.419 +03:00 [DBG] Disposed connection to database '' on server '' (3ms).
+2025-04-29 19:38:04.421 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5077/api/Auth/register - 200 null application/json; charset=utf-8 1093.997ms
+2025-04-29 19:38:17.953 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5077/api/Auth/login - application/json 50
+2025-04-29 19:38:17.956 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/login'
+2025-04-29 19:38:17.957 +03:00 [DBG] Endpoint 'API.Controllers.Auth.AuthController.Login (API)' with route pattern 'api/Auth/login' is valid for the request path '/api/Auth/login'
+2025-04-29 19:38:17.958 +03:00 [DBG] Request matched endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-04-29 19:38:17.960 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-29 19:38:17.962 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-04-29 19:38:17.964 +03:00 [INF] Executing endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-04-29 19:38:17.969 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[System.String],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] Login(Application.DTOs.User.LoginUserDto) on controller API.Controllers.Auth.AuthController (API).
+2025-04-29 19:38:17.971 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-04-29 19:38:17.972 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-04-29 19:38:17.974 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-04-29 19:38:17.975 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-04-29 19:38:17.977 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-04-29 19:38:17.979 +03:00 [DBG] Executing controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-04-29 19:38:17.981 +03:00 [DBG] Executed controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-04-29 19:38:17.982 +03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' ...
+2025-04-29 19:38:17.983 +03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' using the name '' in request data ...
+2025-04-29 19:38:17.985 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-04-29 19:38:17.987 +03:00 [DBG] Connection id "0HNC77GG6NQIJ", Request id "0HNC77GG6NQIJ:00000004": started reading request body.
+2025-04-29 19:38:17.988 +03:00 [DBG] Connection id "0HNC77GG6NQIJ", Request id "0HNC77GG6NQIJ:00000004": done reading request body.
+2025-04-29 19:38:17.991 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Application.DTOs.User.LoginUserDto'
+2025-04-29 19:38:17.992 +03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-04-29 19:38:17.993 +03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-04-29 19:38:17.995 +03:00 [DBG] Attempting to validate the bound parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' ...
+2025-04-29 19:38:17.997 +03:00 [DBG] Done attempting to validate the bound parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-04-29 19:38:17.999 +03:00 [INF] Executing action method API.Controllers.Auth.AuthController.Login (API) - Validation state: "Valid"
+2025-04-29 19:38:18.001 +03:00 [INF] Starting to login User: string - string
+2025-04-29 19:38:18.018 +03:00 [INF] Executed action API.Controllers.Auth.AuthController.Login (API) in 39.4679ms
+2025-04-29 19:38:18.019 +03:00 [INF] Executed endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-04-29 19:38:18.021 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+FluentValidation.ValidationException: Validation failed: 
+ -- Password: Password must contain at least 8 characters Severity: Error
+   at Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\User\source\repos\DDD_Messanger\Application\Behaviors\ValidationBehaivor.cs:line 24
+   at API.Controllers.Auth.AuthController.Login(LoginUserDto loginDto) in C:\Users\User\source\repos\DDD_Messanger\API\Controllers\Auth\AuthController.cs:line 38
+   at lambda_method143(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-29 19:38:18.033 +03:00 [DBG] Connection id "0HNC77GG6NQIJ" completed keep alive response.
+2025-04-29 19:38:18.034 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5077/api/Auth/login - 500 null text/plain; charset=utf-8 80.9758ms
+2025-04-29 19:38:26.493 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5077/api/Auth/login - application/json 136
+2025-04-29 19:38:26.496 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/login'
+2025-04-29 19:38:26.497 +03:00 [DBG] Endpoint 'API.Controllers.Auth.AuthController.Login (API)' with route pattern 'api/Auth/login' is valid for the request path '/api/Auth/login'
+2025-04-29 19:38:26.498 +03:00 [DBG] Request matched endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-04-29 19:38:26.500 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-29 19:38:26.500 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-04-29 19:38:26.501 +03:00 [INF] Executing endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-04-29 19:38:26.503 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[System.String],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] Login(Application.DTOs.User.LoginUserDto) on controller API.Controllers.Auth.AuthController (API).
+2025-04-29 19:38:26.504 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-04-29 19:38:26.506 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-04-29 19:38:26.507 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-04-29 19:38:26.509 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-04-29 19:38:26.510 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-04-29 19:38:26.511 +03:00 [DBG] Executing controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-04-29 19:38:26.513 +03:00 [DBG] Executed controller factory for controller API.Controllers.Auth.AuthController (API)
+2025-04-29 19:38:26.514 +03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' ...
+2025-04-29 19:38:26.515 +03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' using the name '' in request data ...
+2025-04-29 19:38:26.517 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-04-29 19:38:26.518 +03:00 [DBG] Connection id "0HNC77GG6NQIJ", Request id "0HNC77GG6NQIJ:00000005": started reading request body.
+2025-04-29 19:38:26.519 +03:00 [DBG] Connection id "0HNC77GG6NQIJ", Request id "0HNC77GG6NQIJ:00000005": done reading request body.
+2025-04-29 19:38:26.520 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Application.DTOs.User.LoginUserDto'
+2025-04-29 19:38:26.522 +03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-04-29 19:38:26.523 +03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-04-29 19:38:26.524 +03:00 [DBG] Attempting to validate the bound parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto' ...
+2025-04-29 19:38:26.525 +03:00 [DBG] Done attempting to validate the bound parameter 'loginDto' of type 'Application.DTOs.User.LoginUserDto'.
+2025-04-29 19:38:26.527 +03:00 [INF] Executing action method API.Controllers.Auth.AuthController.Login (API) - Validation state: "Valid"
+2025-04-29 19:38:26.528 +03:00 [INF] Starting to login User: string - _8A,3x<fA'ERP{cc*FsK^0+V{L@_O,kz59-N~pUfu%-?4]iU&*4|k|wMhJO$/cHp9\Jo)xI]4/*&:J=yVpqe077>G$S
+2025-04-29 19:38:26.545 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-04-29 19:38:26.642 +03:00 [DBG] Compiling query expression: 
+'DbSet<UserEntity>()
+    .AsNoTracking()
+    .FirstOrDefault(o => o.Username.Equals(__userName_0))'
+2025-04-29 19:38:27.056 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserEntity>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<UserEntity>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserEntity.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserEntity.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 1], [Property: UserEntity.DateOfBirth (DateTime) Required, 2], [Property: UserEntity.Email (Email) Required Index, 3], [Property: UserEntity.FirstName (string) Required MaxLength(50), 4], [Property: UserEntity.LastName (string) Required MaxLength(50), 5], [Property: UserEntity.PasswordHash (string) Required MaxLength(255), 6], [Property: UserEntity.Username (string) Required Index MaxLength(50), 7] }
+            SELECT TOP(1) u.Id, u.CreatedAt, u.DateOfBirth, u.Email, u.FirstName, u.LastName, u.PasswordHash, u.Username
+            FROM Users AS u
+            WHERE u.Username == @__userName_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserEntity.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserEntity.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 1], [Property: UserEntity.DateOfBirth (DateTime) Required, 2], [Property: UserEntity.Email (Email) Required Index, 3], [Property: UserEntity.FirstName (string) Required MaxLength(50), 4], [Property: UserEntity.LastName (string) Required MaxLength(50), 5], [Property: UserEntity.PasswordHash (string) Required MaxLength(255), 6], [Property: UserEntity.Username (string) Required Index MaxLength(50), 7] }
+            SELECT TOP(1) u.Id, u.CreatedAt, u.DateOfBirth, u.Email, u.FirstName, u.LastName, u.PasswordHash, u.Username
+            FROM Users AS u
+            WHERE u.Username == @__userName_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            UserEntity entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                UserEntity instance1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(UserEntity);
+                (object)dataReader.GetGuid(0) != null ? 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]: 
+                            {
+                                return (UserEntity)
+                                {
+                                    UserEntityProxy instance;
+                                    DbContext namelessParameter{2};
+                                    IEntityType namelessParameter{3};
+                                    ILazyLoader namelessParameter{4};
+                                    namelessParameter{2} = materializationContext1.Context;
+                                    namelessParameter{3} = (IEntityType)ParameterBindingInfo.StructuralType;
+                                    namelessParameter{4} = InfrastructureExtensions.GetService<ILazyLoader>((IInfrastructure<IServiceProvider>)materializationContext1.Context);
+                                    instance = (UserEntityProxy)ProxyFactory.CreateLazyLoadingProxy(
+                                        context: namelessParameter{2}, 
+                                        entityType: namelessParameter{3}, 
+                                        loader: namelessParameter{4}, 
+                                        constructorArguments: new object[]{ });
+                                    instance.<Id>k__BackingField = dataReader.GetGuid(0);
+                                    instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(1);
+                                    instance.<DateOfBirth>k__BackingField = dataReader.GetDateTime(2);
+                                    instance.<Email>k__BackingField = Invoke(((ValueConverter<Email, string>)((IReadOnlyProperty)[LIFTABLE Constant: Property: UserEntity.Email (Email) Required Index | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity").FindProperty("Email")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetString(3));
+                                    instance.<FirstName>k__BackingField = dataReader.GetString(4);
+                                    instance.<LastName>k__BackingField = dataReader.GetString(5);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(6);
+                                    instance.<Username>k__BackingField = dataReader.GetString(7);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    (namelessParameter{2} is IInjectableService) ? ((IInjectableService)namelessParameter{2}).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    (namelessParameter{3} is IInjectableService) ? ((IInjectableService)namelessParameter{3}).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    (namelessParameter{4} is IInjectableService) ? ((IInjectableService)namelessParameter{4}).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{9} => namelessParameter{9}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    return instance;
+                                };
+                            }
+                        default: 
+                            default(UserEntity)
+                    }
+                    ;
+                    return instance1;
+                } : 
+                {
+                    object[] keyValues1;
+                    keyValues1 = new object[]{ (object)dataReader.GetGuid(0) };
+                    return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                        entityType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{10} => namelessParameter{10}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")], 
+                        properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: UserEntity.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity").FindPrimaryKey().Properties], 
+                        keyValues: keyValues1);
+                };
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: Infrastructure.Persistence.Contexts.MessengerDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-04-29 19:38:27.120 +03:00 [DBG] Creating DbConnection.
+2025-04-29 19:38:27.122 +03:00 [DBG] Created DbConnection. (2ms).
+2025-04-29 19:38:27.124 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:27.127 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:27.128 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-04-29 19:38:27.130 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-04-29 19:38:27.132 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2025-04-29 19:38:27.133 +03:00 [DBG] Executing DbCommand [Parameters=[@__userName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__userName_0
+2025-04-29 19:38:27.139 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__userName_0
+2025-04-29 19:38:27.157 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:27.159 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 17ms reading results.
+2025-04-29 19:38:27.161 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:27.163 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (2ms).
+2025-04-29 19:38:27.202 +03:00 [INF] Login User: string - _8A,3x<fA'ERP{cc*FsK^0+V{L@_O,kz59-N~pUfu%-?4]iU&*4|k|wMhJO$/cHp9\Jo)xI]4/*&:J=yVpqe077>G$S
+2025-04-29 19:38:27.203 +03:00 [INF] Token generated for user - string. Token : Application.Common.Result`1[System.String]
+2025-04-29 19:38:27.205 +03:00 [INF] Executed action method API.Controllers.Auth.AuthController.Login (API), returned result Microsoft.AspNetCore.Mvc.HttpActionResult in 676.4672ms.
+2025-04-29 19:38:27.206 +03:00 [INF] Setting HTTP status code 200.
+2025-04-29 19:38:27.207 +03:00 [INF] Writing value of type 'String' as Json.
+2025-04-29 19:38:27.209 +03:00 [INF] Executed action API.Controllers.Auth.AuthController.Login (API) in 697.6505ms
+2025-04-29 19:38:27.211 +03:00 [INF] Executed endpoint 'API.Controllers.Auth.AuthController.Login (API)'
+2025-04-29 19:38:27.213 +03:00 [DBG] Connection id "0HNC77GG6NQIJ" completed keep alive response.
+2025-04-29 19:38:27.214 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-04-29 19:38:27.215 +03:00 [DBG] Disposing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:27.216 +03:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-04-29 19:38:27.218 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5077/api/Auth/login - 200 null application/json; charset=utf-8 724.5175ms
+2025-04-29 19:38:39.669 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/api/Chat/getChats/f53813bf-5973-422d-a425-4cd23c48e83b - null null
+2025-04-29 19:38:39.672 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Chat/getChats/f53813bf-5973-422d-a425-4cd23c48e83b'
+2025-04-29 19:38:39.673 +03:00 [DBG] Endpoint 'API.Controllers.Data.ChatController.GetChats (API)' with route pattern 'api/Chat/getChats/{userId:Guid}' is valid for the request path '/api/Chat/getChats/f53813bf-5973-422d-a425-4cd23c48e83b'
+2025-04-29 19:38:39.675 +03:00 [DBG] Request matched endpoint 'API.Controllers.Data.ChatController.GetChats (API)'
+2025-04-29 19:38:39.676 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-29 19:38:39.734 +03:00 [DBG] Successfully validated the token.
+2025-04-29 19:38:39.737 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-04-29 19:38:39.742 +03:00 [DBG] Authorization was successful.
+2025-04-29 19:38:39.745 +03:00 [INF] Executing endpoint 'API.Controllers.Data.ChatController.GetChats (API)'
+2025-04-29 19:38:39.751 +03:00 [INF] Route matched with {action = "GetChats", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.Chat.ReadChatDto]],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] GetChats(System.Guid) on controller API.Controllers.Data.ChatController (API).
+2025-04-29 19:38:39.752 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-04-29 19:38:39.754 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-04-29 19:38:39.755 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-04-29 19:38:39.757 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-04-29 19:38:39.758 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-04-29 19:38:39.760 +03:00 [DBG] Executing controller factory for controller API.Controllers.Data.ChatController (API)
+2025-04-29 19:38:39.762 +03:00 [DBG] Executed controller factory for controller API.Controllers.Data.ChatController (API)
+2025-04-29 19:38:39.763 +03:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Guid' ...
+2025-04-29 19:38:39.765 +03:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Guid' using the name 'userId' in request data ...
+2025-04-29 19:38:39.767 +03:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Guid'.
+2025-04-29 19:38:39.768 +03:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Guid'.
+2025-04-29 19:38:39.769 +03:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Guid' ...
+2025-04-29 19:38:39.771 +03:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Guid'.
+2025-04-29 19:38:39.772 +03:00 [INF] Executing action method API.Controllers.Data.ChatController.GetChats (API) - Validation state: "Valid"
+2025-04-29 19:38:39.775 +03:00 [INF] User "f53813bf-5973-422d-a425-4cd23c48e83b" tries to get chats
+2025-04-29 19:38:39.780 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-04-29 19:38:40.013 +03:00 [DBG] Compiling query expression: 
+'DbSet<UserChatEntity>()
+    .Where(x => x.UserId == __userId_0)
+    .Include(x => x.Chat)'
+2025-04-29 19:38:40.033 +03:00 [DBG] Including navigation: 'UserChatEntity.Chat'.
+2025-04-29 19:38:40.113 +03:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<UserChatEntity>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: UserChatEntity.ChatId (Guid) Required PK FK AfterSave:Throw, 0], [Property: UserChatEntity.UserId (Guid) Required PK FK Index AfterSave:Throw, 1], [Property: UserChatEntity.ChatRole (ChatRole) Required ValueGenerated.OnAdd, 2], [Property: UserChatEntity.IsMuted (bool) Required ValueGenerated.OnAdd, 3] }
+            1 -> Dictionary<IProperty, int> { [Property: ChatEntity.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 4], [Property: ChatEntity.ChatType (ChatType) Required, 5], [Property: ChatEntity.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 6], [Property: ChatEntity.IsPrivate (bool) Required ValueGenerated.OnAdd, 7], [Property: ChatEntity.Title (string) Required MaxLength(20), 8] }
+        SELECT u.ChatId, u.UserId, u.ChatRole, u.IsMuted, c.Id, c.ChatType, c.CreatedAt, c.IsPrivate, c.Title
+        FROM UserChat AS u
+        INNER JOIN Chats AS c ON u.ChatId == c.Id
+        WHERE u.UserId == @__userId_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: UserChatEntity.ChatId (Guid) Required PK FK AfterSave:Throw, 0], [Property: UserChatEntity.UserId (Guid) Required PK FK Index AfterSave:Throw, 1], [Property: UserChatEntity.ChatRole (ChatRole) Required ValueGenerated.OnAdd, 2], [Property: UserChatEntity.IsMuted (bool) Required ValueGenerated.OnAdd, 3] }
+            1 -> Dictionary<IProperty, int> { [Property: ChatEntity.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 4], [Property: ChatEntity.ChatType (ChatType) Required, 5], [Property: ChatEntity.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 6], [Property: ChatEntity.IsPrivate (bool) Required ValueGenerated.OnAdd, 7], [Property: ChatEntity.Title (string) Required MaxLength(20), 8] }
+        SELECT u.ChatId, u.UserId, u.ChatRole, u.IsMuted, c.Id, c.ChatType, c.CreatedAt, c.IsPrivate, c.Title
+        FROM UserChat AS u
+        INNER JOIN Chats AS c ON u.ChatId == c.Id
+        WHERE u.UserId == @__userId_0, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        UserChatEntity entity;
+        ChatEntity entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            UserChatEntity instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(UserChatEntity);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: UserChatEntity.ChatId, UserChatEntity.UserId PK | Resolver: c => c.Dependencies.Model.FindEntityType("Domain.Entities.UserChatEntity").FindPrimaryKey()], 
+                keyValues: new object[]
+                { 
+                    (object)dataReader.GetGuid(0), 
+                    (object)dataReader.GetGuid(1) 
+                }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (UserChatEntity)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: UserChatEntity | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Domain.Entities.UserChatEntity")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: UserChatEntity | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Domain.Entities.UserChatEntity")]: 
+                        {
+                            return (UserChatEntity)
+                            {
+                                UserChatEntityProxy instance;
+                                DbContext namelessParameter{2};
+                                IEntityType namelessParameter{3};
+                                ILazyLoader namelessParameter{4};
+                                namelessParameter{2} = materializationContext1.Context;
+                                namelessParameter{3} = (IEntityType)ParameterBindingInfo.StructuralType;
+                                namelessParameter{4} = InfrastructureExtensions.GetService<ILazyLoader>((IInfrastructure<IServiceProvider>)materializationContext1.Context);
+                                instance = (UserChatEntityProxy)ProxyFactory.CreateLazyLoadingProxy(
+                                    context: namelessParameter{2}, 
+                                    entityType: namelessParameter{3}, 
+                                    loader: namelessParameter{4}, 
+                                    constructorArguments: new object[]{ });
+                                instance.<ChatId>k__BackingField = dataReader.GetGuid(0);
+                                instance.<UserId>k__BackingField = dataReader.GetGuid(1);
+                                instance.<ChatRole>k__BackingField = Invoke(((EnumToStringConverter<ChatRole>)((IReadOnlyProperty)[LIFTABLE Constant: Property: UserChatEntity.ChatRole (ChatRole) Required ValueGenerated.OnAdd | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("Domain.Entities.UserChatEntity").FindProperty("ChatRole")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetString(2));
+                                instance.<IsMuted>k__BackingField = dataReader.GetBoolean(3);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: UserChatEntity | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("Domain.Entities.UserChatEntity")]) : default(void);
+                                (namelessParameter{2} is IInjectableService) ? ((IInjectableService)namelessParameter{2}).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: UserChatEntity | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("Domain.Entities.UserChatEntity")]) : default(void);
+                                (namelessParameter{3} is IInjectableService) ? ((IInjectableService)namelessParameter{3}).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: UserChatEntity | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("Domain.Entities.UserChatEntity")]) : default(void);
+                                (namelessParameter{4} is IInjectableService) ? ((IInjectableService)namelessParameter{4}).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: UserChatEntity | Resolver: namelessParameter{9} => namelessParameter{9}.Dependencies.Model.FindEntityType("Domain.Entities.UserChatEntity")]) : default(void);
+                                return instance;
+                            };
+                        }
+                    default: 
+                        default(UserChatEntity)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        entity = 
+        {
+            MaterializationContext materializationContext2;
+            IEntityType entityType2;
+            ChatEntity instance2;
+            InternalEntityEntry entry2;
+            bool hasNullKey2;
+            materializationContext2 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance2 = default(ChatEntity);
+            entry2 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: ChatEntity.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Domain.Entities.ChatEntity").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetGuid(4) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey2);
+            !(hasNullKey2) ? entry2 != default(InternalEntityEntry) ? 
+            {
+                entityType2 = entry2.EntityType;
+                return instance2 = (ChatEntity)entry2.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot2;
+                shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType2 = [LIFTABLE Constant: EntityType: ChatEntity | Resolver: namelessParameter{10} => namelessParameter{10}.Dependencies.Model.FindEntityType("Domain.Entities.ChatEntity")];
+                instance2 = switch (entityType2)
+                {
+                    case [LIFTABLE Constant: EntityType: ChatEntity | Resolver: namelessParameter{11} => namelessParameter{11}.Dependencies.Model.FindEntityType("Domain.Entities.ChatEntity")]: 
+                        {
+                            return (ChatEntity)
+                            {
+                                ChatEntityProxy instance;
+                                DbContext namelessParameter{12};
+                                IEntityType namelessParameter{13};
+                                ILazyLoader namelessParameter{14};
+                                namelessParameter{12} = materializationContext2.Context;
+                                namelessParameter{13} = (IEntityType)ParameterBindingInfo.StructuralType;
+                                namelessParameter{14} = InfrastructureExtensions.GetService<ILazyLoader>((IInfrastructure<IServiceProvider>)materializationContext2.Context);
+                                instance = (ChatEntityProxy)ProxyFactory.CreateLazyLoadingProxy(
+                                    context: namelessParameter{12}, 
+                                    entityType: namelessParameter{13}, 
+                                    loader: namelessParameter{14}, 
+                                    constructorArguments: new object[]{ });
+                                instance.<Id>k__BackingField = dataReader.GetGuid(4);
+                                instance.<ChatType>k__BackingField = Invoke(((EnumToStringConverter<ChatType>)((IReadOnlyProperty)[LIFTABLE Constant: Property: ChatEntity.ChatType (ChatType) Required | Resolver: namelessParameter{15} => namelessParameter{15}.Dependencies.Model.FindEntityType("Domain.Entities.ChatEntity").FindProperty("ChatType")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetString(5));
+                                instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(6);
+                                instance.<IsPrivate>k__BackingField = dataReader.GetBoolean(7);
+                                instance.<Title>k__BackingField = dataReader.GetString(8);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext2.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: ChatEntity | Resolver: namelessParameter{16} => namelessParameter{16}.Dependencies.Model.FindEntityType("Domain.Entities.ChatEntity")]) : default(void);
+                                (namelessParameter{12} is IInjectableService) ? ((IInjectableService)namelessParameter{12}).Injected(
+                                    context: materializationContext2.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: ChatEntity | Resolver: namelessParameter{17} => namelessParameter{17}.Dependencies.Model.FindEntityType("Domain.Entities.ChatEntity")]) : default(void);
+                                (namelessParameter{13} is IInjectableService) ? ((IInjectableService)namelessParameter{13}).Injected(
+                                    context: materializationContext2.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: ChatEntity | Resolver: namelessParameter{18} => namelessParameter{18}.Dependencies.Model.FindEntityType("Domain.Entities.ChatEntity")]) : default(void);
+                                (namelessParameter{14} is IInjectableService) ? ((IInjectableService)namelessParameter{14}).Injected(
+                                    context: materializationContext2.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: ChatEntity | Resolver: namelessParameter{19} => namelessParameter{19}.Dependencies.Model.FindEntityType("Domain.Entities.ChatEntity")]) : default(void);
+                                return instance;
+                            };
+                        }
+                    default: 
+                        default(ChatEntity)
+                }
+                ;
+                entry2 = entityType2 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType2, 
+                    entity: instance2, 
+                    snapshot: shadowSnapshot2);
+                return instance2;
+            } : default(void);
+            return instance2;
+        };
+        ShaperProcessingExpressionVisitor.IncludeReference<UserChatEntity, UserChatEntity, ChatEntity>(
+            queryContext: queryContext, 
+            entity: entity, 
+            relatedEntity: entity, 
+            navigation: [LIFTABLE Constant: Navigation: UserChatEntity.Chat (ChatEntity) ToPrincipal ChatEntity Inverse: UserChatEntities PropertyAccessMode.Field | Resolver: namelessParameter{20} => namelessParameter{20}.Dependencies.Model.FindEntityType("Domain.Entities.UserChatEntity").FindNavigation("Chat")], 
+            inverseNavigation: [LIFTABLE Constant: Navigation: ChatEntity.UserChatEntities (IEnumerable<UserChatEntity>) Collection ToDependent UserChatEntity Inverse: Chat PropertyAccessMode.Field | Resolver: namelessParameter{21} => namelessParameter{21}.Dependencies.Model.FindEntityType("Domain.Entities.ChatEntity").FindNavigation("UserChatEntities")], 
+            fixup: (namelessParameter{22}, namelessParameter{23}) => 
+            {
+                namelessParameter{22}.<Chat>k__BackingField = namelessParameter{23};
+                return [LIFTABLE Constant: ClrICollectionAccessor<ChatEntity, IEnumerable<UserChatEntity>, UserChatEntity> | Resolver: namelessParameter{24} => namelessParameter{24}.Dependencies.Model.FindEntityType("Domain.Entities.ChatEntity").FindNavigation("UserChatEntities").GetCollectionAccessor()].Add(
+                    entity: namelessParameter{23}, 
+                    value: namelessParameter{22}, 
+                    forMaterialization: True);
+            }, 
+            trackingQuery: True);
+        return entity;
+    }, 
+    contextType: Infrastructure.Persistence.Contexts.MessengerDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-04-29 19:38:40.129 +03:00 [DBG] Creating DbConnection.
+2025-04-29 19:38:40.130 +03:00 [DBG] Created DbConnection. (1ms).
+2025-04-29 19:38:40.131 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:40.132 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:40.134 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-04-29 19:38:40.135 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-04-29 19:38:40.136 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-04-29 19:38:40.138 +03:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[ChatId], [u].[UserId], [u].[ChatRole], [u].[IsMuted], [c].[Id], [c].[ChatType], [c].[CreatedAt], [c].[IsPrivate], [c].[Title]
+FROM [UserChat] AS [u]
+INNER JOIN [Chats] AS [c] ON [u].[ChatId] = [c].[Id]
+WHERE [u].[UserId] = @__userId_0
+2025-04-29 19:38:40.143 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[ChatId], [u].[UserId], [u].[ChatRole], [u].[IsMuted], [c].[Id], [c].[ChatType], [c].[CreatedAt], [c].[IsPrivate], [c].[Title]
+FROM [UserChat] AS [u]
+INNER JOIN [Chats] AS [c] ON [u].[ChatId] = [c].[Id]
+WHERE [u].[UserId] = @__userId_0
+2025-04-29 19:38:40.147 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:40.148 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 2ms reading results.
+2025-04-29 19:38:40.150 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:40.152 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (1ms).
+2025-04-29 19:38:40.176 +03:00 [INF] User "f53813bf-5973-422d-a425-4cd23c48e83b" gets the chats
+2025-04-29 19:38:40.178 +03:00 [INF] Executed action method API.Controllers.Data.ChatController.GetChats (API), returned result Microsoft.AspNetCore.Mvc.HttpActionResult in 403.9842ms.
+2025-04-29 19:38:40.179 +03:00 [INF] Setting HTTP status code 200.
+2025-04-29 19:38:40.205 +03:00 [INF] Writing value of type 'List`1' as Json.
+2025-04-29 19:38:40.217 +03:00 [INF] Executed action API.Controllers.Data.ChatController.GetChats (API) in 457.1196ms
+2025-04-29 19:38:40.218 +03:00 [INF] Executed endpoint 'API.Controllers.Data.ChatController.GetChats (API)'
+2025-04-29 19:38:40.219 +03:00 [DBG] Connection id "0HNC77GG6NQIJ" completed keep alive response.
+2025-04-29 19:38:40.221 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-04-29 19:38:40.222 +03:00 [DBG] Disposing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:40.224 +03:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-04-29 19:38:40.226 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/api/Chat/getChats/f53813bf-5973-422d-a425-4cd23c48e83b - 200 null application/json; charset=utf-8 556.3835ms
+2025-04-29 19:38:45.499 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/api/Chat/getChats/f53813bf-5973-422d-a425-4cd23c48e83b - null null
+2025-04-29 19:38:45.502 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Chat/getChats/f53813bf-5973-422d-a425-4cd23c48e83b'
+2025-04-29 19:38:45.503 +03:00 [DBG] Endpoint 'API.Controllers.Data.ChatController.GetChats (API)' with route pattern 'api/Chat/getChats/{userId:Guid}' is valid for the request path '/api/Chat/getChats/f53813bf-5973-422d-a425-4cd23c48e83b'
+2025-04-29 19:38:45.505 +03:00 [DBG] Request matched endpoint 'API.Controllers.Data.ChatController.GetChats (API)'
+2025-04-29 19:38:45.506 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-29 19:38:45.507 +03:00 [DBG] Successfully validated the token.
+2025-04-29 19:38:45.508 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-04-29 19:38:45.511 +03:00 [DBG] Authorization was successful.
+2025-04-29 19:38:45.512 +03:00 [INF] Executing endpoint 'API.Controllers.Data.ChatController.GetChats (API)'
+2025-04-29 19:38:45.513 +03:00 [INF] Route matched with {action = "GetChats", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.Chat.ReadChatDto]],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] GetChats(System.Guid) on controller API.Controllers.Data.ChatController (API).
+2025-04-29 19:38:45.515 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-04-29 19:38:45.516 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-04-29 19:38:45.517 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-04-29 19:38:45.519 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-04-29 19:38:45.520 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-04-29 19:38:45.521 +03:00 [DBG] Executing controller factory for controller API.Controllers.Data.ChatController (API)
+2025-04-29 19:38:45.522 +03:00 [DBG] Executed controller factory for controller API.Controllers.Data.ChatController (API)
+2025-04-29 19:38:45.523 +03:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Guid' ...
+2025-04-29 19:38:45.525 +03:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Guid' using the name 'userId' in request data ...
+2025-04-29 19:38:45.526 +03:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Guid'.
+2025-04-29 19:38:45.527 +03:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Guid'.
+2025-04-29 19:38:45.529 +03:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Guid' ...
+2025-04-29 19:38:45.530 +03:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Guid'.
+2025-04-29 19:38:45.531 +03:00 [INF] Executing action method API.Controllers.Data.ChatController.GetChats (API) - Validation state: "Valid"
+2025-04-29 19:38:45.532 +03:00 [INF] User "f53813bf-5973-422d-a425-4cd23c48e83b" tries to get chats
+2025-04-29 19:38:45.535 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-04-29 19:38:45.541 +03:00 [DBG] Creating DbConnection.
+2025-04-29 19:38:45.542 +03:00 [DBG] Created DbConnection. (0ms).
+2025-04-29 19:38:45.542 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:45.544 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:45.545 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-04-29 19:38:45.546 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-04-29 19:38:45.547 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-04-29 19:38:45.548 +03:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[ChatId], [u].[UserId], [u].[ChatRole], [u].[IsMuted], [c].[Id], [c].[ChatType], [c].[CreatedAt], [c].[IsPrivate], [c].[Title]
+FROM [UserChat] AS [u]
+INNER JOIN [Chats] AS [c] ON [u].[ChatId] = [c].[Id]
+WHERE [u].[UserId] = @__userId_0
+2025-04-29 19:38:45.550 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[ChatId], [u].[UserId], [u].[ChatRole], [u].[IsMuted], [c].[Id], [c].[ChatType], [c].[CreatedAt], [c].[IsPrivate], [c].[Title]
+FROM [UserChat] AS [u]
+INNER JOIN [Chats] AS [c] ON [u].[ChatId] = [c].[Id]
+WHERE [u].[UserId] = @__userId_0
+2025-04-29 19:38:45.552 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:45.553 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 1ms reading results.
+2025-04-29 19:38:45.555 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:45.556 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (1ms).
+2025-04-29 19:38:45.559 +03:00 [INF] User "f53813bf-5973-422d-a425-4cd23c48e83b" gets the chats
+2025-04-29 19:38:45.560 +03:00 [INF] Executed action method API.Controllers.Data.ChatController.GetChats (API), returned result Microsoft.AspNetCore.Mvc.HttpActionResult in 27.8163ms.
+2025-04-29 19:38:45.562 +03:00 [INF] Setting HTTP status code 200.
+2025-04-29 19:38:45.562 +03:00 [INF] Writing value of type 'List`1' as Json.
+2025-04-29 19:38:45.564 +03:00 [INF] Executed action API.Controllers.Data.ChatController.GetChats (API) in 42.8937ms
+2025-04-29 19:38:45.565 +03:00 [INF] Executed endpoint 'API.Controllers.Data.ChatController.GetChats (API)'
+2025-04-29 19:38:45.566 +03:00 [DBG] Connection id "0HNC77GG6NQIJ" completed keep alive response.
+2025-04-29 19:38:45.567 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-04-29 19:38:45.569 +03:00 [DBG] Disposing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:45.569 +03:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2025-04-29 19:38:45.571 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/api/Chat/getChats/f53813bf-5973-422d-a425-4cd23c48e83b - 200 null application/json; charset=utf-8 71.8858ms
+2025-04-29 19:38:57.123 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/api/Chat/getChats/f53813bf-5973-422d-a425-4cd23c48e83b - null null
+2025-04-29 19:38:57.125 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Chat/getChats/f53813bf-5973-422d-a425-4cd23c48e83b'
+2025-04-29 19:38:57.126 +03:00 [DBG] Endpoint 'API.Controllers.Data.ChatController.GetChats (API)' with route pattern 'api/Chat/getChats/{userId:Guid}' is valid for the request path '/api/Chat/getChats/f53813bf-5973-422d-a425-4cd23c48e83b'
+2025-04-29 19:38:57.128 +03:00 [DBG] Request matched endpoint 'API.Controllers.Data.ChatController.GetChats (API)'
+2025-04-29 19:38:57.129 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-29 19:38:57.130 +03:00 [DBG] Successfully validated the token.
+2025-04-29 19:38:57.131 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-04-29 19:38:57.133 +03:00 [DBG] Authorization was successful.
+2025-04-29 19:38:57.134 +03:00 [INF] Executing endpoint 'API.Controllers.Data.ChatController.GetChats (API)'
+2025-04-29 19:38:57.136 +03:00 [INF] Route matched with {action = "GetChats", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.Chat.ReadChatDto]],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] GetChats(System.Guid) on controller API.Controllers.Data.ChatController (API).
+2025-04-29 19:38:57.137 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-04-29 19:38:57.139 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-04-29 19:38:57.140 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-04-29 19:38:57.142 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-04-29 19:38:57.144 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-04-29 19:38:57.146 +03:00 [DBG] Executing controller factory for controller API.Controllers.Data.ChatController (API)
+2025-04-29 19:38:57.147 +03:00 [DBG] Executed controller factory for controller API.Controllers.Data.ChatController (API)
+2025-04-29 19:38:57.148 +03:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Guid' ...
+2025-04-29 19:38:57.149 +03:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Guid' using the name 'userId' in request data ...
+2025-04-29 19:38:57.151 +03:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Guid'.
+2025-04-29 19:38:57.152 +03:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Guid'.
+2025-04-29 19:38:57.153 +03:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Guid' ...
+2025-04-29 19:38:57.154 +03:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Guid'.
+2025-04-29 19:38:57.156 +03:00 [INF] Executing action method API.Controllers.Data.ChatController.GetChats (API) - Validation state: "Valid"
+2025-04-29 19:38:57.156 +03:00 [INF] User "f53813bf-5973-422d-a425-4cd23c48e83b" tries to get chats
+2025-04-29 19:38:57.161 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-04-29 19:38:57.163 +03:00 [DBG] Creating DbConnection.
+2025-04-29 19:38:57.164 +03:00 [DBG] Created DbConnection. (0ms).
+2025-04-29 19:38:57.165 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:57.166 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:57.168 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-04-29 19:38:57.169 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-04-29 19:38:57.170 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-04-29 19:38:57.171 +03:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[ChatId], [u].[UserId], [u].[ChatRole], [u].[IsMuted], [c].[Id], [c].[ChatType], [c].[CreatedAt], [c].[IsPrivate], [c].[Title]
+FROM [UserChat] AS [u]
+INNER JOIN [Chats] AS [c] ON [u].[ChatId] = [c].[Id]
+WHERE [u].[UserId] = @__userId_0
+2025-04-29 19:38:57.173 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[ChatId], [u].[UserId], [u].[ChatRole], [u].[IsMuted], [c].[Id], [c].[ChatType], [c].[CreatedAt], [c].[IsPrivate], [c].[Title]
+FROM [UserChat] AS [u]
+INNER JOIN [Chats] AS [c] ON [u].[ChatId] = [c].[Id]
+WHERE [u].[UserId] = @__userId_0
+2025-04-29 19:38:57.175 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:57.177 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 1ms reading results.
+2025-04-29 19:38:57.178 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:57.180 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (1ms).
+2025-04-29 19:38:57.182 +03:00 [INF] User "f53813bf-5973-422d-a425-4cd23c48e83b" gets the chats
+2025-04-29 19:38:57.183 +03:00 [INF] Executed action method API.Controllers.Data.ChatController.GetChats (API), returned result Microsoft.AspNetCore.Mvc.HttpActionResult in 26.2698ms.
+2025-04-29 19:38:57.184 +03:00 [INF] Setting HTTP status code 200.
+2025-04-29 19:38:57.186 +03:00 [INF] Writing value of type 'List`1' as Json.
+2025-04-29 19:38:57.187 +03:00 [INF] Executed action API.Controllers.Data.ChatController.GetChats (API) in 40.898ms
+2025-04-29 19:38:57.188 +03:00 [INF] Executed endpoint 'API.Controllers.Data.ChatController.GetChats (API)'
+2025-04-29 19:38:57.190 +03:00 [DBG] Connection id "0HNC77GG6NQIJ" completed keep alive response.
+2025-04-29 19:38:57.191 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-04-29 19:38:57.192 +03:00 [DBG] Disposing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:38:57.194 +03:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-04-29 19:38:57.196 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/api/Chat/getChats/f53813bf-5973-422d-a425-4cd23c48e83b - 200 null application/json; charset=utf-8 72.5905ms
+2025-04-29 19:39:15.868 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5077/api/User/getUserInfo/string - null null
+2025-04-29 19:39:15.870 +03:00 [DBG] 1 candidate(s) found for the request path '/api/User/getUserInfo/string'
+2025-04-29 19:39:15.871 +03:00 [DBG] Endpoint 'API.Controllers.Data.UserController.GetUserInfo (API)' with route pattern 'api/User/getUserInfo/{username}' is valid for the request path '/api/User/getUserInfo/string'
+2025-04-29 19:39:15.873 +03:00 [DBG] Request matched endpoint 'API.Controllers.Data.UserController.GetUserInfo (API)'
+2025-04-29 19:39:15.874 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-29 19:39:15.875 +03:00 [DBG] Successfully validated the token.
+2025-04-29 19:39:15.876 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-04-29 19:39:15.878 +03:00 [DBG] Authorization was successful.
+2025-04-29 19:39:15.879 +03:00 [INF] Executing endpoint 'API.Controllers.Data.UserController.GetUserInfo (API)'
+2025-04-29 19:39:15.884 +03:00 [INF] Route matched with {action = "GetUserInfo", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`3[Microsoft.AspNetCore.Http.HttpResults.Ok`1[Application.Interfaces.DTOs.IReadUserDto],Microsoft.AspNetCore.Http.HttpResults.UnauthorizedHttpResult,Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] GetUserInfo(System.String) on controller API.Controllers.Data.UserController (API).
+2025-04-29 19:39:15.886 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-04-29 19:39:15.888 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-04-29 19:39:15.890 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-04-29 19:39:15.891 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-04-29 19:39:15.893 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-04-29 19:39:15.895 +03:00 [DBG] Executing controller factory for controller API.Controllers.Data.UserController (API)
+2025-04-29 19:39:15.897 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-04-29 19:39:15.900 +03:00 [DBG] Executed controller factory for controller API.Controllers.Data.UserController (API)
+2025-04-29 19:39:15.901 +03:00 [DBG] Attempting to bind parameter 'username' of type 'System.String' ...
+2025-04-29 19:39:15.903 +03:00 [DBG] Attempting to bind parameter 'username' of type 'System.String' using the name 'username' in request data ...
+2025-04-29 19:39:15.904 +03:00 [DBG] Done attempting to bind parameter 'username' of type 'System.String'.
+2025-04-29 19:39:15.905 +03:00 [DBG] Done attempting to bind parameter 'username' of type 'System.String'.
+2025-04-29 19:39:15.907 +03:00 [DBG] Attempting to validate the bound parameter 'username' of type 'System.String' ...
+2025-04-29 19:39:15.908 +03:00 [DBG] Done attempting to validate the bound parameter 'username' of type 'System.String'.
+2025-04-29 19:39:15.909 +03:00 [INF] Executing action method API.Controllers.Data.UserController.GetUserInfo (API) - Validation state: "Valid"
+2025-04-29 19:39:15.913 +03:00 [INF] Starting to get user info for string
+2025-04-29 19:39:15.918 +03:00 [DBG] Creating DbConnection.
+2025-04-29 19:39:15.919 +03:00 [DBG] Created DbConnection. (0ms).
+2025-04-29 19:39:15.920 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:15.922 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:15.923 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-04-29 19:39:15.924 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-04-29 19:39:15.925 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-04-29 19:39:15.927 +03:00 [DBG] Executing DbCommand [Parameters=[@__userName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__userName_0
+2025-04-29 19:39:15.930 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__userName_0
+2025-04-29 19:39:15.933 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:15.935 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 2ms reading results.
+2025-04-29 19:39:15.936 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:15.938 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (1ms).
+2025-04-29 19:39:15.943 +03:00 [INF] User string found
+2025-04-29 19:39:15.945 +03:00 [INF] Executed action method API.Controllers.Data.UserController.GetUserInfo (API), returned result Microsoft.AspNetCore.Mvc.HttpActionResult in 34.2425ms.
+2025-04-29 19:39:15.947 +03:00 [INF] Setting HTTP status code 200.
+2025-04-29 19:39:15.949 +03:00 [INF] Writing value of type 'ReadUserDto' as Json.
+2025-04-29 19:39:15.958 +03:00 [INF] Executed action API.Controllers.Data.UserController.GetUserInfo (API) in 63.4081ms
+2025-04-29 19:39:15.959 +03:00 [INF] Executed endpoint 'API.Controllers.Data.UserController.GetUserInfo (API)'
+2025-04-29 19:39:15.961 +03:00 [DBG] Connection id "0HNC77GG6NQIJ" completed keep alive response.
+2025-04-29 19:39:15.962 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-04-29 19:39:15.964 +03:00 [DBG] Disposing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:15.966 +03:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2025-04-29 19:39:15.968 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5077/api/User/getUserInfo/string - 200 null application/json; charset=utf-8 100.2121ms
+2025-04-29 19:39:22.593 +03:00 [DBG] Connection id "0HNC77GG6NQII" received FIN.
+2025-04-29 19:39:22.594 +03:00 [DBG] Connection id "0HNC77GG6NQII" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-29 19:39:22.596 +03:00 [DBG] Connection id "0HNC77GG6NQII" disconnecting.
+2025-04-29 19:39:22.598 +03:00 [DBG] Connection id "0HNC77GG6NQII" stopped.
+2025-04-29 19:39:27.500 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5077/api/User/updateUserInfo?Username=vlados_pisos - null null
+2025-04-29 19:39:27.503 +03:00 [DBG] 1 candidate(s) found for the request path '/api/User/updateUserInfo'
+2025-04-29 19:39:27.504 +03:00 [DBG] Endpoint 'API.Controllers.Data.UserController.UpdateUserInfo (API)' with route pattern 'api/User/updateUserInfo' is valid for the request path '/api/User/updateUserInfo'
+2025-04-29 19:39:27.506 +03:00 [DBG] Request matched endpoint 'API.Controllers.Data.UserController.UpdateUserInfo (API)'
+2025-04-29 19:39:27.507 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-29 19:39:27.508 +03:00 [DBG] Successfully validated the token.
+2025-04-29 19:39:27.509 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-04-29 19:39:27.510 +03:00 [DBG] Authorization was successful.
+2025-04-29 19:39:27.511 +03:00 [INF] Executing endpoint 'API.Controllers.Data.UserController.UpdateUserInfo (API)'
+2025-04-29 19:39:27.517 +03:00 [INF] Route matched with {action = "UpdateUserInfo", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Http.HttpResults.Results`2[Microsoft.AspNetCore.Http.HttpResults.Ok`1[Application.DTOs.User.ReadUserDto],Microsoft.AspNetCore.Http.HttpResults.BadRequest`1[System.String]]] UpdateUserInfo(Application.DTOs.User.UpdateUserDto) on controller API.Controllers.Data.UserController (API).
+2025-04-29 19:39:27.519 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-04-29 19:39:27.521 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-04-29 19:39:27.522 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-04-29 19:39:27.524 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-04-29 19:39:27.526 +03:00 [DBG] Execution plan of result filters (in the following order): ["None"]
+2025-04-29 19:39:27.528 +03:00 [DBG] Executing controller factory for controller API.Controllers.Data.UserController (API)
+2025-04-29 19:39:27.530 +03:00 [DBG] Entity Framework Core 9.0.3 initialized 'MessengerDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.3' with options: EngineType=SqlServer using lazy loading proxies 
+2025-04-29 19:39:27.532 +03:00 [DBG] Executed controller factory for controller API.Controllers.Data.UserController (API)
+2025-04-29 19:39:27.537 +03:00 [DBG] Attempting to bind parameter 'userDto' of type 'Application.DTOs.User.UpdateUserDto' ...
+2025-04-29 19:39:27.539 +03:00 [DBG] Attempting to bind parameter 'userDto' of type 'Application.DTOs.User.UpdateUserDto' using the name '' in request data ...
+2025-04-29 19:39:27.545 +03:00 [DBG] Attempting to bind property 'Application.DTOs.User.UpdateUserDto.Username' of type 'System.String' using the name 'Username' in request data ...
+2025-04-29 19:39:27.548 +03:00 [DBG] Done attempting to bind property 'Application.DTOs.User.UpdateUserDto.Username' of type 'System.String'.
+2025-04-29 19:39:27.549 +03:00 [DBG] Attempting to bind property 'Application.DTOs.User.UpdateUserDto.Email' of type 'System.String' using the name 'Email' in request data ...
+2025-04-29 19:39:27.551 +03:00 [DBG] Could not find a value in the request with name 'Email' for binding property 'Application.DTOs.User.UpdateUserDto.Email' of type 'System.String'.
+2025-04-29 19:39:27.552 +03:00 [DBG] Done attempting to bind property 'Application.DTOs.User.UpdateUserDto.Email' of type 'System.String'.
+2025-04-29 19:39:27.554 +03:00 [DBG] Attempting to bind property 'Application.DTOs.User.UpdateUserDto.Password' of type 'System.String' using the name 'Password' in request data ...
+2025-04-29 19:39:27.556 +03:00 [DBG] Could not find a value in the request with name 'Password' for binding property 'Application.DTOs.User.UpdateUserDto.Password' of type 'System.String'.
+2025-04-29 19:39:27.557 +03:00 [DBG] Done attempting to bind property 'Application.DTOs.User.UpdateUserDto.Password' of type 'System.String'.
+2025-04-29 19:39:27.558 +03:00 [DBG] Attempting to bind property 'Application.DTOs.User.UpdateUserDto.FirstName' of type 'System.String' using the name 'FirstName' in request data ...
+2025-04-29 19:39:27.559 +03:00 [DBG] Could not find a value in the request with name 'FirstName' for binding property 'Application.DTOs.User.UpdateUserDto.FirstName' of type 'System.String'.
+2025-04-29 19:39:27.561 +03:00 [DBG] Done attempting to bind property 'Application.DTOs.User.UpdateUserDto.FirstName' of type 'System.String'.
+2025-04-29 19:39:27.563 +03:00 [DBG] Attempting to bind property 'Application.DTOs.User.UpdateUserDto.LastName' of type 'System.String' using the name 'LastName' in request data ...
+2025-04-29 19:39:27.564 +03:00 [DBG] Could not find a value in the request with name 'LastName' for binding property 'Application.DTOs.User.UpdateUserDto.LastName' of type 'System.String'.
+2025-04-29 19:39:27.566 +03:00 [DBG] Done attempting to bind property 'Application.DTOs.User.UpdateUserDto.LastName' of type 'System.String'.
+2025-04-29 19:39:27.567 +03:00 [DBG] Attempting to bind property 'Application.DTOs.User.UpdateUserDto.DateOfBirth' of type 'System.Nullable`1[System.DateTime]' using the name 'DateOfBirth' in request data ...
+2025-04-29 19:39:27.569 +03:00 [DBG] Could not find a value in the request with name 'DateOfBirth' for binding property 'Application.DTOs.User.UpdateUserDto.DateOfBirth' of type 'System.Nullable`1[System.DateTime]'.
+2025-04-29 19:39:27.571 +03:00 [DBG] Done attempting to bind property 'Application.DTOs.User.UpdateUserDto.DateOfBirth' of type 'System.Nullable`1[System.DateTime]'.
+2025-04-29 19:39:27.572 +03:00 [DBG] Done attempting to bind parameter 'userDto' of type 'Application.DTOs.User.UpdateUserDto'.
+2025-04-29 19:39:27.573 +03:00 [DBG] Done attempting to bind parameter 'userDto' of type 'Application.DTOs.User.UpdateUserDto'.
+2025-04-29 19:39:27.574 +03:00 [DBG] Attempting to validate the bound parameter 'userDto' of type 'Application.DTOs.User.UpdateUserDto' ...
+2025-04-29 19:39:27.578 +03:00 [DBG] Done attempting to validate the bound parameter 'userDto' of type 'Application.DTOs.User.UpdateUserDto'.
+2025-04-29 19:39:27.579 +03:00 [INF] Executing action method API.Controllers.Data.UserController.UpdateUserInfo (API) - Validation state: "Valid"
+2025-04-29 19:39:27.582 +03:00 [INF] Starting to update user info for vlados_pisos
+2025-04-29 19:39:27.588 +03:00 [DBG] Compiling query expression: 
+'DbSet<UserEntity>()
+    .AsNoTracking()
+    .FirstOrDefault(e => EF.Property<Guid>(e, "Id") == __id_0)'
+2025-04-29 19:39:27.596 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserEntity>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<UserEntity>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserEntity.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserEntity.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 1], [Property: UserEntity.DateOfBirth (DateTime) Required, 2], [Property: UserEntity.Email (Email) Required Index, 3], [Property: UserEntity.FirstName (string) Required MaxLength(50), 4], [Property: UserEntity.LastName (string) Required MaxLength(50), 5], [Property: UserEntity.PasswordHash (string) Required MaxLength(255), 6], [Property: UserEntity.Username (string) Required Index MaxLength(50), 7] }
+            SELECT TOP(1) u.Id, u.CreatedAt, u.DateOfBirth, u.Email, u.FirstName, u.LastName, u.PasswordHash, u.Username
+            FROM Users AS u
+            WHERE u.Id == @__id_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserEntity.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserEntity.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 1], [Property: UserEntity.DateOfBirth (DateTime) Required, 2], [Property: UserEntity.Email (Email) Required Index, 3], [Property: UserEntity.FirstName (string) Required MaxLength(50), 4], [Property: UserEntity.LastName (string) Required MaxLength(50), 5], [Property: UserEntity.PasswordHash (string) Required MaxLength(255), 6], [Property: UserEntity.Username (string) Required Index MaxLength(50), 7] }
+            SELECT TOP(1) u.Id, u.CreatedAt, u.DateOfBirth, u.Email, u.FirstName, u.LastName, u.PasswordHash, u.Username
+            FROM Users AS u
+            WHERE u.Id == @__id_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            UserEntity entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                UserEntity instance1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(UserEntity);
+                (object)dataReader.GetGuid(0) != null ? 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]: 
+                            {
+                                return (UserEntity)
+                                {
+                                    UserEntityProxy instance;
+                                    DbContext namelessParameter{2};
+                                    IEntityType namelessParameter{3};
+                                    ILazyLoader namelessParameter{4};
+                                    namelessParameter{2} = materializationContext1.Context;
+                                    namelessParameter{3} = (IEntityType)ParameterBindingInfo.StructuralType;
+                                    namelessParameter{4} = InfrastructureExtensions.GetService<ILazyLoader>((IInfrastructure<IServiceProvider>)materializationContext1.Context);
+                                    instance = (UserEntityProxy)ProxyFactory.CreateLazyLoadingProxy(
+                                        context: namelessParameter{2}, 
+                                        entityType: namelessParameter{3}, 
+                                        loader: namelessParameter{4}, 
+                                        constructorArguments: new object[]{ });
+                                    instance.<Id>k__BackingField = dataReader.GetGuid(0);
+                                    instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(1);
+                                    instance.<DateOfBirth>k__BackingField = dataReader.GetDateTime(2);
+                                    instance.<Email>k__BackingField = Invoke(((ValueConverter<Email, string>)((IReadOnlyProperty)[LIFTABLE Constant: Property: UserEntity.Email (Email) Required Index | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity").FindProperty("Email")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetString(3));
+                                    instance.<FirstName>k__BackingField = dataReader.GetString(4);
+                                    instance.<LastName>k__BackingField = dataReader.GetString(5);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(6);
+                                    instance.<Username>k__BackingField = dataReader.GetString(7);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    (namelessParameter{2} is IInjectableService) ? ((IInjectableService)namelessParameter{2}).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    (namelessParameter{3} is IInjectableService) ? ((IInjectableService)namelessParameter{3}).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    (namelessParameter{4} is IInjectableService) ? ((IInjectableService)namelessParameter{4}).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{9} => namelessParameter{9}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    return instance;
+                                };
+                            }
+                        default: 
+                            default(UserEntity)
+                    }
+                    ;
+                    return instance1;
+                } : 
+                {
+                    object[] keyValues1;
+                    keyValues1 = new object[]{ (object)dataReader.GetGuid(0) };
+                    return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                        entityType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{10} => namelessParameter{10}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")], 
+                        properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: UserEntity.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity").FindPrimaryKey().Properties], 
+                        keyValues: keyValues1);
+                };
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: Infrastructure.Persistence.Contexts.MessengerDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-04-29 19:39:27.603 +03:00 [DBG] Creating DbConnection.
+2025-04-29 19:39:27.604 +03:00 [DBG] Created DbConnection. (0ms).
+2025-04-29 19:39:27.604 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:27.605 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:27.606 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-04-29 19:39:27.607 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-04-29 19:39:27.608 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-04-29 19:39:27.609 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+2025-04-29 19:39:27.612 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+2025-04-29 19:39:27.614 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:27.615 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 1ms reading results.
+2025-04-29 19:39:27.616 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:27.618 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (1ms).
+2025-04-29 19:39:27.624 +03:00 [DBG] Compiling query expression: 
+'DbSet<UserEntity>()
+    .FirstOrDefault(x => x.Id == __entity_Id_0)'
+2025-04-29 19:39:27.631 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserEntity>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<UserEntity>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserEntity.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserEntity.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 1], [Property: UserEntity.DateOfBirth (DateTime) Required, 2], [Property: UserEntity.Email (Email) Required Index, 3], [Property: UserEntity.FirstName (string) Required MaxLength(50), 4], [Property: UserEntity.LastName (string) Required MaxLength(50), 5], [Property: UserEntity.PasswordHash (string) Required MaxLength(255), 6], [Property: UserEntity.Username (string) Required Index MaxLength(50), 7] }
+            SELECT TOP(1) u.Id, u.CreatedAt, u.DateOfBirth, u.Email, u.FirstName, u.LastName, u.PasswordHash, u.Username
+            FROM Users AS u
+            WHERE u.Id == @__entity_Id_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserEntity.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserEntity.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 1], [Property: UserEntity.DateOfBirth (DateTime) Required, 2], [Property: UserEntity.Email (Email) Required Index, 3], [Property: UserEntity.FirstName (string) Required MaxLength(50), 4], [Property: UserEntity.LastName (string) Required MaxLength(50), 5], [Property: UserEntity.PasswordHash (string) Required MaxLength(255), 6], [Property: UserEntity.Username (string) Required Index MaxLength(50), 7] }
+            SELECT TOP(1) u.Id, u.CreatedAt, u.DateOfBirth, u.Email, u.FirstName, u.LastName, u.PasswordHash, u.Username
+            FROM Users AS u
+            WHERE u.Id == @__entity_Id_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            UserEntity entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                UserEntity instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(UserEntity);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: UserEntity.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetGuid(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (UserEntity)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]: 
+                            {
+                                return (UserEntity)
+                                {
+                                    UserEntityProxy instance;
+                                    DbContext namelessParameter{2};
+                                    IEntityType namelessParameter{3};
+                                    ILazyLoader namelessParameter{4};
+                                    namelessParameter{2} = materializationContext1.Context;
+                                    namelessParameter{3} = (IEntityType)ParameterBindingInfo.StructuralType;
+                                    namelessParameter{4} = InfrastructureExtensions.GetService<ILazyLoader>((IInfrastructure<IServiceProvider>)materializationContext1.Context);
+                                    instance = (UserEntityProxy)ProxyFactory.CreateLazyLoadingProxy(
+                                        context: namelessParameter{2}, 
+                                        entityType: namelessParameter{3}, 
+                                        loader: namelessParameter{4}, 
+                                        constructorArguments: new object[]{ });
+                                    instance.<Id>k__BackingField = dataReader.GetGuid(0);
+                                    instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(1);
+                                    instance.<DateOfBirth>k__BackingField = dataReader.GetDateTime(2);
+                                    instance.<Email>k__BackingField = Invoke(((ValueConverter<Email, string>)((IReadOnlyProperty)[LIFTABLE Constant: Property: UserEntity.Email (Email) Required Index | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity").FindProperty("Email")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetString(3));
+                                    instance.<FirstName>k__BackingField = dataReader.GetString(4);
+                                    instance.<LastName>k__BackingField = dataReader.GetString(5);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(6);
+                                    instance.<Username>k__BackingField = dataReader.GetString(7);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    (namelessParameter{2} is IInjectableService) ? ((IInjectableService)namelessParameter{2}).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    (namelessParameter{3} is IInjectableService) ? ((IInjectableService)namelessParameter{3}).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    (namelessParameter{4} is IInjectableService) ? ((IInjectableService)namelessParameter{4}).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: UserEntity | Resolver: namelessParameter{9} => namelessParameter{9}.Dependencies.Model.FindEntityType("Domain.Entities.UserEntity")]) : default(void);
+                                    return instance;
+                                };
+                            }
+                        default: 
+                            default(UserEntity)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: Infrastructure.Persistence.Contexts.MessengerDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-04-29 19:39:27.638 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:27.639 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:27.640 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-04-29 19:39:27.641 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-04-29 19:39:27.643 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-04-29 19:39:27.644 +03:00 [DBG] Executing DbCommand [Parameters=[@__entity_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__entity_Id_0
+2025-04-29 19:39:27.647 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__entity_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__entity_Id_0
+2025-04-29 19:39:27.652 +03:00 [DBG] Context 'MessengerDbContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-04-29 19:39:27.654 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:27.655 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 5ms reading results.
+2025-04-29 19:39:27.657 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:27.658 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (1ms).
+2025-04-29 19:39:27.669 +03:00 [DBG] An entity of type 'UserEntity' tracked by 'MessengerDbContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-04-29 19:39:27.674 +03:00 [DBG] SaveChanges starting for 'MessengerDbContext'.
+2025-04-29 19:39:27.675 +03:00 [DBG] DetectChanges starting for 'MessengerDbContext'.
+2025-04-29 19:39:27.676 +03:00 [DBG] DetectChanges completed for 'MessengerDbContext'.
+2025-04-29 19:39:27.693 +03:00 [DBG] Opening connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:27.695 +03:00 [DBG] Opened connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:27.696 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-04-29 19:39:27.697 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-04-29 19:39:27.699 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-04-29 19:39:27.700 +03:00 [DBG] Executing DbCommand [Parameters=[@p3='?' (DbType = Guid), @p0='?' (DbType = Date), @p1='?' (Size = 450), @p2='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [DateOfBirth] = @p0, [Email] = @p1, [Username] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2025-04-29 19:39:27.704 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p3='?' (DbType = Guid), @p0='?' (DbType = Date), @p1='?' (Size = 450), @p2='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [DateOfBirth] = @p0, [Email] = @p1, [Username] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2025-04-29 19:39:27.708 +03:00 [DBG] Closing data reader to 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:27.709 +03:00 [DBG] A data reader for 'UserDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 3ms reading results.
+2025-04-29 19:39:27.712 +03:00 [DBG] Closing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:27.714 +03:00 [DBG] Closed connection to database 'UserDB' on server '(localdb)\mssqllocaldb' (1ms).
+2025-04-29 19:39:27.715 +03:00 [DBG] An entity of type 'UserEntity' tracked by 'MessengerDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-04-29 19:39:27.717 +03:00 [DBG] SaveChanges completed for 'MessengerDbContext' with 1 entities written to the database.
+2025-04-29 19:39:27.719 +03:00 [INF] User vlados_pisos updated
+2025-04-29 19:39:27.720 +03:00 [INF] Executed action method API.Controllers.Data.UserController.UpdateUserInfo (API), returned result Microsoft.AspNetCore.Mvc.HttpActionResult in 139.4689ms.
+2025-04-29 19:39:27.722 +03:00 [INF] Setting HTTP status code 200.
+2025-04-29 19:39:27.723 +03:00 [INF] Writing value of type 'ReadUserDto' as Json.
+2025-04-29 19:39:27.724 +03:00 [INF] Executed action API.Controllers.Data.UserController.UpdateUserInfo (API) in 196.4025ms
+2025-04-29 19:39:27.725 +03:00 [INF] Executed endpoint 'API.Controllers.Data.UserController.UpdateUserInfo (API)'
+2025-04-29 19:39:27.726 +03:00 [DBG] Connection id "0HNC77GG6NQIJ" completed keep alive response.
+2025-04-29 19:39:27.728 +03:00 [DBG] 'MessengerDbContext' disposed.
+2025-04-29 19:39:27.730 +03:00 [DBG] Disposing connection to database 'UserDB' on server '(localdb)\mssqllocaldb'.
+2025-04-29 19:39:27.731 +03:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-04-29 19:39:27.732 +03:00 [INF] Request finished HTTP/1.1 PATCH http://localhost:5077/api/User/updateUserInfo?Username=vlados_pisos - 200 null application/json; charset=utf-8 232.4422ms
+2025-04-29 19:39:36.845 +03:00 [INF] Application is shutting down...
+2025-04-29 19:39:36.846 +03:00 [DBG] Hosting stopping
+2025-04-29 19:39:36.854 +03:00 [DBG] Connection id "0HNC77GG6NQIJ" disconnecting.
+2025-04-29 19:39:36.856 +03:00 [DBG] Connection id "0HNC77GG6NQIJ" stopped.
+2025-04-29 19:39:36.857 +03:00 [DBG] Connection id "0HNC77GG6NQIJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-29 19:39:36.864 +03:00 [DBG] Hosting stopped
